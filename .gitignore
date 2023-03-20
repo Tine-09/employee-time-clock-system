@@ -1,0 +1,7 @@
+*.iml
+*.xml
+*.codekit3
+*.DS_Store
+*.css
+*.css.map
+prepros.config
