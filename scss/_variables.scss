@@ -10,11 +10,20 @@ $xxl: 104px;
 $font-family-gotham: 'Gotham';
 
 // Font Sizes
-$h1: 48px;
-$h2: 34px;
-$h3: 28px;
-$h4: 18px;
-$p: 14px;
+$font-size-xxl: 48px;
+$font-size-xl: 34px;
+$font-size-l: 28px;
+$font-size-m: 22px;
+$font-size-s: 18px;
+$font-size-xs: 16px;
+$font-size-xxs: 14px;
+
+// Font Weight
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
 // Colors
 $primary: #323133;
 $primaryDark: #212121;
@@ -29,3 +38,4 @@ $contentBg: #fafafa;
 $background: #eceff1;
 $border: #d0d0d0;
 $placeholderText: #afafaf;
+$default: 16px;

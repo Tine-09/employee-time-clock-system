@@ -1,4 +1,62 @@
-.text {
+* {
+    font-family: $font-family-gotham !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: $bold;
+    color: $primary;
+    letter-spacing: 0.3px;
+}
+
+p {
+    font-size: $font-size-xxs;
+    font-weight: $regular;
+    color: $primary;
+}
+
+h1,
+.h1 {
+    font-size: $font-size-xxl;
+    line-height: 2.5rem;
+}
+
+h2,
+.h2 {
+    font-size: $font-size-xl;
+    line-height: 2rem;
+}
+
+h3,
+.h3 {
+    font-size: $font-size-l;
+    line-height: 1.75rem;
+}
+
+h4,
+.h4 {
+    font-size: $font-size-m;
+    line-height: 1.50rem;
+}
+
+h5,
+.h5 {
+    font-size: $font-size-s;
+    line-height: 1.25rem;
+}
+
+h6,
+.h6 {
+    font-size: $font-size-xs;
+    line-height: 1.25rem;
+}
+
+
+.t {
     // Font Family
     &-f {
         &-gotham {
@@ -8,30 +66,87 @@
 
     // Font Sizes
     &-s {
-        &-h1 {
-            font-size: $h1;
+        &-xxl {
+            font-size: $font-size-xxl;
         }
-        &-h2 {
-            font-size: $h2;
+        &-xl {
+            font-size: $font-size-xl;
         }
-        &-h3 {
-            font-size: $h3;
+        &-l {
+            font-size: $font-size-l;
         }
-        &-h4 {
-            font-size: $h4;
+        &-m {
+            font-size: $font-size-m;
         }
-        &-p {
-            font-size: $p;
+        &-s {
+            font-size: $font-size-s;
+        }
+        &-xs {
+            font-size: $font-size-xs;
+        }
+        &-xxs {
+            font-size: $font-size-xxs;
         }
     }
 
     // Font Weight
     &-w {
-        &-book {
+        &-r {
             font-weight: 400;
         }
-        &-bold {
+        &-m {
+            font-weight: 500;
+        }
+        &-sb {
+            font-weight: 600;
+        }
+        &-b {
             font-weight: 700;
+        }
+    }
+
+    // Text Align
+    &-a {
+        &-c {
+            text-align: center;
+        }
+        &-l {
+            text-align: left;
+        }
+        &-r {
+            text-align: right;
+        }
+        &-j {
+            text-align: justify;
+        }
+    }
+
+    // Text Transform
+    &-t {
+        &-u {
+            text-transform: uppercase;
+        }
+        &-l {
+            text-transform: lowercase;
+        }
+        &-c {
+            text-transform: capitalize;
+        }
+    }
+    
+    // Text Decoration
+    &-d {   
+        &-o {
+            text-decoration: overline;
+        }
+        &-l {
+            text-decoration: line-through;
+        }
+        &-u {
+            text-decoration: underline;
+        }
+        &-uo {
+            text-decoration: underline overline;
         }
     }
 }

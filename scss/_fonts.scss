@@ -1,14 +1,16 @@
 // Bold Text
 @font-face {
-    font-family: $font-family-gotham;
-        src: url("Fonts/Gotham/Gotham-Bold.otf");
-        src: url("Fonts/Gotham/GothamBold.ttf");
+    font-family: 'Gotham';
+        src: url("Fonts/Gotham/Gotham-Bold.otf") format('truetype');
+        src: url("Fonts/Gotham/GothamBold.ttf") format('truetype');
         font-weight: bold;
+        font-style: normal;
 }
 
 // Regular Text
 @font-face {
-    font-family: $font-family-gotham;
-        src: url("Fonts/Gotham/GothamBook.ttf");
+    font-family: 'Gotham';
+        src: url("Fonts/Gotham/GothamBook.ttf") format('truetype');
+        font-weight: normal;
         font-style: normal;
 }
