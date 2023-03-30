@@ -14,14 +14,14 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-weight: $bold;
+    font-weight: $font-weight-bold;
     color: $primary;
     letter-spacing: 0.3px;
 }
 
 p {
     font-size: $font-size-xxs;
-    font-weight: $regular;
+    font-weight: $font-weight-regular;
     color: $primary;
 }
 
@@ -62,7 +62,7 @@ h6,
 }
 
 
-.t {
+.f {
     // Font Family
     &-f {
         &-gotham {
@@ -98,20 +98,20 @@ h6,
     // Font Weight
     &-w {
         &-r {
-            font-weight: 400;
+            font-weight: $font-weight-regular;
         }
         &-m {
-            font-weight: 500;
+            font-weight: $font-weight-medium;
         }
         &-sb {
-            font-weight: 600;
+            font-weight: $font-weight-semibold;
         }
         &-b {
-            font-weight: 700;
+            font-weight: $font-weight-bold;
         }
     }
 
-    // Text Align
+    // Font Alignment
     &-a {
         &-c {
             text-align: center;
@@ -127,7 +127,7 @@ h6,
         }
     }
 
-    // Text Transform
+    // Font Transform
     &-t {
         &-u {
             text-transform: uppercase;
@@ -140,7 +140,7 @@ h6,
         }
     }
     
-    // Text Decoration
+    // Font Decoration
     &-d {   
         &-o {
             text-decoration: overline;
