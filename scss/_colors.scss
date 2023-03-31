@@ -1,0 +1,247 @@
+.color-card-primary {
+	background-color: $primary;
+}
+
+.color-card-primarydark {
+	background-color: $primaryDark;
+}
+
+.color-card-secondary {
+	background-color: $secondary;
+}
+
+.color-card-secondarydark {
+	background-color: $secondaryDark;
+}
+
+.color-card-success {
+	background-color: $success;
+}
+
+.color-card-warning {
+	background-color: $warning;
+}
+
+.color-card-danger {
+	background-color: $danger;
+}
+
+.color-card-sidebar {
+	background-color: $primary;
+}
+
+.color-card-sidebaractive {
+	background-color: $primaryDark;
+}
+
+.color-card-contentbg {
+	background-color: $contentBg;
+}
+
+.color-card-backgroundcolor {
+	background-color: $background;
+}
+
+.color-card-bordercolor {
+	background-color: $border;
+}
+
+.color-card-placeholdercolor {
+	background-color: $placeholderText;
+}
+
+.color-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.color-background {
+	width: 70px;
+	height: 70px;
+
+	&.primary {
+		background-color: $primary;
+	}
+
+	&.primarydark {
+		background-color: $primaryDark;
+	}
+
+	&.secondary {
+		background-color: $secondary;
+	}
+
+	&.secondarydark {
+		background-color: $secondaryDark;
+	}
+
+	&.success {
+		background-color: $success;
+	}
+
+	&.warning {
+		background-color: $warning;
+	}
+
+	&.danger {
+		background-color: $danger;
+	}
+
+	&.sidebar {
+		background-color: $primary;
+	}
+
+	&.sidebaractive {
+		background-color: $primaryDark;
+	}
+
+	&.contetbg {
+		background-color: $contentBg;
+	}
+
+	&.background {
+		background-color: $background;
+	}
+
+	&.border {
+		background-color: $border;
+	}
+
+	&.placeholdertext {
+		background-color: $placeholderText;
+	}
+
+	&.tabhover {
+		background-color: $tabHover;
+	}
+}
+
+.text-container {
+	h4 {
+		font-weight: 500;
+		&.primary {
+			color: $primary;
+		}
+
+		&.primarydark {
+			color: $primaryDark;
+		}
+
+		&.secondary {
+			color: $secondary;
+		}
+
+		&.secondarydark {
+			color: $secondaryDark;
+		}
+
+		&.success {
+			color: $success;
+		}
+
+		&.warning {
+			color: $warning;
+		}
+
+		&.danger {
+			color: $danger;
+		}
+
+		&.sidebar {
+			color: $primary;
+		}
+
+		&.sidebaractive {
+			color: $primaryDark;
+		}
+
+		&.contetbg {
+			color: $contentBg;
+		}
+
+		&.background {
+			color: $background;
+		}
+
+		&.border {
+			color: $border;
+		}
+
+		&.placeholdertext {
+			color: $placeholderText;
+		}
+
+		&.tabhover {
+			color: $tabHover;
+		}
+	}
+}
+
+.border-container {
+	&.container-primary {
+		border: 2px solid $primary;
+	}
+
+	&.container-primarydark {
+		border: 2px solid $primaryDark;
+	}
+
+	&.container-secondary {
+		border: 2px solid $secondary;
+	}
+
+	&.container-secondarydark {
+		border: 2px solid $secondaryDark;
+	}
+
+	&.container-success {
+		border: 2px solid $success;
+	}
+
+	&.container-warning {
+		border: 2px solid $warning;
+	}
+
+	&.container-danger {
+		border: 2px solid $danger;
+	}
+
+	&.container-bordercolor {
+		border: 2px solid $border;
+	}
+
+	h4 {
+		font-weight: 500;
+		&.primary {
+			color: $primary;
+		}
+
+		&.primarydark {
+			color: $primaryDark;
+		}
+
+		&.secondary {
+			color: $secondary;
+		}
+
+		&.secondarydark {
+			color: $secondaryDark;
+		}
+
+		&.success {
+			color: $success;
+		}
+
+		&.warning {
+			color: $warning;
+		}
+
+		&.danger {
+			color: $danger;
+		}
+
+		&.bordercolor {
+			color: $border;
+		}
+	}
+}
