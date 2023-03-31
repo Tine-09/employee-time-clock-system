@@ -1,5 +1,6 @@
 * {
     font-family: $font-family-gotham !important;
+    color: $primary;
 }
 
 h1,
@@ -39,19 +40,19 @@ h2,
 
 h3,
 .h3 {
-    font-size: $font-size-l;
+    font-size: $font-size-lg;
     line-height: 1.75rem;
 }
 
 h4,
 .h4 {
-    font-size: $font-size-m;
+    font-size: $font-size-md;
     line-height: 1.50rem;
 }
 
 h5,
 .h5 {
-    font-size: $font-size-s;
+    font-size: $font-size-sm;
     line-height: 1.25rem;
 }
 
@@ -78,14 +79,14 @@ h6,
         &-xl {
             font-size: $font-size-xl;
         }
-        &-l {
-            font-size: $font-size-l;
+        &-lg {
+            font-size: $font-size-lg;
         }
-        &-m {
-            font-size: $font-size-m;
+        &-md {
+            font-size: $font-size-md;
         }
-        &-s {
-            font-size: $font-size-s;
+        &-sm {
+            font-size: $font-size-sm;
         }
         &-xs {
             font-size: $font-size-xs;
@@ -97,61 +98,61 @@ h6,
 
     // Font Weight
     &-w {
-        &-r {
+        &-regular {
             font-weight: $font-weight-regular;
         }
-        &-m {
+        &-medium {
             font-weight: $font-weight-medium;
         }
-        &-sb {
+        &-semi-bold {
             font-weight: $font-weight-semibold;
         }
-        &-b {
+        &-bold {
             font-weight: $font-weight-bold;
         }
     }
 
     // Font Alignment
     &-a {
-        &-c {
+        &-center {
             text-align: center;
         }
-        &-l {
+        &-left {
             text-align: left;
         }
-        &-r {
+        &-right {
             text-align: right;
         }
-        &-j {
+        &-justify {
             text-align: justify;
         }
     }
 
     // Font Transform
     &-t {
-        &-u {
+        &-uppercase {
             text-transform: uppercase;
         }
-        &-l {
+        &-lowercase {
             text-transform: lowercase;
         }
-        &-c {
+        &-capitalize {
             text-transform: capitalize;
         }
     }
     
     // Font Decoration
     &-d {   
-        &-o {
+        &-overline {
             text-decoration: overline;
         }
-        &-l {
+        &-linethrough {
             text-decoration: line-through;
         }
-        &-u {
+        &-underline {
             text-decoration: underline;
         }
-        &-uo {
+        &-under-overline {
             text-decoration: underline overline;
         }
     }
