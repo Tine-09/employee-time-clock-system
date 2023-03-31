@@ -50,198 +50,167 @@
 	background-color: $placeholderText;
 }
 
-.color-container {
-	display: flex;
-	flex-direction: row;
-}
-
-.color-background {
-	width: 70px;
-	height: 70px;
-
-	&.primary {
-		background-color: $primary;
-	}
-
-	&.primarydark {
-		background-color: $primaryDark;
-	}
-
-	&.secondary {
-		background-color: $secondary;
-	}
-
-	&.secondarydark {
-		background-color: $secondaryDark;
-	}
-
-	&.success {
-		background-color: $success;
-	}
-
-	&.warning {
-		background-color: $warning;
-	}
-
-	&.danger {
-		background-color: $danger;
-	}
-
-	&.sidebar {
-		background-color: $primary;
-	}
-
-	&.sidebaractive {
-		background-color: $primaryDark;
-	}
-
-	&.contetbg {
-		background-color: $contentBg;
-	}
-
-	&.background {
-		background-color: $background;
-	}
-
-	&.border {
-		background-color: $border;
-	}
-
-	&.placeholdertext {
-		background-color: $placeholderText;
-	}
-
-	&.tabhover {
-		background-color: $tabHover;
-	}
-}
-
 .text-container {
 	h4 {
 		font-weight: 500;
-		&.primary {
-			color: $primary;
-		}
-
-		&.primarydark {
-			color: $primaryDark;
-		}
-
-		&.secondary {
-			color: $secondary;
-		}
-
-		&.secondarydark {
-			color: $secondaryDark;
-		}
-
-		&.success {
-			color: $success;
-		}
-
-		&.warning {
-			color: $warning;
-		}
-
-		&.danger {
-			color: $danger;
-		}
-
-		&.sidebar {
-			color: $primary;
-		}
-
-		&.sidebaractive {
-			color: $primaryDark;
-		}
-
-		&.contetbg {
-			color: $contentBg;
-		}
-
-		&.background {
-			color: $background;
-		}
-
-		&.border {
-			color: $border;
-		}
-
-		&.placeholdertext {
-			color: $placeholderText;
-		}
-
-		&.tabhover {
-			color: $tabHover;
-		}
 	}
 }
 
-.border-container {
-	&.container-primary {
-		border: 2px solid $primary;
-	}
+// ** NEW SASS
 
-	&.container-primarydark {
-		border: 2px solid $primaryDark;
-	}
+.color {
+	&-bg {
+		//background color
+		&-primary {
+			background-color: $primary;
+		}
 
-	&.container-secondary {
-		border: 2px solid $secondary;
-	}
+		&-primarydark {
+			background-color: $primaryDark;
+		}
 
-	&.container-secondarydark {
-		border: 2px solid $secondaryDark;
-	}
+		&-secondary {
+			background-color: $secondary;
+		}
 
-	&.container-success {
-		border: 2px solid $success;
-	}
+		&-secondarydark {
+			background-color: $secondaryDark;
+		}
 
-	&.container-warning {
-		border: 2px solid $warning;
-	}
+		&-success {
+			background-color: $success;
+		}
 
-	&.container-danger {
-		border: 2px solid $danger;
-	}
+		&-warning {
+			background-color: $warning;
+		}
 
-	&.container-bordercolor {
-		border: 2px solid $border;
-	}
+		&-danger {
+			background-color: $danger;
+		}
 
-	h4 {
-		font-weight: 500;
-		&.primary {
+		&-sidebar {
+			background-color: $primary;
+		}
+
+		&-sidebaractive {
+			background-color: $primaryDark;
+		}
+
+		&-contetbg {
+			background-color: $contentBg;
+		}
+
+		&-background {
+			background-color: $background;
+		}
+
+		&-border {
+			background-color: $border;
+		}
+
+		&-placeholdertext {
+			background-color: $placeholderText;
+		}
+
+		&-tabhover {
+			background-color: $tabHover;
+		}
+	}
+	&-t {
+		//text color
+		&-primary {
 			color: $primary;
 		}
 
-		&.primarydark {
+		&-primarydark {
 			color: $primaryDark;
 		}
 
-		&.secondary {
+		&-secondary {
 			color: $secondary;
 		}
 
-		&.secondarydark {
+		&-secondarydark {
 			color: $secondaryDark;
 		}
 
-		&.success {
+		&-success {
 			color: $success;
 		}
 
-		&.warning {
+		&-warning {
 			color: $warning;
 		}
 
-		&.danger {
+		&-danger {
 			color: $danger;
 		}
 
-		&.bordercolor {
+		&-sidebar {
+			color: $primary;
+		}
+
+		&-sidebaractive {
+			color: $primaryDark;
+		}
+
+		&-contetbg {
+			color: $contentBg;
+		}
+
+		&-background {
+			color: $background;
+		}
+
+		&-border {
 			color: $border;
+		}
+
+		&-placeholdertext {
+			color: $placeholderText;
+		}
+
+		&-tabhover {
+			color: $tabHover;
+		}
+	}
+	&-border {
+		// border color
+		&-bordercolor {
+			color: $secondary;
+		}
+
+		&-primary {
+			border: 2px solid $primary;
+		}
+
+		&-primarydark {
+			border: 2px solid $primaryDark;
+		}
+
+		&-secondary {
+			border: 2px solid $secondary;
+		}
+
+		&-secondarydark {
+			border: 2px solid $secondaryDark;
+		}
+
+		&-success {
+			border: 2px solid $success;
+		}
+
+		&-warning {
+			border: 2px solid $warning;
+		}
+
+		&-danger {
+			border: 2px solid $danger;
+		}
+
+		&-bordercolor {
+			border: 2px solid $border;
 		}
 	}
 }
