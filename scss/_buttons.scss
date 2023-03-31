@@ -133,7 +133,7 @@
     }
 
     &.btn-size{
-        &-xsmall{
+        &-xs{
             background-color: $secondary;
             font-size: 10px;
             padding: 0px 10px;
@@ -142,7 +142,7 @@
                 background-color: $secondaryDark;
             }
         }
-        &-small{
+        &-sm{
             background-color: $secondary;
             font-size: 12px;
             padding: 0px 12px;
@@ -151,13 +151,13 @@
                 background-color: $secondaryDark;
             }
         }
-        &-meduim{
+        &-md{
             background-color: $secondary;
             &:hover{
                 background-color: $secondaryDark;
             }
         }
-        &-large{
+        &-lg{
             background-color: $secondary;
             font-size: 16px;
             padding: 13px 45px;
