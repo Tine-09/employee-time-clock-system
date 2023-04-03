@@ -105,45 +105,59 @@
 		padding-left: $xxl;
 	}
 	&-x-remove {
-		padding: 0;
+		padding-left: 0;
+		padding-right: 0;
 	}
 	&-x-xs {
-		padding: 0 $xs;
+		padding-left: $xs;
+		padding-right: $xs;
 	}
 	&-x-sm {
-		padding: 0 $sm;
+		padding-left: $sm;
+		padding-right: $sm;
 	}
 	&-x-md {
-		padding: 0 $md;
+		padding-left: $md;
+		padding-right: $md;
 	}
 	&-x-lg {
-		padding: 0 $lg;
+		padding-left: $lg;
+		padding-right: $lg;
 	}
 	&-x-xl {
-		padding: 0 $xl;
+		padding-left: $xl;
+		padding-right: $xl;
 	}
 	&-x-xxl {
-		padding: 0 $xxl;
+		padding-left: $xxl;
+		padding-right: $xxl;
 	}
 	&-y-remove {
-		padding: 0;
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 	&-y-xs {
-		padding: $xs 0;
+		padding-top: $xs;
+		padding-bottom: $xs;
 	}
 	&-y-sm {
-		padding: $sm 0;
+		padding-top: $sm;
+		padding-bottom: $sm;
 	}
 	&-y-md {
-		padding: $md 0;
+		padding-top: $md;
+		padding-bottom: md;
 	}
 	&-y-lg {
-		padding: $lg 0;
+		padding-top: $lg;
+		padding-bottom: $lg;
 	}
 	&-y-xl {
-		padding: $xl 0;
+		padding-top: $xl;
+		padding-bottom: $xl;
 	}
 	&-y-xxl {
-		padding: $xxl 0;
+		padding-top: $xxl;
+		padding-bottom: $xxl;
 	}
 }

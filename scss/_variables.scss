@@ -1,10 +1,28 @@
 // Margin and Padding Sizes
 $xs: 8px;
 $sm: 16px;
-$lg: 24px;
-$md: 32px;
+$md: 24px;
+$lg: 32px;
 $xl: 64px;
 $xxl: 104px;
+
+// Font Family
+$font-family-gotham: "Gotham";
+
+// Font Sizes
+$font-size-xxl: 48px;
+$font-size-xl: 34px;
+$font-size-lg: 28px;
+$font-size-md: 22px;
+$font-size-sm: 18px;
+$font-size-xs: 16px;
+$font-size-xxs: 14px;
+
+// Font Weight
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
 
 // Colors
 $primary: #323133;
@@ -14,8 +32,16 @@ $secondary: #ed1c24;
 $secondaryDark: #d51920;
 
 $success: #28a745;
-$warning: #cb8035;
-$danger: #c51e2e;
+$successDark: #1f8536;
+
+$warning: #ed9a47;
+$warningDark: #cb8035;
+
+$danger: #dc3545;
+$dangerDark: #c51e2e;
+
+$gostDark: #e5e5e5;
+
 $contentBg: #fafafa;
 $background: #eceff1;
 $border: #d0d0d0;

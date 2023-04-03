@@ -14,12 +14,112 @@
 		<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/js/uikit.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/js/uikit-icons.min.js"></script>
 		<script src="js/javascript.js"></script>
+
+		<!-- Fontawesome cdn  -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	</head>
 
 	<body>
 		<!-- Content Here -->
 		<!-- TYPOGRAPHY -->
-
+		<div class="m-y-xl m-x-xl">
+			<h2>TYPOGRAPHY</h2>
+			<div>
+				<table class="uk-table m-t-sm">
+					<thead>
+						<tr>
+							<th>FONT FAMILY <hr></th>
+						</tr>
+					</thead>
+					
+					<tbody class="f-s-lg">
+						<tr>
+							<td>Gotham Book</td>
+							<td>The quick brown fox jumps over the lazy dog.</td>
+						</tr>
+						<tr>
+							<td class="f-w-bold">Gotham Bold</td>
+							<td class="f-w-bold">The quick brown fox jumps over the lazy dog.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		
+			
+			<div class="m-t-xl">
+				<table class="uk-table uk-table-small uk-table-divider">
+					<thead>
+						<tr>
+							<th class="f-w-bold">HEADER</th>
+							<th>FONT SIZES</th>
+							<th>FONT WEIGHT</th>
+							<th>FONT ALIGNMENT</th>
+							<th>FONT TRANSFORMATION</th>
+							<th>FONT DECORATION</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><h1>H1</h1></td>
+							<td class="f-s-xxl">2xl</td>
+							<td class="f-w-regular">This is font weight regular.</td>
+							<td class="f-a-center">This font is align to center.</td>
+							<td class="f-t-uppercase">This font is uppercase.</td>
+							<td class="f-d-overline">This font has overline.</td>
+						</tr>
+						<tr>
+							<td><h2>H2</h2></td>
+							<td class="f-s-xl">extra large</td>
+							<td class="f-w-medium">This is font weight medium.</td>
+							<td class="f-a-left">This font is align to left.</td>
+							<td class="f-t-lowercase">This font is lowercase.</td>
+							<td class="f-d-linethrough">This font has line-through.</td>
+						</tr>
+						<tr>
+							<td><h3>H3</h3></td>
+							<td class="f-s-lg">large</td>
+							<td class="f-w-semi-bold">This is font weight semi-bold.</td>
+							<td class="f-a-right">This font is align to right</td>
+							<td class="f-t-capitalize">This font is capitalize.</td>
+							<td class="f-d-underline">This font has underline.</td>
+						</tr>
+						<tr>
+							<td><h4>H4</h4></td>
+							<td class="f-s-md">medium</td>
+							<td class="f-w-bold">This is font weight bold.</td>
+							<td class="f-a-justify">This font is align justified.</td>
+							<td></td>
+							<td class="f-d-under-overline">This font has underline overline.</td>
+						</tr>
+						<tr>
+							<td><h5>H5</h5></td>
+							<td class="f-s-sm">small</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><h6>H6</h6></td>
+							<td class="f-s-xs">extra small</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td class="f-s-xxs">2xs</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
 		<!-- COLOR -->
 
 		<h1 class="p-t-xl p-l-xl">BACKGROUND COLOR</h1>
@@ -191,8 +291,61 @@
 		</div>
 
 		<!-- BUTTONS -->
+		<div class="uk-container">
+			<div class="uk-margin-top">
+				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px;">Type</h6>
+				<button class="uk-button btn btn-type-default">Default</button>
+				<button class="uk-button btn btn-type-disabled">Disabled</button>
+			</div>
 
-		<!-- BUTTON SIZES -->
+			<div class="uk-margin-top">
+				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px;">Edge</h6>
+				<button class="uk-button btn btn-border-rounded">Rounded</button>
+				<button class="uk-button btn btn-border-pill">Rounded-full</button>
+				<button class="uk-button btn btn-border-none">Rounded-none</button>
+			</div>
+
+			<div class="uk-margin-top">
+				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px;">Color</h6>
+				<button class="uk-button btn btn-color-primary">Primary</button>
+				<button class="uk-button btn btn-color-secondary">Secondary</button>
+				<button class="uk-button btn btn-color-success">Success</button>
+				<button class="uk-button btn btn-color-danger">Danger</button>
+				<button class="uk-button btn btn-color-warning">Warning</button>
+				<button class="uk-button btn btn-color-ghost">Ghost</button>
+			</div>
+
+			<div class="uk-margin-top">
+				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px;">Outline</h6>
+				<button class="uk-button btn btn-outline-primary">Primary Outline</button>
+				<button class="uk-button btn btn-outline-secondary">Secondary Outline</button>
+				<button class="uk-button btn btn-outline-success">Success Outline</button>
+				<button class="uk-button btn btn-outline-danger">Danger Outline</button>
+				<button class="uk-button btn btn-outline-warning">Warning Outline</button>
+			</div>
+
+			<div class="uk-margin-top">
+				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px;">Size</h6>
+				<button class="uk-button btn btn-size-xs">Xsmall</button>
+				<button class="uk-button btn btn-size-sm">Small</button>
+				<button class="uk-button btn btn-size-md">Medium</button>
+				<button class="uk-button btn btn-size-lg">Large</button>
+			</div>
+
+			<div class="uk-margin-top">
+				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px;">Icon with text</h6>
+				<button class="uk-button btn btn-icon-edit"><i class="fa-solid fa-pencil"></i> Edit</button>
+				<button class="uk-button btn btn-icon-success"><i class="fa-regular fa-circle-check"></i> Success</button>
+				<button class="uk-button btn btn-icon-danger"><i class="fa-sharp fa-solid fa-circle-exclamation"></i> Danger</button>
+			</div>
+
+			<div class="uk-margin-top uk-margin-bottom">
+				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px;">Icon only</h6>
+				<button class="uk-button btn btn-icon-o-edit"><i class="fa-solid fa-pencil"></i></button>
+				<button class="uk-button btn btn-icon-o-success"><i class="fa-regular fa-circle-check"></i></button>
+				<button class="uk-button btn btn-icon-o-danger"><i class="fa-sharp fa-solid fa-circle-exclamation"></i></button>
+			</div>
+		</div>
 
 		<!-- CARD TYPE -->
 
@@ -204,8 +357,8 @@
 
 		<!-- DROPDOWN -->
 
-		<!-- AVATAR -->
-
+		<!-- AVATAR -->  
+		
 		<!-- LIST -->
 
 		<!-- PAGINATION -->
