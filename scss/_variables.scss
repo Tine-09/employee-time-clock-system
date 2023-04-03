@@ -1,8 +1,8 @@
 // Margin and Padding Sizes
 $xs: 8px;
 $sm: 16px;
-$lg: 24px;
-$md: 32px;
+$md: 24px;
+$lg: 32px;
 $xl: 64px;
 $xxl: 104px;
 
@@ -32,10 +32,17 @@ $secondary: #ed1c24;
 $secondaryDark: #d51920;
 
 $success: #28a745;
-$warning: #cb8035;
-$danger: #c51e2e;
+$successDark: #1F8536;
+
+$warning: #ED9A47;
+$warningDark: #CB8035;
+
+$danger: #DC3545;
+$dangerDark: #C51E2E;
+
+$gostDark: #E5E5E5;
+
 $contentBg: #fafafa;
 $background: #eceff1;
 $border: #d0d0d0;
-$placeholderText: #afafaf;
 
