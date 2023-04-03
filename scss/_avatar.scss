@@ -1,20 +1,17 @@
-.a {
+.img {
     &-sm {
-        background-color: $primary; // placeholder only
         width: 55px;
         height: 55px;
-        border-radius: 50px;
+        border-radius: 50%;
     }
     &-md {
-        background-color: $primary; // placeholder only
         width: 87px;
         height: 87px;
-        border-radius: 50px;
+        border-radius: 50%;
     }
     &-lg {
-        background-color: $primary; // placeholder only
         width: 205px;
-        height: 205px;
-        border-radius: 100px;
+        height: 190px;
+        border-radius: 120%;
     }
 }
