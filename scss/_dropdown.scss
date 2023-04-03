@@ -1,0 +1,27 @@
+.drpdwn{
+    .card{
+        .card-body{
+            .card-title{
+                font-size: $font-size-sm;
+                font-weight: 600;
+                line-height: 20px;
+            }
+            .p{
+                font-size: $font-size-xxs;
+            }
+        }
+    }
+
+    &-list{
+        .card{
+            .card-body{
+                .uk-nav-header{
+                    font-size: $font-size-sm;
+                    font-weight: 600;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+
