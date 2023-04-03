@@ -1,66 +1,6 @@
-.color-card-primary {
-	background-color: $primary;
-}
-
-.color-card-primarydark {
-	background-color: $primaryDark;
-}
-
-.color-card-secondary {
-	background-color: $secondary;
-}
-
-.color-card-secondarydark {
-	background-color: $secondaryDark;
-}
-
-.color-card-success {
-	background-color: $success;
-}
-
-.color-card-warning {
-	background-color: $warning;
-}
-
-.color-card-danger {
-	background-color: $danger;
-}
-
-.color-card-sidebar {
-	background-color: $primary;
-}
-
-.color-card-sidebaractive {
-	background-color: $primaryDark;
-}
-
-.color-card-contentbg {
-	background-color: $contentBg;
-}
-
-.color-card-backgroundcolor {
-	background-color: $background;
-}
-
-.color-card-bordercolor {
-	background-color: $border;
-}
-
-.color-card-placeholdercolor {
-	background-color: $placeholderText;
-}
-
-.text-container {
-	h4 {
-		font-weight: 500;
-	}
-}
-
-// ** NEW SASS
-
 .color {
 	&-bg {
-		//background color
+		//Background Color
 		&-primary {
 			background-color: $primary;
 		}
@@ -118,7 +58,8 @@
 		}
 	}
 	&-t {
-		//text color
+		//Text Color
+
 		&-primary {
 			color: $primary;
 		}
@@ -176,7 +117,7 @@
 		}
 	}
 	&-border {
-		// border color
+		// Border Color
 		&-bordercolor {
 			color: $secondary;
 		}
