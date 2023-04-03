@@ -16,22 +16,25 @@
 		<script src="js/javascript.js"></script>
 
 		<!-- Fontawesome cdn  -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 	</head>
 
-	<body>
+	<body class="uk-container uk-container-expand">
 		<!-- Content Here -->
 		<!-- TYPOGRAPHY -->
-		<div class="m-y-xl m-x-xl">
+		<div class="m-t-lg">
 			<h2>TYPOGRAPHY</h2>
 			<div>
 				<table class="uk-table m-t-sm">
 					<thead>
 						<tr>
-							<th>FONT FAMILY <hr></th>
+							<th>
+								FONT FAMILY
+								<hr />
+							</th>
 						</tr>
 					</thead>
-					
+
 					<tbody class="f-s-lg">
 						<tr>
 							<td>Gotham Book</td>
@@ -44,8 +47,7 @@
 					</tbody>
 				</table>
 			</div>
-		
-			
+
 			<div class="m-t-xl">
 				<table class="uk-table uk-table-small uk-table-divider">
 					<thead>
@@ -119,26 +121,27 @@
 				</table>
 			</div>
 		</div>
-		
+
 		<!-- COLOR -->
 
 		<!-- BUTTONS -->
-		<div class="uk-container">
+		<div class="m-t-xxl">
+			<h1>Buttons</h1>
 			<div class="uk-margin-top">
-				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px;">Type</h6>
+				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Type</h6>
 				<button class="uk-button btn btn-type-default">Default</button>
 				<button class="uk-button btn btn-type-disabled">Disabled</button>
 			</div>
 
 			<div class="uk-margin-top">
-				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px;">Edge</h6>
+				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Edge</h6>
 				<button class="uk-button btn btn-border-rounded">Rounded</button>
 				<button class="uk-button btn btn-border-pill">Rounded-full</button>
 				<button class="uk-button btn btn-border-none">Rounded-none</button>
 			</div>
 
 			<div class="uk-margin-top">
-				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px;">Color</h6>
+				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Color</h6>
 				<button class="uk-button btn btn-color-primary">Primary</button>
 				<button class="uk-button btn btn-color-secondary">Secondary</button>
 				<button class="uk-button btn btn-color-success">Success</button>
@@ -148,7 +151,7 @@
 			</div>
 
 			<div class="uk-margin-top">
-				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px;">Outline</h6>
+				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Outline</h6>
 				<button class="uk-button btn btn-outline-primary">Primary Outline</button>
 				<button class="uk-button btn btn-outline-secondary">Secondary Outline</button>
 				<button class="uk-button btn btn-outline-success">Success Outline</button>
@@ -157,7 +160,7 @@
 			</div>
 
 			<div class="uk-margin-top">
-				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px;">Size</h6>
+				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Size</h6>
 				<button class="uk-button btn btn-size-xs">Xsmall</button>
 				<button class="uk-button btn btn-size-sm">Small</button>
 				<button class="uk-button btn btn-size-md">Medium</button>
@@ -165,14 +168,14 @@
 			</div>
 
 			<div class="uk-margin-top">
-				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px;">Icon with text</h6>
+				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Icon with text</h6>
 				<button class="uk-button btn btn-icon-edit"><i class="fa-solid fa-pencil"></i> Edit</button>
 				<button class="uk-button btn btn-icon-success"><i class="fa-regular fa-circle-check"></i> Success</button>
 				<button class="uk-button btn btn-icon-danger"><i class="fa-sharp fa-solid fa-circle-exclamation"></i> Danger</button>
 			</div>
 
 			<div class="uk-margin-top uk-margin-bottom">
-				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px;">Icon only</h6>
+				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Icon only</h6>
 				<button class="uk-button btn btn-icon-o-edit"><i class="fa-solid fa-pencil"></i></button>
 				<button class="uk-button btn btn-icon-o-success"><i class="fa-regular fa-circle-check"></i></button>
 				<button class="uk-button btn btn-icon-o-danger"><i class="fa-sharp fa-solid fa-circle-exclamation"></i></button>
@@ -184,6 +187,298 @@
 		<!-- FORMS -->
 
 		<!-- MARGIN & PADDING -->
+		<h1 class="m-t-xxl">Margin (the distance of square to it's label)</h1>
+		<h2>Margin (All)</h2>
+		<div class="uk-width-1-2" style="display: inline-block">
+			<div>
+				<p>Margin Remove (m-remove)</p>
+				<div class="m-remove square"></div>
+			</div>
+			<div>
+				<p>Margin Extra Small (m-xs)</p>
+				<div class="m-xs square"></div>
+			</div>
+			<div>
+				<p>Margin Small (m-sm)</p>
+				<div class="m-sm square"></div>
+			</div>
+			<div>
+				<p>Margin Medium (m-md)</p>
+				<div class="m-md square"></div>
+			</div>
+		</div>
+		<div class="uk-width-1-2" style="float: right">
+			<div>
+				<p>Margin Large (m-lg)</p>
+				<div class="m-lg square"></div>
+			</div>
+			<div>
+				<p>Margin Extra Large (m-xl)</p>
+				<div class="m-xl square"></div>
+			</div>
+			<div>
+				<p>Margin Extra Extra Large (m-xxl)</p>
+				<div class="m-xxl square"></div>
+			</div>
+		</div>
+		<h2  style="margin-top:140px">Margin Horizontal</h2>
+		<div class="uk-width-1-2" style="display: inline-block">
+			<div>
+				<p>Margin Horizontal Remove (m-x-remove)</p>
+				<div class="m-x-remove square"></div>
+			</div>
+			<div>
+				<p>Margin Horizontal Extra Small (m-x-xs)</p>
+				<div class="m-x-xs square"></div>
+			</div>
+			<div>
+				<p>Margin Horizontal Small (m-x-sm)</p>
+				<div class="m-x-sm square"></div>
+			</div>
+			<div>
+				<p>Margin Horizontal Medium (m-x-md)</p>
+				<div class="m-x-md square"></div>
+			</div>
+		</div>
+		<div class="uk-width-1-2" style="float: right">
+			<div>
+				<p>Margin Horizontal Large (m-x-lg)</p>
+				<div class="m-x-lg square"></div>
+			</div>
+			<div>
+				<p>Margin Horizontal Extra Large (m-x-xl)</p>
+				<div class="m-x-xl square"></div>
+			</div>
+			<div>
+				<p>Margin Horizontal Extra Extra Large (m-x-xxl)</p>
+				<div class="m-x-xxl square"></div>
+			</div>
+		</div>
+		<h2>Margin Vertical</h2>
+		<div class="uk-width-1-2" style="display: inline-block">
+			<div>
+				<p>Margin Vertical Remove (m-y-remove)</p>
+				<div class="m-y-remove square"></div>
+			</div>
+			<div>
+				<p>Margin Vertical Extra Small (m-y-xs)</p>
+				<div class="m-y-xs square"></div>
+			</div>
+			<div>
+				<p>Margin Vertical Small (m-y-sm)</p>
+				<div class="m-y-sm square"></div>
+			</div>
+			<div>
+				<p>Margin Vertical Medium Small (m-y-md)</p>
+				<div class="m-y-md square"></div>
+			</div>
+		</div>
+		<div class="uk-width-1-2" style="float: right">
+			<div>
+				<p>Margin Vertical Large (m-y-lg)</p>
+				<div class="m-y-lg square"></div>
+			</div>
+			<div>
+				<p>Margin Vertical Extra Large (m-y-xl)</p>
+				<div class="m-y-xl square"></div>
+			</div>
+			<div>
+				<p>Margin Vertical Extra Extra Large (m-y-xxl)</p>
+				<div class="m-y-xxl square"></div>
+			</div>
+		</div>
+
+		<h2 style="margin-top:140px">Margin Top</h2>
+		<div class="uk-width-1-2" style="display: inline-block">
+			<div>
+				<p>Margin Top Remove (m-t-remove)</p>
+				<div class="m-t-remove square"></div>
+			</div>
+			<div>
+				<p>Margin Top Extra Small (m-t-xs)</p>
+				<div class="m-t-xs square"></div>
+			</div>
+			<div>
+				<p>Margin Top Small (m-t-sm)</p>
+				<div class="m-t-sm square"></div>
+			</div>
+			<div>
+				<p>Margin Top Medium Small (m-t-md)</p>
+				<div class="m-t-md square"></div>
+			</div>
+		</div>
+		<div class="uk-width-1-2" style="float: right">
+			<div>
+				<p>Margin Top Large (m-t-lg)</p>
+				<div class="m-t-lg square"></div>
+			</div>
+			<div>
+				<p>Margin Top Extra Large (m-t-xl)</p>
+				<div class="m-t-xl square"></div>
+			</div>
+			<div>
+				<p>Margin Top Extra Extra Large (m-t-xxl)</p>
+				<div class="m-t-xxl square"></div>
+			</div>
+		</div>
+		<h2 class="m-t-xxl">Margin Right</h2>
+		<div class="uk-flex uk-grid-large">
+			<div class="uk-width-1-2 ">
+				<div>
+					<p>Margin Right Remove (m-r-remove)</p>
+					<div class="m-r-remove square" style="width: unset;""></div>
+				</div>
+				<div>
+					<p>Margin Right Extra Small (m-r-xs)</p>
+					<div class="m-r-xs square" style="width: unset;""></div>
+				</div>
+				<div>
+					<p>Margin Right Small (m-r-sm)</p>
+					<div class="m-r-sm square" style="width: unset;""></div>
+				</div>
+				<div>
+					<p>Margin Right Medium Small (m-r-md)</p>
+					<div class="m-r-md square" style="width: unset;""></div>
+				</div>
+			</div>
+			<div class="uk-width-1-2">
+				<div>
+					<p>Margin Right Large (m-r-lg)</p>
+					<div class="m-r-lg square" style="width: unset;"></div>
+				</div>
+				<div>
+					<p>Margin Right Extra Large (m-r-xl)</p>
+					<div class="m-r-xl square" style="width: unset;"></div>
+				</div>
+				<div>
+					<p>Margin Right Extra Extra Large (m-r-xxl)</p>
+					<div class="m-r-xxl square" style="width: unset;"></div>
+				</div>
+			</div>
+		</div>
+		<h2>Margin Bottom</h2>
+		<div class="uk-width-1-2" style="display: inline-block">
+			<div>
+				<p>Margin Bottom Remove (m-b-remove)</p>
+				<div class="m-b-remove square"></div>
+			</div>
+			<div>
+				<p>Margin Bottom Extra Small (m-b-xs)</p>
+				<div class="m-b-xs square"></div>
+			</div>
+			<div>
+				<p>Margin Bottom Small (m-b-sm)</p>
+				<div class="m-b-sm square"></div>
+			</div>
+			<div>
+				<p>Margin Bottom Medium Small (m-b-md)</p>
+				<div class="m-b-md square"></div>
+			</div>
+		</div>
+		<div class="uk-width-1-2" style="float: right">
+			<div>
+				<p>Margin Bottom Large (m-b-lg)</p>
+				<div class="m-b-lg square"></div>
+			</div>
+			<div>
+				<p>Margin Bottom Extra Large (m-b-xl)</p>
+				<div class="m-b-xl square"></div>
+			</div>
+			<div>
+				<p>Margin Bottom Extra Extra Large (m-b-xxl)</p>
+				<div class="m-b-xxl square"></div>
+			</div>
+		</div>
+		<h2>Margin Left</h2>
+		<div class="uk-width-1-2" style="display: inline-block">
+			<div>
+				<p>Margin Left Remove (m-l-remove)</p>
+				<div class="m-l-remove square"></div>
+			</div>
+			<div>
+				<p>Margin Left Extra Small (m-l-xs)</p>
+				<div class="m-l-xs square"></div>
+			</div>
+			<div>
+				<p>Margin Left Small (m-l-sm)</p>
+				<div class="m-l-sm square"></div>
+			</div>
+			<div>
+				<p>Margin Left Medium Small (m-l-md)</p>
+				<div class="m-l-md square"></div>
+			</div>
+		</div>
+		<div class="uk-width-1-2" style="float: right">
+			<div>
+				<p>Margin Left Large (m-l-lg)</p>
+				<div class="m-l-lg square"></div>
+			</div>
+			<div>
+				<p>Margin Left Extra Large (m-l-xl)</p>
+				<div class="m-l-xl square"></div>
+			</div>
+			<div>
+				<p>Margin Left Extra Extra Large (m-l-xxl)</p>
+				<div class="m-l-xxl square"></div>
+			</div>
+		</div>
+		<h1>Padding (space of label inside the square)</h1>
+		<h2>Padding (All)</h2>
+			<p class="p-remove square-padding f-w-regular" >Padding Remove (p-remove)</p>
+			<p class="p-xs square-padding" >Padding Extra Small (p-xs)</p>
+			<p class="p-sm square-padding" >Padding Small (p-sm)</p>
+			<p class="p-md square-padding" >Padding Medium (p-md)</p>
+			<p class="p-lg square-padding" >Padding Large (p-lg)</p>
+			<p class="p-xl square-padding" >Padding Extra Large (p-xl)</p>
+			<p class="p-xxl square-padding" >Padding Extra Extra Large (p-xxl)</p>
+		<h2>Padding Horizontal</h2>
+			<p class="p-x-remove square-padding" >Padding Horizontal Remove (p-x-remove)</p>
+			<p class="p-x-xs square-padding" >Padding Horizontal Extra Small (p-x-xs)</p>
+			<p class="p-x-sm square-padding" >Padding Horizontal Small (p-x-sm)</p>
+			<p class="p-x-md square-padding" >Padding Horizontal Medium (p-x-md)</p>
+			<p class="p-x-lg square-padding" >Padding Horizontal Large (p-x-lg)</p>
+			<p class="p-x-xl square-padding" >Padding Horizontal Extra Large (p-x-xl)</p>
+			<p class="p-x-xxl square-padding m-t-md" >Padding Horizontal Extra Extra Large (p-x-xxl)</p>
+		<h2>Padding Vertical</h2>
+			<p class="p-y-remove square-padding" >Padding Vertical Remove (p-x-remove)</p>
+			<p class="p-y-xs square-padding" >Padding Vertical Extra Small (p-x-xs)</p>
+			<p class="p-y-sm square-padding" >Padding Vertical Small (p-x-sm)</p>
+			<p class="p-y-md square-padding" >Padding Vertical Medium (p-x-md)</p>
+			<p class="p-y-lg square-padding" >Padding Vertical Large (p-x-lg)</p>
+			<p class="p-y-xl square-padding" >Padding Vertical Extra Large (p-x-xl)</p>
+			<p class="p-y-xxl square-padding " >Padding Vertical Extra Extra Large (p-x-xxl)</p>
+		<h2>Padding Top</h2>
+			<p class="p-t-remove square-padding" >Padding Top Remove (p-t-remove)</p>
+			<p class="p-t-xs square-padding" >Padding Top Extra Small (p-t-xs)</p>
+			<p class="p-t-sm square-padding" >Padding Top Small (p-t-sm)</p>
+			<p class="p-t-md square-padding" >Padding Top Medium (p-t-md)</p>
+			<p class="p-t-lg square-padding" >Padding Top Large (p-t-lg)</p>
+			<p class="p-t-xl square-padding" >Padding Top Extra Large (p-t-xl)</p>
+			<p class="p-t-xxl square-padding " >Padding Top Extra Extra Large (p-t-xxl)</p>
+		<h2>Padding Right</h2>
+			<p class="p-r-remove square-padding" >Padding Right Remove (p-r-remove)</p>
+			<p class="p-r-xs square-padding" >Padding Right Extra Small (p-r-xs)</p>
+			<p class="p-r-sm square-padding" >Padding Right Small (p-r-sm)</p>
+			<p class="p-r-md square-padding" >Padding Right Medium (p-r-md)</p>
+			<p class="p-r-lg square-padding" >Padding Right Large (p-r-lg)</p>
+			<p class="p-r-xl square-padding" >Padding Right Extra Large (p-r-xl)</p>
+			<p class="p-r-xxl square-padding " >Padding Right Extra Extra Large (p-r-xxl)</p>
+		<h2>Padding Bottom</h2>
+			<p class="p-b-remove square-padding" >Padding Bottom Remove (p-b-remove)</p>
+			<p class="p-b-xs square-padding" >Padding Bottom Extra Small (p-b-xs)</p>
+			<p class="p-b-sm square-padding" >Padding Bottom Small (p-b-sm)</p>
+			<p class="p-b-md square-padding" >Padding Bottom Medium (p-b-md)</p>
+			<p class="p-b-lg square-padding" >Padding Bottom Large (p-b-lg)</p>
+			<p class="p-b-xl square-padding" >Padding Bottom Extra Large (p-b-xl)</p>
+			<p class="p-b-xxl square-padding " >Padding Bottom Extra Extra Large (p-b-xxl)</p>
+		<h2>Padding Left</h2>
+			<p class="p-l-remove square-padding" >Padding Left Remove (p-l-remove)</p>
+			<p class="p-l-xs square-padding" >Padding Left Extra Small (p-l-xs)</p>
+			<p class="p-l-sm square-padding" >Padding Left Small (p-l-sm)</p>
+			<p class="p-l-md square-padding" >Padding Left Medium (p-l-md)</p>
+			<p class="p-l-lg square-padding" >Padding Left Large (p-l-lg)</p>
+			<p class="p-l-xl square-padding" >Padding Left Extra Large (p-l-xl)</p>
+			<p class="p-l-xxl square-padding " >Padding Left Extra Extra Large (p-l-xxl)</p>
 
 		<!-- TABS -->
 
@@ -191,32 +486,41 @@
 
 		<!-- AVATAR -->
 		<!--placeholder only for now-->
-		<div class="uk-container m-t-xxl">
+		<div class="m-t-xxl">
 			<h2>AVATAR</h2>
 			<div class="uk-grid-small" uk-grid>
 				<div class="uk-width-1-6">
-					<img class="img-lg" src="images/avatar.jpg" alt="avatar">
+					<img class="img-lg" src="images/avatar.jpg" alt="avatar" />
 					<div>
-						<p class="m-t-md m-l-lg">H: 190px <br> W: 205px <br> Radius: 100%</p>
+						<p class="m-t-md m-l-lg">
+							H: 190px <br />
+							W: 205px <br />
+							Radius: 100%
+						</p>
 					</div>
 				</div>
 				<div class="uk-width-1-6 m-l-xxl">
-					<img class="img-md" src="images/avatar.jpg" alt="avatar">
+					<img class="img-md" src="images/avatar.jpg" alt="avatar" />
 					<div>
-						<p class="m-t-md">H & W: 87px <br> Radius: 50%</p>
+						<p class="m-t-md">
+							H & W: 87px <br />
+							Radius: 50%
+						</p>
 					</div>
 				</div>
 				<div class="uk-width-1-6">
-					<img class="img-sm" src="images/avatar.jpg" alt="avatar">
+					<img class="img-sm" src="images/avatar.jpg" alt="avatar" />
 					<div>
-						<p class="m-t-md">H & W: 55px <br> Radius: 50%</p>
+						<p class="m-t-md">
+							H & W: 55px <br />
+							Radius: 50%
+						</p>
 					</div>
 				</div>
 			</div>
-			
 		</div>
-		<!-- AVATAR -->  
-		
+		<!-- AVATAR -->
+
 		<!-- LIST -->
 
 		<!-- PAGINATION -->
