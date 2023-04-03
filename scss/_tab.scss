@@ -1,0 +1,20 @@
+.uk-tab {
+	background-color: none !important;
+	:hover {
+		a {
+			border-color: $hoverTab;
+			border-width: 3px;
+		}
+	}
+
+	.uk-active {
+		a {
+			border-color: $secondary;
+			border-width: 3px;
+		}
+
+		:hover {
+			cursor: pointer;
+		}
+	}
+}
