@@ -188,45 +188,64 @@
 		<!-- MARGIN & PADDING -->
 
 		<!-- TABS -->
-		<h2 class="m-xl">TABS</h2>
-		<div class="tab-container m-l-xl m-t-lg">
-			<div>
-				<ul uk-tab>
-					<li class="uk-active"><a href="#">Tab One</a></li>
-					<li><a href="#">Tab Two</a></li>
-					<li><a href="#">Tab Three</a></li>
-					<li class="uk-disabled"><a>Disabled</a></li>
-				</ul>
+		<div class="tab-container m-xl">
+			<h2 class="m-xl">TABS</h2>
+			<div class="m-l-xl m-t-lg">
+				<div>
+					<div>
+						<h6>TAB WITH BORDER BOTTOM</h6>
+						<ul uk-tab class="tab tab-disable-border-bottom">
+							<li class="uk-active"><a href="#">Tab One</a></li>
+							<li class=""><a href="#">Tab Two</a></li>
+							<li class=""><a href="#">Tab Three</a></li>
+							<li class="uk-disabled"><a>Disabled</a></li>
+						</ul>
 
-				<ul class="uk-switcher uk-margin">
-					<li>This is tab one</li>
-					<li>This is tab two</li>
-					<li>This is tab three</li>
-				</ul>
+						<ul class="uk-switcher uk-margin">
+							<li>This is tab one content</li>
+							<li>This is tab two content</li>
+							<li>This is tab three content</li>
+						</ul>
+					</div>
 
-				<ul uk-tab>
-					<li class="uk-active"><a href="#">Tab one</a></li>
-					<li><a href="#">Tab Two</a></li>
-					<li>
-						<a href="#">More <span uk-icon="icon: triangle-down"></span></a>
-						<div uk-dropdown="mode: click">
-							<ul class="uk-nav uk-dropdown-nav">
-								<li class="uk-active"><a href="#">Active</a></li>
-								<li><a href="#">Item</a></li>
-								<li class="uk-nav-header">OTHERS</li>
-								<li><a href="#">Item</a></li>
-								<li><a href="#">Item</a></li>
-								<li class="uk-nav-divider"></li>
-								<li><a href="#">Item</a></li>
-							</ul>
+					<h6>TAB WITHOUT BORDER BOTTOM</h6>
+					<ul uk-tab class="tab tab-border-bottom">
+						<li class="uk-active"><a href="#">Tab One</a></li>
+						<li class=""><a href="#">Tab Two</a></li>
+						<li class=""><a href="#">Tab Three</a></li>
+						<li class="uk-disabled"><a>Disabled</a></li>
+					</ul>
 
-							<ul class="uk-switcher uk-margin">
-								<li>This tab one</li>
-								<li>This tab two</li>
-							</ul>
-						</div>
-					</li>
-				</ul>
+					<ul class="uk-switcher uk-margin">
+						<li>This is tab one content</li>
+						<li>This is tab two content</li>
+						<li>This is tab three content</li>
+					</ul>
+
+					<ul uk-tab class="tab tab-border-bottom">
+						<li class="uk-active"><a href="#">Tab one</a></li>
+						<li><a href="#">Tab Two</a></li>
+						<li>
+							<a href="#">More <span uk-icon="icon: triangle-down"></span></a>
+							<div uk-dropdown="mode: click">
+								<ul class="uk-nav uk-dropdown-nav">
+									<li class="uk-active"><a href="#">Active</a></li>
+									<li><a href="#">Item</a></li>
+									<li class="uk-nav-header">OTHERS</li>
+									<li><a href="#">Item</a></li>
+									<li><a href="#">Item</a></li>
+									<li class="uk-nav-divider"></li>
+									<li><a href="#">Item</a></li>
+								</ul>
+
+								<ul class="uk-switcher uk-margin">
+									<li>This tab one</li>
+									<li>This tab two</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 
@@ -267,7 +286,6 @@
 				</div>
 			</div>
 		</div>
-		<!-- AVATAR -->
 
 		<!-- LIST -->
 

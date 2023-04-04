@@ -1,5 +1,11 @@
-.uk-tab {
-	background-color: none !important;
+.tab {
+	.uk-active {
+		a {
+			border-color: $secondary;
+			border-width: 3px;
+		}
+	}
+
 	:hover {
 		a {
 			border-color: $hoverTab;
@@ -7,14 +13,15 @@
 		}
 	}
 
-	.uk-active {
-		a {
-			border-color: $secondary;
-			border-width: 3px;
+	&-disable-border-bottom {
+		&::before {
+			border-bottom: 1px solid $primary;
 		}
+	}
 
-		:hover {
-			cursor: pointer;
+	&-border-bottom {
+		&::before {
+			border-bottom: none;
 		}
 	}
 }
