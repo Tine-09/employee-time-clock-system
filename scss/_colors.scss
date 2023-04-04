@@ -1,0 +1,157 @@
+.color {
+	&-bg {
+		//Background Color
+		&-primary {
+			background-color: $primary;
+		}
+
+		&-primarydark {
+			background-color: $primaryDark;
+		}
+
+		&-secondary {
+			background-color: $secondary;
+		}
+
+		&-secondarydark {
+			background-color: $secondaryDark;
+		}
+
+		&-success {
+			background-color: $success;
+		}
+
+		&-warning {
+			background-color: $warning;
+		}
+
+		&-danger {
+			background-color: $danger;
+		}
+
+		&-sidebar {
+			background-color: $primary;
+		}
+
+		&-sidebaractive {
+			background-color: $primaryDark;
+		}
+
+		&-contetbg {
+			background-color: $contentBg;
+		}
+
+		&-background {
+			background-color: $background;
+		}
+
+		&-border {
+			background-color: $border;
+		}
+
+		&-placeholdertext {
+			background-color: $placeholderText;
+		}
+
+		&-tabhover {
+			background-color: $tabHover;
+		}
+	}
+	&-t {
+		//Text Color
+
+		&-primary {
+			color: $primary;
+		}
+
+		&-primarydark {
+			color: $primaryDark;
+		}
+
+		&-secondary {
+			color: $secondary;
+		}
+
+		&-secondarydark {
+			color: $secondaryDark;
+		}
+
+		&-success {
+			color: $success;
+		}
+
+		&-warning {
+			color: $warning;
+		}
+
+		&-danger {
+			color: $danger;
+		}
+
+		&-sidebar {
+			color: $primary;
+		}
+
+		&-sidebaractive {
+			color: $primaryDark;
+		}
+
+		&-contetbg {
+			color: $contentBg;
+		}
+
+		&-background {
+			color: $background;
+		}
+
+		&-border {
+			color: $border;
+		}
+
+		&-placeholdertext {
+			color: $placeholderText;
+		}
+
+		&-tabhover {
+			color: $tabHover;
+		}
+	}
+	&-border {
+		// Border Color
+		&-bordercolor {
+			color: $secondary;
+		}
+
+		&-primary {
+			border: 2px solid $primary;
+		}
+
+		&-primarydark {
+			border: 2px solid $primaryDark;
+		}
+
+		&-secondary {
+			border: 2px solid $secondary;
+		}
+
+		&-secondarydark {
+			border: 2px solid $secondaryDark;
+		}
+
+		&-success {
+			border: 2px solid $success;
+		}
+
+		&-warning {
+			border: 2px solid $warning;
+		}
+
+		&-danger {
+			border: 2px solid $danger;
+		}
+
+		&-bordercolor {
+			border: 2px solid $border;
+		}
+	}
+}
