@@ -625,22 +625,125 @@
 
 		<!-- PAGINATION -->
 		<div class="m-xl">
-			<h2 class="">PAGINATION</h2>
-			<ul class="uk-pagination uk-flex-middle m-t-xl" uk-margin>
-				<li>
-					<a href="#"><span uk-pagination-previous></span></a>
-				</li>
-				<li class="page-number uk-active m-xs uk-text-center"><a href="">1</a></li>
-				<li class="page-number m-xs uk-text-center"><a href="">2</a></li>
-				<li class="page-number m-xs uk-text-center"><a href="">3</a></li>
-				<li class="page-number m-xs uk-text-center"><a href="">4</a></li>
-				<li class="page-number m-xs uk-text-center"><a href="">5</a></li>
-				<li>
-					<a href="#"><span uk-pagination-next></span></a>
-				</li>
-			</ul>
-			<h6 class="f-t-uppercase m-l-xxl">Page 1 out of 5</h6>
+			<h2>PAGINATION</h2>
+			<h3 class="m-y-lg">Alignment</h3>
+			<!-- LEFT ALIGN PAGINATION -->
+			<div class="uk-text-left m-t-xl">
+				<div class="uk-inline">
+					<h4 class="uk-text-center">Left Align</h4>
+					<ul class="uk-pagination uk-flex-middle" uk-margin>
+						<li>
+							<a href="#"><span uk-pagination-previous></span></a>
+						</li>
+						<li class="page-number uk-active m-xs uk-text-center"><a href="">1</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">2</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">3</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">4</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">5</a></li>
+
+						<li>
+							<a href="#"><span uk-pagination-next></span></a>
+						</li>
+					</ul>
+					<h6 class="uk-position-bottom-center f-t-uppercase" style="bottom: -25px">Page 1 out of 5</h6>
+				</div>
+			</div>
+			<div class="uk-text-center m-t-xxl">
+				<div class="uk-inline">
+					<h4 class="uk-text-center">Center Align</h4>
+					<ul class="uk-pagination uk-flex-middle" uk-margin>
+						<li>
+							<a href="#"><span uk-pagination-previous></span></a>
+						</li>
+						<li class="page-number uk-active m-xs uk-text-center"><a href="">1</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">2</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">3</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">4</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">5</a></li>
+						<li>
+							<a href="#"><span uk-pagination-next></span></a>
+						</li>
+					</ul>
+					<h6 class="uk-position-bottom-center f-t-uppercase" style="bottom: -25px">Page 1 out of 5</h6>
+				</div>
+			</div>
+			<!-- RIGHT ALIGN PAGINATION -->
+			<div class="uk-text-right m-t-xxl">
+				<div class="uk-inline">
+					<h4 class="uk-text-center">Right Align</h4>
+					<ul class="uk-pagination uk-flex-middle" uk-margin>
+						<li>
+							<a href="#"><span uk-pagination-previous></span></a>
+						</li>
+						<li class="page-number uk-active m-xs uk-text-center"><a href="">1</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">2</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">3</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">4</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">5</a></li>
+
+						<li>
+							<a href="#"><span uk-pagination-next></span></a>
+						</li>
+					</ul>
+					<h6 class="uk-position-bottom-center f-t-uppercase" style="bottom: -25px">Page 1 out of 5</h6>
+				</div>
+			</div>
+			<!-- VARIANTS -->
+			<h3>Variants</h3>
+			<div class="m-t-lg">
+				<div class="uk-inline">
+					<h4>Page number is less than 5</h4>
+					<ul class="uk-pagination uk-flex-middle" uk-margin>
+						<li>
+							<a href="#"><span uk-pagination-previous></span></a>
+						</li>
+						<li class="page-number uk-active m-xs uk-text-center"><a href="">1</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">2</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">3</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">4</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">5</a></li>
+
+						<li>
+							<a href="#"><span uk-pagination-next></span></a>
+						</li>
+					</ul>
+					<h6 class="uk-position-bottom-center f-t-uppercase" style="bottom: -30px">Page 1 out of 5</h6>
+				</div>
+			</div>
+			<div class="m-t-xxl">
+				<div class="uk-inline">
+					<h4>Page number is greater than 5</h4>
+					<ul class="uk-pagination uk-flex-middle" uk-margin>
+						<li>
+							<a href="#"
+								><span><i class="fa-sharp fa-solid fa-angles-left" style="margin-top: 7px"></i></span
+							></a>
+						</li>
+						<li>
+							<a href="#"><span uk-pagination-previous></span></a>
+						</li>
+						<li class="page-number m-xs uk-text-center"><a href="">6</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">7</a></li>
+						<li class="page-number uk-active m-xs uk-text-center"><a href="">8</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">9</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">10</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">...</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">15</a></li>
+
+						<li>
+							<a href="#"><span uk-pagination-next></span></a>
+						</li>
+						<li>
+							<a href="#"
+								><span> <i class="fa-sharp fa-solid fa-angles-right" style="margin-top: 7px"></i></span
+							></a>
+						</li>
+					</ul>
+					<h6 class="uk-position-bottom-center f-t-uppercase" style="bottom: -30px">Page 8 out of 15</h6>
+				</div>
+			</div>
 		</div>
+
 		<!-- MODAL -->
 
 		<!-- HEADER -->
