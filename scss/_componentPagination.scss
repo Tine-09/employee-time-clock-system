@@ -1,0 +1,24 @@
+.uk-pagination {
+	span {
+		color: $primaryDark;
+	}
+	.page-number {
+		border-radius: 50px;
+		padding: 5px 8px;
+		&:hover {
+			background-color: $primary;
+			a {
+				color: white;
+			}
+		}
+		a {
+			color: $primaryDark;
+		}
+	}
+	.uk-active {
+		background-color: $primary;
+		a {
+			color: white;
+		}
+	}
+}

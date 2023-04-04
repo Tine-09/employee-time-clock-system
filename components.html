@@ -295,6 +295,8 @@
 		<!-- BUTTONS -->
 		<div class="m-xl">
 			<h2>Buttons</h2>
+		<div class="m-t-md">
+			<h1>BUTTONS</h1>
 			<div class="uk-margin-top">
 				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Type</h6>
 				<button class="uk-button btn btn-type-default">Default</button>
@@ -788,7 +790,7 @@
 			</div>
 		</div>
 		<!-- LIST -->
-		<div class="m-md">
+		<div class="m-xl">
 			<h2>LIST</h2>
 			<div class="uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
 				<div>
@@ -853,8 +855,63 @@
 
 		<!-- PAGINATION -->
 
-		<!-- MODAL -->
+		<!-- MODALS -->
+		<div class="component-modal m-xl">
+			<!-- DEFAULT MODAL -->
+			<h2 class="m-b-lg">MODALS</h2>
+			<button class="uk-button btn btn-color-primary color-bg-secondary" type="button" uk-toggle="target: #modal-default">Default</button>
+			<div id="modal-default" uk-modal>
+				<div class="uk-modal-dialog uk-modal-body ">
+					<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+					<h2 class="uk-modal-title">MODAL DEFAULT</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+			<!-- MODAL WITH HEADER AND FOOTER -->
+			<button class="uk-button btn btn-color-primary" href="#modal-header-and-footer" uk-toggle>Header and Footer</button>
+			<div id="modal-header-and-footer" uk-modal>
+				<div class="uk-modal-dialog ">
+					<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+					<div class="uk-modal-header" style="border: none; padding: 30px 30px 15px">
+						<h2 class="uk-modal-title">MODAL HEADER</h2>
+						<h1 class="m-remove">Title</h1>
+					</div>
+					<div class="uk-modal-body p-t-sm">
+						<p class="m-t-remove m-b-lg" style="line-height:25px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<div class="uk-text-right">
+							<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">Cancel</button>
+							<button class="uk-button btn btn-type-default">Save</button>
+						</div>
+					</div>
 
+				</div>
+			</div>
+			<!-- MODAL W/OUT X BUTTON -->
+			<button class="uk-button btn btn-color-primary" type="button" uk-toggle="target: #modal-no-close-button">W/out X</button>
+			<div id="modal-no-close-button" uk-modal>
+				<div class="uk-modal-dialog uk-modal-body">
+					<h2 class="uk-modal-title">MODAL W/OUT X BUTTON</h2>
+					<p style="line-height:25px" class="m-b-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="uk-text-right">
+						<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">Cancel</button>
+						<button class="uk-button btn btn-type-default">Save</button>
+					</div>
+				</div>
+			</div>
+			<!-- MODAL CONFIRMATION -->
+			<button class="uk-button btn btn-color-primary" type="button" uk-toggle="target: #modal-confirmation">Confirmation</button>
+			<div id="modal-confirmation" uk-modal>
+				<div class="uk-modal-dialog uk-modal-body">
+					<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+					<h2 class="uk-modal-title">CONFIRMATION MODAL</h2>
+					<p style="line-height:25px" class="m-b-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor olor sit amet, consectetur adipiscing elit, sed do eiusmod te</p>
+					<div class="uk-text-right">
+						<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">No</button>
+						<button class="uk-button btn btn-type-default">Yes</button>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- HEADER -->
 
 		<!-- SIDEBAR -->
