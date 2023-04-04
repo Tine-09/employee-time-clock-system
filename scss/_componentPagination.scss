@@ -5,20 +5,28 @@
 	.page-number {
 		border-radius: 50px;
 		padding: 5px 8px;
+		font-weight: bolder;
 		&:hover {
-			background-color: $primary;
+			background-color: $ghostDark;
 			a {
-				color: white;
+				color: $primaryDark;
 			}
 		}
 		a {
-			color: $primaryDark;
+			color: $primary;
+			transition: none !important;
 		}
 	}
 	.uk-active {
-		background-color: $primary;
+		background-color: $primaryDark;
 		a {
 			color: white;
+		}
+		&:hover {
+			background-color: $primaryDark;
+			a {
+				color: white;
+			}
 		}
 	}
 }
