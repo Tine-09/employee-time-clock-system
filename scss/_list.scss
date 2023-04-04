@@ -1,0 +1,25 @@
+.list{
+    font-size: $font-size-xxs;
+    &.list-size{
+        &-sm{
+            li{
+                margin-top: 16px;
+            }
+        }
+        &-md{
+            li{
+                margin-top: 8px;
+            }
+        }
+        &-lg{
+            li{
+                margin-top: 24px;
+            }
+        }
+        &-xl{   
+            li{
+                margin-top: 32px;
+            }
+        }
+    }
+}
