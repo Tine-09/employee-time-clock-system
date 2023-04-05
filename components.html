@@ -24,6 +24,7 @@
 		<!-- TYPOGRAPHY -->
 		<div class="m-xl">
 			<h2>TYPOGRAPHY</h2>
+			<hr />
 			<div>
 				<table class="uk-table m-t-sm">
 					<thead>
@@ -295,6 +296,7 @@
 		<!-- BUTTONS -->
 		<div class="m-xl">
 			<h2>Buttons</h2>
+			<hr />
 			<div class="uk-margin-top">
 				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Type</h6>
 				<button class="uk-button btn btn-type-default">Default</button>
@@ -357,6 +359,7 @@
 		<!-- MARGIN & PADDING -->
 		<div class="m-xl">
 			<h2>Margin (the distance of square to it's label)</h2>
+			<hr />
 			<div class="uk-grid-column-large uk-child-width-1-4 uk-flex-between" uk-grid>
 				<div class="m-t-lg">
 					<h4>Margin(All)</h4>
@@ -753,9 +756,9 @@
 		<!-- DROPDOWN -->
 
 		<!-- AVATAR -->
-		<!--placeholder only for now-->
 		<div class="m-xl">
 			<h2>AVATAR</h2>
+			<hr />
 			<div class="uk-grid-small" uk-grid>
 				<div class="uk-width-1-6">
 					<img class="img-lg" src="images/avatar.jpg" alt="avatar" />
@@ -788,14 +791,15 @@
 			</div>
 		</div>
 		<!-- LIST -->
-		<div class="m-md">
+		<div class="m-xl">
 			<h2>LIST</h2>
+			<hr />
 			<div class="uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
 				<div>
 					<div class="uk-card uk-card-default">
 						<div class="uk-card-body">
 							<h4>Small</h4>
-							<hr>
+							<hr />
 							<ul class="uk-list list list-size-sm">
 								<li>List item 1</li>
 								<li>List item 2</li>
@@ -809,7 +813,7 @@
 					<div class="uk-card uk-card-default">
 						<div class="uk-card-body">
 							<h4>Default</h4>
-							<hr>
+							<hr />
 							<ul class="uk-list list list-size-md">
 								<li>List item 1</li>
 								<li>List item 2</li>
@@ -823,7 +827,7 @@
 					<div class="uk-card uk-card-default">
 						<div class="uk-card-body">
 							<h4>Large</h4>
-							<hr>
+							<hr />
 							<ul class="uk-list list list-size-lg">
 								<li>List item 1</li>
 								<li>List item 2</li>
@@ -837,7 +841,7 @@
 					<div class="uk-card uk-card-default">
 						<div class="uk-card-body">
 							<h4>Extra Large</h4>
-							<hr>
+							<hr />
 							<ul class="uk-list list list-size-xl">
 								<li>List item 1</li>
 								<li>List item 2</li>
@@ -848,7 +852,6 @@
 					</div>
 				</div>
 			</div>
-			
 		</div>
 
 		<!-- PAGINATION -->
@@ -858,23 +861,22 @@
 		<!-- HEADER -->
 		<div class="m-xl">
 			<h2>HEADER</h2>
-			<hr>
+			<hr />
 			<nav class="uk-navbar-container">
-				<div class="container">
-					<div uk-navbar class="m-xl">
+				<div class="uk-flex-between">
+					<div uk-navbar class="">
 						<div class="uk-navbar-left">
-							<ul class="uk-navbar-nav m-t-sm">
-								<h1>Page Name</h1>
-							</ul>
-						</div>
-						<div class="uk-navbar-right m-t-sm">
 							<ul class="uk-navbar-nav">
-								<li class="m-b-sm"><a href=""><span uk-icon="bell"></span></a></li>
-								<li class="m-y-md">juan@qstrike.com</li>
-								<li class="m-y-sm"><img src="images/avatar.jpg" class="img-sm"></li>
+								<h1 class="m-t-sm">Page Name</h1>
 							</ul>
 						</div>
-			
+						<div class="uk-navbar-right">
+							<ul class="uk-navbar-nav uk-flex">
+								<li class="m-t-sm"><span uk-icon="bell"></span></li>
+								<li class="m-t-sm">juan@qstrike.com</li>
+								<li><img src="images/avatar.jpg" class="img-sm" /></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</nav>
