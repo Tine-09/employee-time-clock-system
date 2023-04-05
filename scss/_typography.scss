@@ -1,6 +1,6 @@
 * {
-    font-family: $font-family-gotham !important;
-    color: $primary;
+	font-family: $font-family-gotham !important;
+	color: $primary;
 }
 
 h1,
@@ -15,145 +15,143 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-weight: $font-weight-bold;
-    color: $primary;
-    letter-spacing: 0.3px;
+	font-weight: $font-weight-bold;
+	color: $primary;
+	letter-spacing: 0.3px;
 }
 
 p {
-    font-size: $font-size-xxs;
-    font-weight: $font-weight-regular;
-    color: $primary;
+	font-size: $font-size-xxs;
+	font-weight: $font-weight-regular;
+	color: $primary;
 }
 
 h1,
 .h1 {
-    font-size: $font-size-xxl;
-    line-height: 2.5rem;
+	font-size: $font-size-xxl;
+	line-height: 2.5rem;
 }
 
 h2,
 .h2 {
-    font-size: $font-size-xl;
-    line-height: 2rem;
+	font-size: $font-size-xl;
+	line-height: 2rem;
 }
 
 h3,
 .h3 {
-    font-size: $font-size-lg;
-    line-height: 1.75rem;
+	font-size: $font-size-lg;
+	line-height: 1.75rem;
 }
 
 h4,
 .h4 {
-    font-size: $font-size-md;
-    line-height: 1.50rem;
+	font-size: $font-size-md;
+	line-height: 1.5rem;
 }
 
 h5,
 .h5 {
-    font-size: $font-size-sm;
-    line-height: 1.25rem;
+	font-size: $font-size-sm;
+	line-height: 1.25rem;
 }
 
 h6,
 .h6 {
-    font-size: $font-size-xs;
-    line-height: 1.25rem;
+	font-size: $font-size-xs;
+	line-height: 1.25rem;
 }
 
-
 .f {
-    // Font Family
-    &-f {
-        &-gotham {
-            font-family: $font-family-gotham;
-        }
-    }
+	// Font Family
+	&-f {
+		&-gotham {
+			font-family: $font-family-gotham;
+		}
+	}
 
-    // Font Sizes
-    &-s {
-        &-xxl {
-            font-size: $font-size-xxl;
-        }
-        &-xl {
-            font-size: $font-size-xl;
-        }
-        &-lg {
-            font-size: $font-size-lg;
-        }
-        &-md {
-            font-size: $font-size-md;
-        }
-        &-sm {
-            font-size: $font-size-sm;
-        }
-        &-xs {
-            font-size: $font-size-xs;
-        }
-        &-xxs {
-            font-size: $font-size-xxs;
-        }
-    }
+	// Font Sizes
+	&-s {
+		&-xxl {
+			font-size: $font-size-xxl;
+		}
+		&-xl {
+			font-size: $font-size-xl;
+		}
+		&-lg {
+			font-size: $font-size-lg;
+		}
+		&-md {
+			font-size: $font-size-md;
+		}
+		&-sm {
+			font-size: $font-size-sm;
+		}
+		&-xs {
+			font-size: $font-size-xs;
+		}
+		&-xxs {
+			font-size: $font-size-xxs;
+		}
+	}
 
-    // Font Weight
-    &-w {
-        &-regular {
-            font-weight: $font-weight-regular;
-        }
-        &-medium {
-            font-weight: $font-weight-medium;
-        }
-        &-semi-bold {
-            font-weight: $font-weight-semibold;
-        }
-        &-bold {
-            font-weight: $font-weight-bold;
-        }
-    }
+	// Font Weight
+	&-w {
+		&-regular {
+			font-weight: $font-weight-regular;
+		}
+		&-medium {
+			font-weight: $font-weight-medium;
+		}
+		&-semi-bold {
+			font-weight: $font-weight-semibold;
+		}
+		&-bold {
+			font-weight: $font-weight-bold;
+		}
+	}
 
-    // Font Alignment
-    &-a {
-        &-center {
-            text-align: center;
-        }
-        &-left {
-            text-align: left;
-        }
-        &-right {
-            text-align: right;
-        }
-        &-justify {
-            text-align: justify;
-        }
-    }
+	// Font Alignment
+	&-a {
+		&-center {
+			text-align: center;
+		}
+		&-left {
+			text-align: left;
+		}
+		&-right {
+			text-align: right;
+		}
+		&-justify {
+			text-align: justify;
+		}
+	}
+	// Font Transform
+	&-t {
+		&-uppercase {
+			text-transform: uppercase;
+		}
+		&-lowercase {
+			text-transform: lowercase;
+		}
+		&-capitalize {
+			text-transform: capitalize;
+		}
+	}
 
-    // Font Transform
-    &-t {
-        &-uppercase {
-            text-transform: uppercase;
-        }
-        &-lowercase {
-            text-transform: lowercase;
-        }
-        &-capitalize {
-            text-transform: capitalize;
-        }
-    }
-    
-    // Font Decoration
-    &-d {   
-        &-overline {
-            text-decoration: overline;
-        }
-        &-linethrough {
-            text-decoration: line-through;
-        }
-        &-underline {
-            text-decoration: underline;
-        }
-        &-under-overline {
-            text-decoration: underline overline;
-        }
-    }
+	// Font Decoration
+	&-d {
+		&-overline {
+			text-decoration: overline;
+		}
+		&-linethrough {
+			text-decoration: line-through;
+		}
+		&-underline {
+			text-decoration: underline;
+		}
+		&-under-overline {
+			text-decoration: underline overline;
+		}
+	}
 }
