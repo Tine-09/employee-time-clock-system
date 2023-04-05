@@ -293,23 +293,12 @@
 		</div>
 
 		<!-- BUTTONS -->
-		<div class="m-xl">
-			<h2>Buttons</h2>
-			<div class="uk-margin-top">
-				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Type</h6>
-				<button class="uk-button btn btn-type-default">Default</button>
-				<button class="uk-button btn btn-type-disabled">Disabled</button>
-			</div>
 
-			<div class="uk-margin-top">
-				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Edge</h6>
 				<button class="uk-button btn btn-border-rounded">Rounded</button>
 				<button class="uk-button btn btn-border-pill">Rounded-full</button>
 				<button class="uk-button btn btn-border-none">Rounded-none</button>
 			</div>
 
-			<div class="uk-margin-top">
-				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Color</h6>
 				<button class="uk-button btn btn-color-primary">Primary</button>
 				<button class="uk-button btn btn-color-secondary">Secondary</button>
 				<button class="uk-button btn btn-color-success">Success</button>
@@ -318,8 +307,6 @@
 				<button class="uk-button btn btn-color-ghost">Ghost</button>
 			</div>
 
-			<div class="uk-margin-top">
-				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Outline</h6>
 				<button class="uk-button btn btn-outline-primary">Primary Outline</button>
 				<button class="uk-button btn btn-outline-secondary">Secondary Outline</button>
 				<button class="uk-button btn btn-outline-success">Success Outline</button>
@@ -327,23 +314,17 @@
 				<button class="uk-button btn btn-outline-warning">Warning Outline</button>
 			</div>
 
-			<div class="uk-margin-top">
-				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Size</h6>
 				<button class="uk-button btn btn-size-xs">Xsmall</button>
 				<button class="uk-button btn btn-size-sm">Small</button>
 				<button class="uk-button btn btn-size-md">Medium</button>
 				<button class="uk-button btn btn-size-lg">Large</button>
 			</div>
 
-			<div class="uk-margin-top">
-				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Icon with text</h6>
 				<button class="uk-button btn btn-icon-edit"><i class="fa-solid fa-pencil"></i> Edit</button>
 				<button class="uk-button btn btn-icon-success"><i class="fa-regular fa-circle-check"></i> Success</button>
 				<button class="uk-button btn btn-icon-danger"><i class="fa-sharp fa-solid fa-circle-exclamation"></i> Danger</button>
 			</div>
 
-			<div class="uk-margin-top uk-margin-bottom">
-				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Icon only</h6>
 				<button class="uk-button btn btn-icon-o-edit"><i class="fa-solid fa-pencil"></i></button>
 				<button class="uk-button btn btn-icon-o-success"><i class="fa-regular fa-circle-check"></i></button>
 				<button class="uk-button btn btn-icon-o-danger"><i class="fa-sharp fa-solid fa-circle-exclamation"></i></button>
@@ -764,6 +745,84 @@
 		<!-- TABS -->
 
 		<!-- DROPDOWN -->
+		<div class="m-y-xl m-x-xl">
+			<h2 class="m-t-xl">DROPDOWN</h2>
+			<div class="m-t-lg">
+				<h6 class="f-w-bold f-s-xs" style="text-transform: uppercase;">Mode</h6>
+				<div>
+					<div class="uk-inline">
+						<button class="uk-button btn btn-color-primary">Hover</button>
+						<div uk-dropdown class="uk-dropdown drpdwn">
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title">Hover</div>
+									<p class="m-t-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quia veritatis, porro consequuntur inventore minima non vel.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-inline">
+						<button class="uk-button btn btn-color-primary">Click</button>
+						<div uk-dropdown="mode: click" class="uk-dropdown drpdwn">
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title">Click</div>
+									<p class="m-t-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quia veritatis, porro consequuntur inventore minima non vel.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="uk-block m-t-lg">
+					<h6 class="f-w-bold f-s-xs" style="text-transform: uppercase;">Contents</h6>
+					<div class="uk-inline">
+						<button class="uk-button btn btn-color-primary">Card</button>
+						<div uk-dropdown class="uk-dropdown drpdwn">
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title">Card</div>
+									<p class="m-t-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quia veritatis, porro consequuntur inventore minima non vel.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="uk-inline">
+						<button class="uk-button btn btn-color-primary">List</button>
+						<div uk-dropdown class="uk-dropdown drpdwn-list">
+							<div class="card">
+								<div class="card-body">
+									<ul class="uk-nav uk-dropdown-nav">
+										<li><a href="#">Item 1</a></li>
+										<li><a href="#">Item 2</a></li>
+										<li><a href="#">Item 3</a></li>
+										<li><a href="#">Item 4</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="uk-inline">
+						<button class="uk-button btn btn-color-primary">List with Title</button>
+						<div uk-dropdown class="uk-dropdown drpdwn-list">
+							<div class="card">
+								<div class="card-body">
+									<ul class="uk-nav uk-dropdown-nav">
+										<li class="uk-nav-header">Title</li>
+										<li><a href="#">Item 1</a></li>
+										<li><a href="#">Item 2</a></li>
+										<li><a href="#">Item 3</a></li>
+										<li><a href="#">Item 4</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- AVATAR -->
 		<!--placeholder only for now-->
