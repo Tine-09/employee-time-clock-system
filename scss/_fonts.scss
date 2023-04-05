@@ -1,16 +1,30 @@
-// Bold Text
+$prefix: "../";
+// GOTHAM FONTS
+// Light
 @font-face {
-	font-family: "Gotham";
-	src: url("Fonts/Gotham/Gotham-Bold.otf") format("truetype");
-	src: url("Fonts/Gotham/GothamBold.ttf") format("truetype");
-	font-weight: bold;
+	font-family: GothamPro;
+	src: url($prefix + "fonts/GothamPro/GothamPro-Light.eot");
+	src: url($prefix + "fonts/GothamPro/GothamPro-Light.woff2") format("woff2"), url($prefix + "fonts/GothamPro/GothamPro-Light.woff") format("woff"), url($prefix + "fonts/GothamPro/GothamPro-Light.ttf") format("truetype"), url($prefix + "fonts/GothamPro/GothamPro-Light.svg#GothamPro-Light") format("svg"), url($prefix + "fonts/GothamPro/GothamPro-Light.eot?#iefix") format("embedded-opentype");
+	font-weight: 100;
 	font-style: normal;
 }
 
-// Regular Text
+// Normal
 @font-face {
-	font-family: "Gotham";
-	src: url("Fonts/Gotham/GothamBook.ttf") format("truetype");
-	font-weight: normal;
+
+	font-family: GothamPro;
+	src: url($prefix + "fonts/GothamPro/GothamPro.eot");
+	src: url($prefix + "fonts/GothamPro/../fonts/GothamPro/GothamPro.eot");
+	src: url($prefix + "fonts/GothamPro/GothamPro.woff2") format("woff2"), url($prefix + "fonts/GothamPro/GothamPro.woff") format("woff"), url($prefix + "fonts/GothamPro/GothamPro.ttf") format("truetype"), url($prefix + "fonts/GothamPro/GothamPro.svg#GothamPro") format("svg"), url($prefix + "fonts/GothamPro/GothamPro.eot?#iefix") format("embedded-opentype");
+	font-weight: 200;
+	font-style: normal;
+}
+
+// SemiBold or Medium
+@font-face {
+	font-family: GothamPro;
+	src: url($prefix + "fonts/GothamPro/GothamPro-Medium.eot");
+	src: url($prefix + "fonts/GothamPro/GothamPro-Medium.woff2") format("woff2"), url($prefix + "fonts/GothamPro/GothamPro-Medium.woff") format("woff"), url($prefix + "fonts/GothamPro/GothamPro-Medium.ttf") format("truetype"), url($prefix + "fonts/GothamPro/GothamPro-Medium.svg#GothamPro-Medium") format("svg"), url($prefix + "fonts/GothamPro/GothamPro-Medium.eot?#iefix") format("embedded-opentype");
+	font-weight: 300;
 	font-style: normal;
 }
