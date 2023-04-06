@@ -1,27 +1,44 @@
 .tab {
-	.uk-active {
+	&-border-none {
 		a {
-			border-color: $secondary;
-			border-width: 3px;
+			text-transform: capitalize;
 		}
-	}
 
-	:hover {
-		a {
-			border-color: $hoverTab;
-			border-width: 3px;
+		.uk-active {
+			:hover {
+				border-width: 3px;
+				border-color: $secondary;
+			}
+
+			a {
+				font-weight: bold;
+				border-width: 3px;
+				border-color: $secondary;
+			}
 		}
-	}
 
-	&-disable-border-bottom {
-		&::before {
-			border-bottom: 1px solid $primary;
+		:hover {
+			a {
+				border-color: $tabHover;
+				border-width: 3px;
+			}
 		}
-	}
 
-	&-border-bottom {
 		&::before {
 			border-bottom: none;
+		}
+	}
+
+	&-border {
+		.uk-active {
+			a {
+				border-color: $secondary;
+				border-width: 1px;
+			}
+		}
+
+		&::before {
+			border-bottom: 1px solid $primary;
 		}
 	}
 }
