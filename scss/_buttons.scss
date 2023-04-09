@@ -1,239 +1,238 @@
-.btn{
-    text-transform: capitalize;
-    padding-left: 32px;
-    padding-right: 32px;
-    color: #fff;
-    font-size: 14px;
-    letter-spacing: 0.1em;
-    font-weight: 400;
+.btn {
+	text-transform: capitalize;
+	padding-left: 32px;
+	padding-right: 32px;
+	color: #fff;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+	font-weight: 400;
 
-    &.btn-type{
-        &-default{
-            background-color: $secondary;
-            &:hover{
-                background-color: $secondaryDark;
-            }
-        }
-        &-disabled{
-            background-color: $secondary;
-            opacity: 0.5;
-            cursor: default;
-        }
+	&.btn-type {
+		&-default {
+			background-color: $secondary;
+			&:hover {
+				background-color: $secondaryDark;
+			}
+		}
+		&-disabled {
+			background-color: $secondary;
+			opacity: 0.5;
+			cursor: default;
+		}
 
-        &-circle{
-            border-radius: 50%;
-            background: $primary;
-            padding: 2px 18px;
-            &:hover{
-                background-color: $primaryDark;
-                color: #fff;
-            }
-        }
-    }
+		&-circle {
+			border-radius: 50%;
+			background: $primary;
+			padding: 2px 18px;
+			&:hover {
+				background-color: $primaryDark;
+				color: #fff;
+			}
+		}
+	}
 
-    &.btn-border{
-        &-rounded{
-            background-color: $secondary;
-            border-radius: 8px;
-            &:hover{
-                background-color: $secondaryDark;
-            }
-        }
-        &-pill{
-            background-color: $secondary;
-            border-radius: 50px;
-            &:hover{
-                background-color: $secondaryDark;
-            }
-        }
-        &-none{
-            background-color: $secondary;
-            &:hover{
-                background-color: $secondaryDark;
-            }
-        }
-    }
+	&.btn-border {
+		&-rounded {
+			background-color: $secondary;
+			border-radius: 8px;
+			&:hover {
+				background-color: $secondaryDark;
+			}
+		}
+		&-pill {
+			background-color: $secondary;
+			border-radius: 50px;
+			&:hover {
+				background-color: $secondaryDark;
+			}
+		}
+		&-none {
+			background-color: $secondary;
+			&:hover {
+				background-color: $secondaryDark;
+			}
+		}
+	}
 
-    &.btn-color{
-        &-primary{
-            background-color: $primary;
-            &:hover{
-                background-color: $primaryDark;
-            }
-        }
-        &-secondary{
-            background-color: $secondary;
-            &:hover{
-                background-color: $secondaryDark;
-            }
-        }
-        &-success{
-            background-color: $success;
-            &:hover{
-                background-color: $successDark;
-            }
-        }
-        &-danger{
-            background-color: $danger;
-            &:hover{
-                background-color: $dangerDark;
-            }
-        }
-        &-warning{
-            background-color: $warning;
-            &:hover{
-                background-color: $warningDark;
-            }
-        }
-        &-ghost{
-            background-color: #fff;
-            color: #000;
-            &:hover{
-                background-color: $gostDark;
-            }
-        }
-    }
+	&.btn-color {
+		&-primary {
+			background-color: $primary;
+			&:hover {
+				background-color: $primaryDark;
+			}
+		}
+		&-secondary {
+			background-color: $secondary;
+			&:hover {
+				background-color: $secondaryDark;
+			}
+		}
+		&-success {
+			background-color: $success;
+			&:hover {
+				background-color: $successDark;
+			}
+		}
+		&-danger {
+			background-color: $danger;
+			&:hover {
+				background-color: $dangerDark;
+			}
+		}
+		&-warning {
+			background-color: $warning;
+			&:hover {
+				background-color: $warningDark;
+			}
+		}
+		&-ghost {
+			background-color: #fff;
+			color: #000;
+			&:hover {
+				background-color: $gostDark;
+			}
+		}
+	}
 
-    &.btn-outline{
-        &-primary{
-            border: 1px solid $primary;
-            background-color: #fff;
-            color: $primary;
-            &:hover{
-                background-color: $primaryDark;
-                color: #fff;
-            }
-        }
-        &-secondary{
-            border: 1px solid $secondary;
-            background-color: #fff;
-            color: $secondary;
-            &:hover{
-                background-color: $secondaryDark;
-                color: #fff;
-            }
-        }
-        &-success{
-            border: 1px solid $success;
-            background-color: #fff;
-            color: $success;
-            &:hover{
-                background-color: $successDark;
-                color: #fff;
-            }
-        }
-        &-danger{
-            border: 1px solid $danger;
-            background-color: #fff;
-            color: $danger;
-            &:hover{
-                background-color: $dangerDark;
-                color: #fff;
-            }
-        }
-        &-warning{
-            border: 1px solid $warning;
-            background-color: #fff;
-            color: $warning;
-            &:hover{
-                background-color: $warningDark;
-                color: #fff;
-            }
-        }
-    }
+	&.btn-outline {
+		&-primary {
+			border: 1px solid $primary;
+			background-color: #fff;
+			color: $primary;
+			&:hover {
+				background-color: $primaryDark;
+				color: #fff;
+			}
+		}
+		&-secondary {
+			border: 1px solid $secondary;
+			background-color: #fff;
+			color: $secondary;
+			&:hover {
+				background-color: $secondaryDark;
+				color: #fff;
+			}
+		}
+		&-success {
+			border: 1px solid $success;
+			background-color: #fff;
+			color: $success;
+			&:hover {
+				background-color: $successDark;
+				color: #fff;
+			}
+		}
+		&-danger {
+			border: 1px solid $danger;
+			background-color: #fff;
+			color: $danger;
+			&:hover {
+				background-color: $dangerDark;
+				color: #fff;
+			}
+		}
+		&-warning {
+			border: 1px solid $warning;
+			background-color: #fff;
+			color: $warning;
+			&:hover {
+				background-color: $warningDark;
+				color: #fff;
+			}
+		}
+	}
 
-    &.btn-size{
-        &-xs{
-            background-color: $secondary;
-            font-size: 10px;
-            padding: 0px 10px;
-            line-height: 18px;
-            &:hover{
-                background-color: $secondaryDark;
-            }
-        }
-        &-sm{
-            background-color: $secondary;
-            font-size: 12px;
-            padding: 0px 12px;
-            line-height: 28px;
-            &:hover{
-                background-color: $secondaryDark;
-            }
-        }
-        &-md{
-            background-color: $secondary;
-            &:hover{
-                background-color: $secondaryDark;
-            }
-        }
-        &-lg{
-            background-color: $secondary;
-            font-size: 16px;
-            padding: 13px 45px;
-            line-height: 30px;
-            &:hover{
-                background-color: $secondaryDark;
-            }
-        }
-    }
+	&.btn-size {
+		&-xs {
+			background-color: $secondary;
+			font-size: 10px;
+			padding: 0px 10px;
+			line-height: 18px;
+			&:hover {
+				background-color: $secondaryDark;
+			}
+		}
+		&-sm {
+			background-color: $secondary;
+			font-size: 12px;
+			padding: 0px 12px;
+			line-height: 28px;
+			&:hover {
+				background-color: $secondaryDark;
+			}
+		}
+		&-md {
+			background-color: $secondary;
+			&:hover {
+				background-color: $secondaryDark;
+			}
+		}
+		&-lg {
+			background-color: $secondary;
+			font-size: 16px;
+			padding: 13px 45px;
+			line-height: 30px;
+			&:hover {
+				background-color: $secondaryDark;
+			}
+		}
+	}
 
-    &.btn-icon{
-        &-edit{
-            background-color: $secondary;
-            border-radius: 8px;
-            &:hover{
-                background-color: $secondaryDark;
-            }
-        }
-        &-success{
-            background-color: $success;
-            border-radius: 8px;
-            &:hover{
-                background-color: $successDark;
-            }
-        }
-        &-danger{
-            background-color: $danger;
-            border-radius: 8px;
-            &:hover{
-                background-color: $dangerDark
-            }
-        }
-    }
+	&.btn-icon {
+		&-edit {
+			background-color: $secondary;
+			border-radius: 8px;
+			&:hover {
+				background-color: $secondaryDark;
+			}
+		}
+		&-success {
+			background-color: $success;
+			border-radius: 8px;
+			&:hover {
+				background-color: $successDark;
+			}
+		}
+		&-danger {
+			background-color: $danger;
+			border-radius: 8px;
+			&:hover {
+				background-color: $dangerDark;
+			}
+		}
+	}
 
-    &.btn-icon-o{
-        &-edit{
-            background-color: $secondary;
-            border-radius: 8px;
-            padding-left: 20px;
-            padding-right: 20px;
-            &:hover{
-                background-color: $secondaryDark;
-            }
-        }
-        &-success{
-            background-color: $success;
-            border-radius: 8px;
-            padding-left: 20px;
-            padding-right: 20px;
-            &:hover{
-                background-color: $successDark;
-            }
-        }
-        &-danger{
-            background-color: $danger;
-            border-radius: 8px;
-            padding-left: 20px;
-            padding-right: 20px;
-            &:hover{
-                background-color: $dangerDark
-            }
-        }
-    }
+	&.btn-icon-o {
+		&-edit {
+			background-color: $secondary;
+			border-radius: 8px;
+			padding-left: 20px;
+			padding-right: 20px;
+			&:hover {
+				background-color: $secondaryDark;
+			}
+		}
+		&-success {
+			background-color: $success;
+			border-radius: 8px;
+			padding-left: 20px;
+			padding-right: 20px;
+			&:hover {
+				background-color: $successDark;
+			}
+		}
+		&-danger {
+			background-color: $danger;
+			border-radius: 8px;
+			padding-left: 20px;
+			padding-right: 20px;
+			&:hover {
+				background-color: $dangerDark;
+			}
+		}
+	}
 
-    &:hover{
-        color: #fff;
-    }
-
+	&:hover {
+		color: #fff;
+	}
 }
