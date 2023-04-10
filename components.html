@@ -742,7 +742,70 @@
 				</div>
 			</div>
 		</div>
+
 		<!-- TABS -->
+		<div class="tab-container m-xl">
+			<h2 class="m-xl">TABS</h2>
+			<div class="m-l-xl m-t-lg">
+				<div>
+					<div>
+						<h6>TAB WITH BORDER BOTTOM</h6>
+						<ul uk-tab class="tab tab-border f-w-bold">
+							<li class="uk-active"><a href="#">Tab One</a></li>
+							<li class=""><a href="#">Tab Two</a></li>
+							<li class=""><a href="#">Tab Three</a></li>
+							<li class="uk-disabled"><a>Disabled</a></li>
+						</ul>
+
+						<ul class="uk-switcher uk-margin">
+							<li>This is tab one content</li>
+							<li>This is tab two content</li>
+							<li>This is tab three content</li>
+						</ul>
+					</div>
+
+					<h6>TAB WITHOUT BORDER BOTTOM</h6>
+					<ul uk-tab class="tab tab-border-none">
+						<li class="uk-active"><a href="#">Tab One</a></li>
+						<li class=""><a href="#">Tab Two</a></li>
+						<li class=""><a href="#">Tab Three</a></li>
+						<li class="uk-disabled"><a>Disabled</a></li>
+					</ul>
+
+					<ul class="uk-switcher uk-margin">
+						<li>This is tab one content</li>
+						<li>This is tab two content</li>
+						<li>This is tab three content</li>
+					</ul>
+
+					<ul uk-tab class="tab tab-border-none">
+						<li class="uk-active"><a href="#">Tab one</a></li>
+						<li><a href="#">Tab Two</a></li>
+						<li>
+							<a href="#">More <span uk-icon="icon: triangle-down"></span></a>
+							<div uk-dropdown="mode: click">
+								<ul class="uk-nav uk-dropdown-nav">
+									<li class="uk-active"><a href="#">Active</a></li>
+									<li><a href="#">Item</a></li>
+									<li class="uk-nav-header">OTHERS</li>
+									<li><a href="#">Item</a></li>
+									<li><a href="#">Item</a></li>
+									<li class="uk-nav-divider"></li>
+									<li><a href="#">Item</a></li>
+								</ul>
+
+								<ul class="uk-switcher uk-margin">
+									<li>This tab one</li>
+									<li>This tab two</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<hr />
 
 		<!-- DROPDOWN -->
 		<div class="m-y-xl m-x-xl">
@@ -859,6 +922,7 @@
 				</div>
 			</div>
 		</div>
+
 		<!-- LIST -->
 		<div class="m-md">
 			<h2>LIST</h2>
@@ -867,7 +931,7 @@
 					<div class="uk-card uk-card-default">
 						<div class="uk-card-body">
 							<h4>Small</h4>
-							<hr>
+							<hr />
 							<ul class="uk-list list list-size-sm">
 								<li>List item 1</li>
 								<li>List item 2</li>
@@ -881,7 +945,7 @@
 					<div class="uk-card uk-card-default">
 						<div class="uk-card-body">
 							<h4>Default</h4>
-							<hr>
+							<hr />
 							<ul class="uk-list list list-size-md">
 								<li>List item 1</li>
 								<li>List item 2</li>
@@ -895,7 +959,7 @@
 					<div class="uk-card uk-card-default">
 						<div class="uk-card-body">
 							<h4>Large</h4>
-							<hr>
+							<hr />
 							<ul class="uk-list list list-size-lg">
 								<li>List item 1</li>
 								<li>List item 2</li>
@@ -909,7 +973,7 @@
 					<div class="uk-card uk-card-default">
 						<div class="uk-card-body">
 							<h4>Extra Large</h4>
-							<hr>
+							<hr />
 							<ul class="uk-list list list-size-xl">
 								<li>List item 1</li>
 								<li>List item 2</li>
@@ -920,7 +984,6 @@
 					</div>
 				</div>
 			</div>
-			
 		</div>
 
 		<!-- PAGINATION -->
