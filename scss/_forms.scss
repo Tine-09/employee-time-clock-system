@@ -1,0 +1,142 @@
+input {
+	&.uk-input {
+		border-radius: 2px;
+	}
+
+	&.uk-input:focus {
+		border-color: $primary;
+	}
+
+	&.uk-checkbox:checked {
+		background-color: $primary !important;
+		border-color: $primary;
+	}
+
+	&.uk-checkbox:hover {
+		border-color: $primary;
+	}
+
+	&.uk-radio:checked {
+		background-color: $primary !important;
+	}
+
+	&.uk-radio:hover {
+		border-color: $primary;
+	}
+
+	&.uk-form-danger {
+		border-color: $danger;
+	}
+
+	&.uk-form-danger:focus {
+		border-color: $danger;
+	}
+
+	&.uk-form-success {
+		border-color: $success;
+	}
+
+	&.uk-form-success:focus {
+		border-color: $success;
+	}
+}
+
+select {
+	&.uk-select {
+		border-radius: 2px;
+	}
+
+	&.uk-select:focus {
+		border-color: $primary;
+	}
+
+	&.uk-select::selection {
+		background: $primary;
+	}
+}
+
+textarea {
+	&.uk-textarea:focus {
+		border-color: $primary;
+	}
+}
+
+.uk-alert-danger {
+	background-color: #fff;
+	border-color: $danger;
+}
+
+.uk-alert-danger p {
+	color: $danger;
+}
+
+// Style the toggle
+.toggle {
+	display: inline-block;
+	position: relative;
+	width: $toggle-size;
+	height: $slider-size;
+	background-color: $background-color;
+	border-radius: $slider-size;
+	overflow: hidden;
+	cursor: pointer;
+
+	// Add "ON" and "OFF" words
+	&::before {
+		content: "ON";
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		width: 20px;
+		text-align: center;
+	}
+
+	&::after {
+		content: "OFF";
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+		width: 20px;
+		text-align: center;
+	}
+
+	// Hide the checkbox
+	input[type="checkbox"] {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		appearance: none;
+	}
+
+	// Style the toggle text
+	.toggle-text {
+		position: absolute;
+		top: 50%;
+		left: 10px;
+		transform: translateY(-50%);
+		font-size: 16px;
+		font-weight: bold;
+	}
+}
+
+// Style the slider
+.slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: $slider-size;
+	height: $slider-size;
+	background-color: $slider-color;
+	border-radius: $slider-size;
+	transition: transform $toggle-transition;
+}
+
+// Style the toggle when it's checked
+input:checked + .slider {
+	transform: translateX($toggle-size - $slider-size);
+}
