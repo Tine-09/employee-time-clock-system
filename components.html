@@ -295,7 +295,7 @@
 
 		<!-- BUTTONS -->
 		<div class="m-xl">
-			<h2>Buttons</h2>
+			<h2>BUTTONS</h2>
 			<hr />
 			<div class="uk-margin-top">
 				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Type</h6>
@@ -359,8 +359,7 @@
 
 		<!-- MARGIN & PADDING -->
 		<div class="m-xl">
-			<h2>Margin (the distance of square to it's label)</h2>
-			<hr />
+			<h2>MARGIN</h2>
 			<div class="uk-grid-column-large uk-child-width-1-4 uk-flex-between" uk-grid>
 				<div class="m-t-lg">
 					<h4>Margin(All)</h4>
@@ -678,7 +677,7 @@
 			</div>
 		</div>
 		<div class="m-xl">
-			<h2 class="">Padding (space of label inside the square)</h2>
+			<h2 class="">PADDING</h2>
 			<div class="uk-grid-large uk-child-width-1-4 uk-flex-between" uk-grid>
 				<div class="m-t-lg">
 					<h4>Padding (All)</h4>
@@ -998,6 +997,125 @@
 		</div>
 
 		<!-- PAGINATION -->
+		<div class="m-xl">
+			<h2>PAGINATION</h2>
+			<h3 class="m-y-lg">Alignment</h3>
+			<!-- LEFT ALIGN PAGINATION -->
+			<div class="uk-text-left m-t-xl">
+				<div class="uk-inline">
+					<h4 class="uk-text-center">Left Align</h4>
+					<ul class="uk-pagination uk-flex-middle" uk-margin>
+						<li uk-tooltip="Previous Page">
+							<a href="#"><span uk-pagination-previous></span></a>
+						</li>
+						<li class="page-number uk-active m-xs uk-text-center"><a href="">1</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">2</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">3</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">4</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">5</a></li>
+
+						<li uk-tooltip="Next Page">
+							<a href="#"><span uk-pagination-next></span></a>
+						</li>
+					</ul>
+					<h6 class="uk-position-bottom-center f-t-uppercase f-s-xxs" style="bottom: -25px">Page 1 out of 5</h6>
+				</div>
+			</div>
+			<div class="uk-text-center m-t-xxl">
+				<div class="uk-inline">
+					<h4 class="uk-text-center">Center Align</h4>
+					<ul class="uk-pagination uk-flex-middle" uk-margin>
+						<li uk-tooltip="Previous Page">
+							<a href="#"><span uk-pagination-previous></span></a>
+						</li>
+						<li class="page-number uk-active m-xs uk-text-center"><a href="">1</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">2</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">3</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">4</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">5</a></li>
+						<li uk-tooltip="Next Page">
+							<a href="#"><span uk-pagination-next></span></a>
+						</li>
+					</ul>
+					<h6 class="uk-position-bottom-center f-t-uppercase f-s-xxs" style="bottom: -25px">Page 1 out of 5</h6>
+				</div>
+			</div>
+			<!-- RIGHT ALIGN PAGINATION -->
+			<div class="uk-text-right m-t-xxl">
+				<div class="uk-inline">
+					<h4 class="uk-text-center">Right Align</h4>
+					<ul class="uk-pagination uk-flex-middle" uk-margin>
+						<li uk-tooltip="Previous Page">
+							<a href="#"><span uk-pagination-previous></span></a>
+						</li>
+						<li class="page-number uk-active m-xs uk-text-center"><a href="">1</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">2</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">3</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">4</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">5</a></li>
+
+						<li uk-tooltip="Next Page">
+							<a href="#"><span uk-pagination-next></span></a>
+						</li>
+					</ul>
+					<h6 class="uk-position-bottom-center f-t-uppercase f-s-xxs" style="bottom: -25px">Page 1 out of 5</h6>
+				</div>
+			</div>
+			<!-- VARIANTS -->
+			<h3>Variants</h3>
+			<div class="m-t-lg">
+				<div class="uk-inline">
+					<h4>Page number is less than 5</h4>
+					<ul class="uk-pagination uk-flex-middle" uk-margin>
+						<li uk-tooltip="Previous Page">
+							<a href="#"><span uk-pagination-previous></span></a>
+						</li>
+						<li class="page-number uk-active m-xs uk-text-center"><a href="">1</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">2</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">3</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">4</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">5</a></li>
+
+						<li uk-tooltip="Next Page">
+							<a href="#"><span uk-pagination-next></span></a>
+						</li>
+					</ul>
+					<h6 class="uk-position-bottom-center f-t-uppercase f-s-xxs" style="bottom: -30px">Page 1 out of 5</h6>
+				</div>
+			</div>
+			<div class="m-t-xxl">
+				<div class="uk-inline">
+					<h4>Page number is greater than 5</h4>
+					<ul class="uk-pagination uk-flex-middle" uk-margin>
+						<li uk-tooltip="Go To First Page">
+							<a href="#"
+								><span><i class="fa-sharp fa-solid fa-angles-left" style="margin-top: 7px"></i></span
+							></a>
+						</li>
+						<li uk-tooltip="Previous Page">
+							<a href="#"><span uk-pagination-previous></span></a>
+						</li>
+						<li class="page-number m-xs uk-text-center"><a href="">6</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">7</a></li>
+						<li class="page-number uk-active m-xs uk-text-center"><a href="">8</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">9</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">10</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">...</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">15</a></li>
+
+						<li uk-tooltip="Next Page">
+							<a href="#"><span uk-pagination-next></span></a>
+						</li>
+						<li uk-tooltip="Go To Last Page">
+							<a href="#"
+								><span> <i class="fa-sharp fa-solid fa-angles-right" style="margin-top: 7px"></i></span
+							></a>
+						</li>
+					</ul>
+					<h6 class="uk-position-bottom-center f-t-uppercase f-s-xxs" style="bottom: -30px">Page 8 out of 15</h6>
+				</div>
+			</div>
+		</div>
 
 		<!-- MODAL -->
 		<div class="m-xl">

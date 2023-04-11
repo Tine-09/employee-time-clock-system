@@ -125,63 +125,6 @@ h6,
 			text-align: justify;
 		}
 	}
-
-	// Font Sizes
-	&-s {
-		&-xxl {
-			font-size: $font-size-xxl;
-		}
-		&-xl {
-			font-size: $font-size-xl;
-		}
-		&-lg {
-			font-size: $font-size-lg;
-		}
-		&-md {
-			font-size: $font-size-md;
-		}
-		&-sm {
-			font-size: $font-size-sm;
-		}
-		&-xs {
-			font-size: $font-size-xs;
-		}
-		&-xxs {
-			font-size: $font-size-xxs;
-		}
-	}
-
-	// Font Weight
-	&-w {
-		&-regular {
-			font-weight: $font-weight-regular;
-		}
-		&-medium {
-			font-weight: $font-weight-medium;
-		}
-		&-semi-bold {
-			font-weight: $font-weight-semibold;
-		}
-		&-bold {
-			font-weight: $font-weight-bold;
-		}
-	}
-
-	// Font Alignment
-	&-a {
-		&-center {
-			text-align: center;
-		}
-		&-left {
-			text-align: left;
-		}
-		&-right {
-			text-align: right;
-		}
-		&-justify {
-			text-align: justify;
-		}
-	}
   
 	// Font Transform
 	&-t {
