@@ -953,43 +953,52 @@
 		<!-- SIDEBAR -->
 		<div class="m-xl">
 			<h2>SIDEBAR</h2>
-			<nav class="sidebar">
-				<header>
-					<div class="image-text">
-						<span class="image">
-							<img src="./images/logo.png" alt="" />
-						</span>
+			<div class="uk-grid-collapse" uk-grid>
+				<div class="uk-width-1-4">
+					<!-- sidebar -->
+					<nav class="sidebar">
+						<header>
+							<div class="image-text">
+								<span class="image">
+									<img src="./images/logo.png" alt="" />
+								</span>
 
-						<div class="text header-text">
-							<span class="name">QuickStrike</span>
-						</div>
-					</div>
-				</header>
-				<ul>
-					<li class="nav-link active">
-						<a href="#"><i class="bx bxs-grid-alt icon"></i> <span class="text">Dashboard</span></a>
-					</li>
-					<li class="nav-link">
-						<a href="#"><i class="bx bx-calendar icon"></i> <span class="text">Attendance</span></a>
-					</li>
-					<li class="nav-link">
-						<a href="#"><i class="bx bxs-folder-open icon"></i> <span class="text">Project</span></a>
-					</li>
-					<li class="nav-link">
-						<a href="#"><i class="bx bxs-user icon"></i> <span class="text">Profile</span></a>
-					</li>
-					<li class="nav-link">
-						<a href="#"><i class="bx bxs-group icon"></i> <span class="text">Employee List</span></a>
-					</li>
-					<hr style="margin: 30px 0px" />
-					<li class="nav-link">
-						<a href="#"><i class="bx bxs-cog icon"></i> <span class="text">Settings</span></a>
-					</li>
-					<li class="nav-link">
-						<a href="#"><i class="bx bx-log-out icon"></i> <span class="text">Logout</span></a>
-					</li>
-				</ul>
-			</nav>
+								<div class="text header-text">
+									<span class="name">QuickStrike</span>
+								</div>
+							</div>
+						</header>
+						<ul>
+							<li class="nav-link active">
+								<a href="#"><i class="bx bxs-grid-alt icon"></i> <span class="text">Dashboard</span></a>
+							</li>
+							<li class="nav-link">
+								<a href="#"><i class="bx bx-calendar icon"></i> <span class="text">Attendance</span></a>
+							</li>
+							<li class="nav-link">
+								<a href="#"><i class="bx bxs-folder-open icon"></i> <span class="text">Project</span></a>
+							</li>
+							<li class="nav-link">
+								<a href="#"><i class="bx bxs-user icon"></i> <span class="text">Profile</span></a>
+							</li>
+							<li class="nav-link">
+								<a href="#"><i class="bx bxs-group icon"></i> <span class="text">Employee List</span></a>
+							</li>
+							<hr style="margin: 30px 0px" />
+							<li class="nav-link">
+								<a href="#"><i class="bx bxs-cog icon"></i> <span class="text">Settings</span></a>
+							</li>
+							<li class="nav-link">
+								<a href="#"><i class="bx bx-log-out icon"></i> <span class="text">Logout</span></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="uk-width-expand">
+					<div uk-height-overflow="offset-top: true" uk-overflow-auto></div>
+					<!-- Content -->
+				</div>
+			</div>
 		</div>
 
 		<!-- FOOTER -->
