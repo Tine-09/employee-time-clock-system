@@ -1,0 +1,44 @@
+.tab {
+	&-border-none {
+		a {
+			text-transform: capitalize;
+		}
+
+		.uk-active {
+			:hover {
+				border-width: 3px;
+				border-color: $secondary;
+			}
+
+			a {
+				font-weight: bold;
+				border-width: 3px;
+				border-color: $secondary;
+			}
+		}
+
+		:hover {
+			a {
+				border-color: $tabHover;
+				border-width: 3px;
+			}
+		}
+
+		&::before {
+			border-bottom: none;
+		}
+	}
+
+	&-border {
+		.uk-active {
+			a {
+				border-color: $secondary;
+				border-width: 1px;
+			}
+		}
+
+		&::before {
+			border-bottom: 1px solid $primary;
+		}
+	}
+}
