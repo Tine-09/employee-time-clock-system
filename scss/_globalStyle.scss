@@ -1,0 +1,14 @@
+.fa-classic,
+.fa-regular,
+.fa-solid,
+.far,
+.fas {
+	font-family: "Font Awesome 6 Free" !important;
+	color: unset !important;
+}
+
+.uk-tooltip {
+	&-inner {
+		color: white;
+	}
+}
