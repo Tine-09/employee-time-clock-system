@@ -27,6 +27,7 @@
 		<!-- TYPOGRAPHY -->
 		<div class="m-xl">
 			<h2>TYPOGRAPHY</h2>
+			<hr />
 			<div>
 				<table class="uk-table m-t-sm">
 					<thead>
@@ -304,15 +305,13 @@
 				<button class="uk-button btn btn-type-disabled">Disabled</button>
 			</div>
 
-			<div class="uk-margin-top">
-				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Edge</h6>
+			<div class="uk-margin-top uk-margin-bottom">
 				<button class="uk-button btn btn-border-rounded">Rounded</button>
 				<button class="uk-button btn btn-border-pill">Rounded-full</button>
 				<button class="uk-button btn btn-border-none">Rounded-none</button>
 			</div>
 
-			<div class="uk-margin-top">
-				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Color</h6>
+			<div class="uk-margin-top uk-margin-bottom">
 				<button class="uk-button btn btn-color-primary">Primary</button>
 				<button class="uk-button btn btn-color-secondary">Secondary</button>
 				<button class="uk-button btn btn-color-success">Success</button>
@@ -321,8 +320,7 @@
 				<button class="uk-button btn btn-color-ghost">Ghost</button>
 			</div>
 
-			<div class="uk-margin-top">
-				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Outline</h6>
+			<div class="uk-margin-top uk-margin-bottom">
 				<button class="uk-button btn btn-outline-primary">Primary Outline</button>
 				<button class="uk-button btn btn-outline-secondary">Secondary Outline</button>
 				<button class="uk-button btn btn-outline-success">Success Outline</button>
@@ -330,23 +328,20 @@
 				<button class="uk-button btn btn-outline-warning">Warning Outline</button>
 			</div>
 
-			<div class="uk-margin-top">
-				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Size</h6>
+			<div class="uk-margin-top uk-margin-bottom">
 				<button class="uk-button btn btn-size-xs">Xsmall</button>
 				<button class="uk-button btn btn-size-sm">Small</button>
 				<button class="uk-button btn btn-size-md">Medium</button>
 				<button class="uk-button btn btn-size-lg">Large</button>
 			</div>
 
-			<div class="uk-margin-top">
-				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Icon with text</h6>
+			<div class="uk-margin-top uk-margin-bottom">
 				<button class="uk-button btn btn-icon-edit"><i class="fa-solid fa-pencil"></i> Edit</button>
 				<button class="uk-button btn btn-icon-success"><i class="fa-regular fa-circle-check"></i> Success</button>
 				<button class="uk-button btn btn-icon-danger"><i class="fa-sharp fa-solid fa-circle-exclamation"></i> Danger</button>
 			</div>
 
 			<div class="uk-margin-top uk-margin-bottom">
-				<h6 style="font-weight: 600; text-transform: uppercase; font-size: 20px; margin-top: 20px">Icon only</h6>
 				<button class="uk-button btn btn-icon-o-edit"><i class="fa-solid fa-pencil"></i></button>
 				<button class="uk-button btn btn-icon-o-success"><i class="fa-regular fa-circle-check"></i></button>
 				<button class="uk-button btn btn-icon-o-danger"><i class="fa-sharp fa-solid fa-circle-exclamation"></i></button>
@@ -372,7 +367,7 @@
 
 		<!-- MARGIN & PADDING -->
 		<div class="m-xl">
-			<h2>Margin (the distance of square to it's label)</h2>
+			<h2>MARGIN</h2>
 			<div class="uk-grid-column-large uk-child-width-1-4 uk-flex-between" uk-grid>
 				<div class="m-t-lg">
 					<h4>Margin(All)</h4>
@@ -690,7 +685,7 @@
 			</div>
 		</div>
 		<div class="m-xl">
-			<h2 class="">Padding (space of label inside the square)</h2>
+			<h2 class="">PADDING</h2>
 			<div class="uk-grid-large uk-child-width-1-4 uk-flex-between" uk-grid>
 				<div class="m-t-lg">
 					<h4>Padding (All)</h4>
@@ -764,7 +759,70 @@
 				</div>
 			</div>
 		</div>
+
 		<!-- TABS -->
+		<div class="tab-container m-xl">
+			<h2 class="m-xl">TABS</h2>
+			<div class="m-l-xl m-t-lg">
+				<div>
+					<div>
+						<h6>TAB WITH BORDER BOTTOM</h6>
+						<ul uk-tab class="tab tab-border f-w-bold">
+							<li class="uk-active"><a href="#">Tab One</a></li>
+							<li class=""><a href="#">Tab Two</a></li>
+							<li class=""><a href="#">Tab Three</a></li>
+							<li class="uk-disabled"><a>Disabled</a></li>
+						</ul>
+
+						<ul class="uk-switcher uk-margin">
+							<li>This is tab one content</li>
+							<li>This is tab two content</li>
+							<li>This is tab three content</li>
+						</ul>
+					</div>
+
+					<h6>TAB WITHOUT BORDER BOTTOM</h6>
+					<ul uk-tab class="tab tab-border-none">
+						<li class="uk-active"><a href="#">Tab One</a></li>
+						<li class=""><a href="#">Tab Two</a></li>
+						<li class=""><a href="#">Tab Three</a></li>
+						<li class="uk-disabled"><a>Disabled</a></li>
+					</ul>
+
+					<ul class="uk-switcher uk-margin">
+						<li>This is tab one content</li>
+						<li>This is tab two content</li>
+						<li>This is tab three content</li>
+					</ul>
+
+					<ul uk-tab class="tab tab-border-none">
+						<li class="uk-active"><a href="#">Tab one</a></li>
+						<li><a href="#">Tab Two</a></li>
+						<li>
+							<a href="#">More <span uk-icon="icon: triangle-down"></span></a>
+							<div uk-dropdown="mode: click">
+								<ul class="uk-nav uk-dropdown-nav">
+									<li class="uk-active"><a href="#">Active</a></li>
+									<li><a href="#">Item</a></li>
+									<li class="uk-nav-header">OTHERS</li>
+									<li><a href="#">Item</a></li>
+									<li><a href="#">Item</a></li>
+									<li class="uk-nav-divider"></li>
+									<li><a href="#">Item</a></li>
+								</ul>
+
+								<ul class="uk-switcher uk-margin">
+									<li>This tab one</li>
+									<li>This tab two</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<hr />
 
 		<!-- DROPDOWN -->
 		<div class="m-xl">
@@ -847,9 +905,9 @@
 		</div>
 
 		<!-- AVATAR -->
-		<!--placeholder only for now-->
 		<div class="m-xl">
 			<h2>AVATAR</h2>
+			<hr />
 			<div class="uk-grid-small" uk-grid>
 				<div class="uk-width-1-6">
 					<img class="img-lg" src="images/avatar.jpg" alt="avatar" />
@@ -881,9 +939,11 @@
 				</div>
 			</div>
 		</div>
+
 		<!-- LIST -->
 		<div class="m-xl">
 			<h2>LIST</h2>
+			<hr />
 			<div class="uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
 				<div>
 					<div class="uk-card uk-card-default">
@@ -945,11 +1005,150 @@
 		</div>
 
 		<!-- PAGINATION -->
+		<div class="m-xl">
+			<h2>PAGINATION</h2>
+			<h3 class="m-y-lg">Alignment</h3>
+			<!-- LEFT ALIGN PAGINATION -->
+			<div class="uk-text-left m-t-xl">
+				<div class="uk-inline">
+					<h4 class="uk-text-center">Left Align</h4>
+					<ul class="uk-pagination uk-flex-middle" uk-margin>
+						<li uk-tooltip="Previous Page">
+							<a href="#"><span uk-pagination-previous></span></a>
+						</li>
+						<li class="page-number uk-active m-xs uk-text-center"><a href="">1</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">2</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">3</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">4</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">5</a></li>
+
+						<li uk-tooltip="Next Page">
+							<a href="#"><span uk-pagination-next></span></a>
+						</li>
+					</ul>
+					<h6 class="uk-position-bottom-center f-t-uppercase f-s-xxs" style="bottom: -25px">Page 1 out of 5</h6>
+				</div>
+			</div>
+			<div class="uk-text-center m-t-xxl">
+				<div class="uk-inline">
+					<h4 class="uk-text-center">Center Align</h4>
+					<ul class="uk-pagination uk-flex-middle" uk-margin>
+						<li uk-tooltip="Previous Page">
+							<a href="#"><span uk-pagination-previous></span></a>
+						</li>
+						<li class="page-number uk-active m-xs uk-text-center"><a href="">1</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">2</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">3</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">4</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">5</a></li>
+						<li uk-tooltip="Next Page">
+							<a href="#"><span uk-pagination-next></span></a>
+						</li>
+					</ul>
+					<h6 class="uk-position-bottom-center f-t-uppercase f-s-xxs" style="bottom: -25px">Page 1 out of 5</h6>
+				</div>
+			</div>
+			<!-- RIGHT ALIGN PAGINATION -->
+			<div class="uk-text-right m-t-xxl">
+				<div class="uk-inline">
+					<h4 class="uk-text-center">Right Align</h4>
+					<ul class="uk-pagination uk-flex-middle" uk-margin>
+						<li uk-tooltip="Previous Page">
+							<a href="#"><span uk-pagination-previous></span></a>
+						</li>
+						<li class="page-number uk-active m-xs uk-text-center"><a href="">1</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">2</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">3</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">4</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">5</a></li>
+
+						<li uk-tooltip="Next Page">
+							<a href="#"><span uk-pagination-next></span></a>
+						</li>
+					</ul>
+					<h6 class="uk-position-bottom-center f-t-uppercase f-s-xxs" style="bottom: -25px">Page 1 out of 5</h6>
+				</div>
+			</div>
+			<!-- VARIANTS -->
+			<h3>Variants</h3>
+			<div class="m-t-lg">
+				<div class="uk-inline">
+					<h4>Page number is less than 5</h4>
+					<ul class="uk-pagination uk-flex-middle" uk-margin>
+						<li uk-tooltip="Previous Page">
+							<a href="#"><span uk-pagination-previous></span></a>
+						</li>
+						<li class="page-number uk-active m-xs uk-text-center"><a href="">1</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">2</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">3</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">4</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">5</a></li>
+
+						<li uk-tooltip="Next Page">
+							<a href="#"><span uk-pagination-next></span></a>
+						</li>
+					</ul>
+					<h6 class="uk-position-bottom-center f-t-uppercase f-s-xxs" style="bottom: -30px">Page 1 out of 5</h6>
+				</div>
+			</div>
+			<div class="m-t-xxl">
+				<div class="uk-inline">
+					<h4>Page number is greater than 5</h4>
+					<ul class="uk-pagination uk-flex-middle" uk-margin>
+						<li uk-tooltip="Go To First Page">
+							<a href="#"
+								><span><i class="fa-sharp fa-solid fa-angles-left" style="margin-top: 7px"></i></span
+							></a>
+						</li>
+						<li uk-tooltip="Previous Page">
+							<a href="#"><span uk-pagination-previous></span></a>
+						</li>
+						<li class="page-number m-xs uk-text-center"><a href="">6</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">7</a></li>
+						<li class="page-number uk-active m-xs uk-text-center"><a href="">8</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">9</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">10</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">...</a></li>
+						<li class="page-number m-xs uk-text-center"><a href="">15</a></li>
+
+						<li uk-tooltip="Next Page">
+							<a href="#"><span uk-pagination-next></span></a>
+						</li>
+						<li uk-tooltip="Go To Last Page">
+							<a href="#"
+								><span> <i class="fa-sharp fa-solid fa-angles-right" style="margin-top: 7px"></i></span
+							></a>
+						</li>
+					</ul>
+					<h6 class="uk-position-bottom-center f-t-uppercase f-s-xxs" style="bottom: -30px">Page 8 out of 15</h6>
+				</div>
+			</div>
+		</div>
 
 		<!-- MODAL -->
 
 		<!-- HEADER -->
-
+		<div class="m-xl">
+			<h2>HEADER</h2>
+			<hr />
+			<nav class="uk-navbar-container m-lg">
+				<div class="uk-flex-between">
+					<div uk-navbar class="m-x-lg">
+						<div class="uk-navbar-left">
+							<ul class="uk-navbar-nav">
+								<h1 class="m-t-sm">Page Name</h1>
+							</ul>
+						</div>
+						<div class="uk-navbar-right">
+							<ul class="uk-navbar-nav uk-flex">
+								<li class="m-t-sm"><span uk-icon="bell"></span></li>
+								<li>juan@qstrike.com <img src="images/avatar.jpg" class="img-sm" /></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
 		<!-- SIDEBAR -->
 		<div class="m-xl">
 			<h2>SIDEBAR</h2>
