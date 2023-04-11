@@ -70,76 +70,6 @@ textarea {
 	color: $danger;
 }
 
-// Style the toggle
-.toggle {
-	display: inline-block;
-	position: relative;
-	width: $toggle-size;
-	height: $slider-size;
-	background-color: $background-color;
-	border-radius: $slider-size;
-	overflow: hidden;
-	cursor: pointer;
-
-	// Add "ON" and "OFF" words
-	&::before {
-		content: "ON";
-		position: absolute;
-		top: 50%;
-		left: 0;
-		transform: translateY(-50%);
-		width: 20px;
-		text-align: center;
-	}
-
-	&::after {
-		content: "OFF";
-		position: absolute;
-		top: 50%;
-		right: 0;
-		transform: translateY(-50%);
-		width: 20px;
-		text-align: center;
-	}
-
-	// Hide the checkbox
-	input[type="checkbox"] {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 0;
-		height: 0;
-		opacity: 0;
-		appearance: none;
-	}
-
-	// Style the toggle text
-	.toggle-text {
-		position: absolute;
-		top: 50%;
-		left: 10px;
-		transform: translateY(-50%);
-		font-size: 16px;
-		font-weight: bold;
-	}
-}
-
-// Style the slider
-.slider {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: $slider-size;
-	height: $slider-size;
-	background-color: $slider-color;
-	border-radius: $slider-size;
-	transition: transform $toggle-transition;
-}
-
-// Style the toggle when it's checked
-input:checked + .slider {
-	transform: translateX($toggle-size - $slider-size);
-}
 // Toggle
 .switch {
 	position: relative;
@@ -147,7 +77,7 @@ input:checked + .slider {
 		visibility: hidden;
 		&:checked {
 			+ label {
-				background-color: $gostDark;
+				background-color: $primary;
 				&:after {
 					left: 27px;
 				}
@@ -160,7 +90,7 @@ input:checked + .slider {
 		height: 23px;
 		top: 0;
 		left: 0;
-		background-color: $primary;
+		background-color: $gostDark;
 		border-radius: 50px;
 		&:after {
 			content: "";
