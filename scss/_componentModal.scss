@@ -1,0 +1,14 @@
+.uk-modal-close {
+	right: 0;
+	&-full {
+		padding: 10px;
+	}
+}
+.modal-content {
+	padding: 50px;
+	box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+	p {
+		line-height: 38px;
+		font-size: 18px !important;
+	}
+}
