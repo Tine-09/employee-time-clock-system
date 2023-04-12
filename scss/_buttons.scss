@@ -29,6 +29,7 @@
 			}
 		}
 	}
+
 	&.btn-border {
 		&-rounded {
 			background-color: $secondary;
@@ -51,6 +52,7 @@
 			}
 		}
 	}
+
 	&.btn-color {
 		&-primary {
 			background-color: $primary;
@@ -86,10 +88,12 @@
 			background-color: #fff;
 			color: #000;
 			&:hover {
+
 				background-color: $ghostDark;
 			}
 		}
 	}
+
 	&.btn-outline {
 		&-primary {
 			border: 1px solid $primary;
@@ -137,6 +141,7 @@
 			}
 		}
 	}
+
 	&.btn-size {
 		&-xs {
 			background-color: $secondary;
@@ -172,6 +177,7 @@
 			}
 		}
 	}
+
 	&.btn-icon {
 		&-edit {
 			background-color: $secondary;
@@ -195,6 +201,7 @@
 			}
 		}
 	}
+
 	&.btn-icon-o {
 		&-edit {
 			background-color: $secondary;
@@ -228,3 +235,4 @@
 		color: #fff;
 	}
 }
+
