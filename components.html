@@ -400,8 +400,8 @@
 					<div class= "uk-width-1-2@s m-t-sm">
 						<label class="uk-form-label" for="form-stacked-text">Error</label>
 						<input class="uk-input uk-form-danger" type="text" placeholder="form-danger" aria-label="form-danger" value="form-danger" />
-						<div>
-							<p class="w-message"><i class="fa-sharp fa-solid fa-circle-exclamation"></i> Warning Message</p>
+						<div class="color-t-danger m-t-xs">
+							<div><i class="fa-sharp fa-solid fa-circle-exclamation"></i> Warning Message</div>
 						</div>
 					</div>
 
@@ -430,40 +430,64 @@
 							<label><input class="uk-radio" type="radio" name="radio1" /> B </label>
 						</div>
 					</div>
-
-					<div>
-						<div class="uk-form-label">Toggle</div>
-						<div class="toggle">
-							<input type="checkbox" id="checkbox1" />
-							<label for="checkbox1"></label>
-							<label for="" class="onbtn">ON</label>
-							<label for="" class="offbtn">OFF</label>
+					<div class="m-t-lg">
+						<h5>Toggle Sizes</h5>
+						<div class="toggle-sm">
+							<div class="uk-form-label">Small</div>
+							<div class="toggle">
+								<input type="checkbox" id="checkbox1" />
+								<label for="checkbox1"></label>
+								<label for="" class="onbtn-sm">ON</label>
+								<label for="" class="offbtn-sm">OFF</label>
+							</div>
+						</div>
+						<div class="toggle-md">
+							<div class="uk-form-label">Medium</div>
+							<div class="toggle">
+								<input type="checkbox" id="checkbox1" />
+								<label for="checkbox1"></label>
+								<label for="" class="onbtn-md">ON</label>
+								<label for="" class="offbtn-md">OFF</label>
+							</div>
+						</div>
+						<div class="toggle-lg">
+							<div class="uk-form-label">Large</div>
+							<div class="toggle">
+								<input type="checkbox" id="checkbox1" />
+								<label for="checkbox1"></label>
+								<label for="" class="onbtn-lg">ON</label>
+								<label for="" class="offbtn-lg">OFF</label>
+							</div>
 						</div>
 					</div>
 				</form>
-				<div class="m-t-md">
+				<div class="m-t-lg">
 					<h5>Form with Icons</h5>
 					<div>
 						<form class="uk-grid-small">
-							<div class="uk-width-1-2@s m-t-sm">
+							<div class="uk-width-1-2@s">
+								<div class="uk-form-label color-t-placeholdertext">clickable icon Right</div>
 								<div class="uk-inline">
-									<span class="uk-form-icon" uk-icon="icon: user"></span>
+									<a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: user"></a>
+									<input class="uk-input" type="text" aria-label="clickable icon">
+								</div>
+							</div>
+							<div class="uk-width-1-2@s m-t-sm">
+								<div class="uk-form-label color-t-placeholdertext">not clickable icon Right</div>
+								<div class="uk-inline">
+									<span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: mail"></span>
 									<input class="uk-input" type="text" aria-label="Not clickable icon">
 								</div>
 							</div>
 							<div class="uk-width-1-2@s m-t-sm">
+								<div class="uk-form-label color-t-placeholdertext">clickable icon Left</div>
 								<div class="uk-inline">
-									<span class="uk-form-icon" uk-icon="icon: mail"></span>
+									<a class="uk-form-icon" href="#" uk-icon="icon: location"></a>
 									<input class="uk-input" type="text" aria-label="Not clickable icon">
 								</div>
 							</div>
 							<div class="uk-width-1-2@s m-t-sm">
-								<div class="uk-inline">
-									<span class="uk-form-icon" uk-icon="icon: location"></span>
-									<input class="uk-input" type="text" aria-label="Not clickable icon">
-								</div>
-							</div>
-							<div class="uk-width-1-2@s m-t-sm">
+								<div class="uk-form-label color-t-placeholdertext">not clickable icon Left</div>
 								<div class="uk-inline">
 									<span class="uk-form-icon" uk-icon="icon: lock"></span>
 									<input class="uk-input" type="text" aria-label="Not clickable icon">
@@ -472,7 +496,7 @@
 						</form>
 					</div>
 				</div>
-				<div class="m-t-md">
+				<div class="m-t-lg">
 					<h5>Form Sizes</h5>
 					<div>
 						<form>

@@ -66,66 +66,187 @@ textarea {
 	border-color: $danger;
 }
 
-p.w-message {
-	color: $danger;
-}
-
 // Toggle
 .toggle {
-	position: relative;
-	display: inline;
-
-	input[type="checkbox"] {
+	&-sm {
+	}
+}
+.toggle {
+	&-sm {
 		position: relative;
-		width: 80px;
-		height: 35px;
-		background: $ghostDark;
-		appearance: none;
-		border-radius: 20px;
-		outline: none;
-		transition: 0.4s;
-		box-shadow: 0 0 4px;
-		cursor: pointer;
+		display: inline;
+
+		input[type="checkbox"] {
+			position: relative;
+			width: 50px;
+			height: 20px;
+			background: $ghostDark;
+			appearance: none;
+			border-radius: 20px;
+			outline: none;
+			transition: 0.4s;
+			box-shadow: 0 0 4px;
+			cursor: pointer;
+		}
+		input:checked[type="checkbox"] {
+			background: $primary;
+		}
+		//slider
+		input[type="checkbox"]::before {
+			z-index: 2;
+			position: absolute;
+			content: "";
+			left: 0;
+			width: 20px;
+			height: 20px;
+			background: #fff;
+			border-radius: 50%;
+			transform: scale(1.1);
+			box-shadow: 0 0 4px;
+			transition: 0.4s;
+		}
+		//slide left to right
+		input:checked[type="checkbox"]::before {
+			left: 30px;
+		}
 	}
-	input:checked[type="checkbox"] {
-		background: $primary;
+
+	&-md {
+		position: relative;
+		display: inline;
+
+		input[type="checkbox"] {
+			position: relative;
+			width: 68px;
+			height: 30px;
+			background: $ghostDark;
+			appearance: none;
+			border-radius: 20px;
+			outline: none;
+			transition: 0.4s;
+			box-shadow: 0 0 4px;
+			cursor: pointer;
+		}
+		input:checked[type="checkbox"] {
+			background: $primary;
+		}
+		//slider
+		input[type="checkbox"]::before {
+			z-index: 2;
+			position: absolute;
+			content: "";
+			left: 0;
+			width: 30px;
+			height: 30px;
+			background: #fff;
+			border-radius: 50%;
+			transform: scale(1.1);
+			box-shadow: 0 0 4px;
+			transition: 0.4s;
+		}
+		//slide left to right
+		input:checked[type="checkbox"]::before {
+			left: 38px;
+		}
 	}
-	//slider
-	input[type="checkbox"]::before {
-		z-index: 2;
-		position: absolute;
-		content: "";
-		left: 0;
-		width: 35px;
-		height: 35px;
-		background: #fff;
-		border-radius: 50%;
-		transform: scale(1.1);
-		box-shadow: 0 0 4px;
-		transition: 0.4s;
-	}
-	//slide left to right
-	input:checked[type="checkbox"]::before {
-		left: 45px;
+	&-lg {
+		position: relative;
+		display: inline;
+
+		input[type="checkbox"] {
+			position: relative;
+			width: 80px;
+			height: 35px;
+			background: $ghostDark;
+			appearance: none;
+			border-radius: 20px;
+			outline: none;
+			transition: 0.4s;
+			box-shadow: 0 0 4px;
+			cursor: pointer;
+		}
+		input:checked[type="checkbox"] {
+			background: $primary;
+		}
+		//slider
+		input[type="checkbox"]::before {
+			z-index: 2;
+			position: absolute;
+			content: "";
+			left: 0;
+			width: 35px;
+			height: 35px;
+			background: #fff;
+			border-radius: 50%;
+			transform: scale(1.1);
+			box-shadow: 0 0 4px;
+			transition: 0.4s;
+		}
+		//slide left to right
+		input:checked[type="checkbox"]::before {
+			left: 44px;
+		}
 	}
 }
 //on and off
 label {
-	&.onbtn {
+	&.onbtn-sm {
 		position: absolute;
 		color: #fff;
-		font-size: 20px;
+		font-size: 10px;
+		font-weight: $font-weight-bold;
 		pointer-events: none;
-		bottom: 10px;
-		left: 13px;
+		bottom: 11px;
+		left: 12px;
 	}
 
-	&.offbtn {
+	&.offbtn-sm {
 		position: absolute;
-		font-size: 20px;
+		font-size: 10px;
+		font-weight: $font-weight-bold;
 		pointer-events: none;
-		bottom: 9px;
-		right: 11px;
+		bottom: 11px;
+		left: 30px;
+		color: $primary;
+	}
+
+	&.onbtn-md {
+		position: absolute;
+		color: #fff;
+		font-size: 13px;
+		font-weight: $font-weight-bold;
+		pointer-events: none;
+		bottom: 14px;
+		left: 14px;
+	}
+
+	&.offbtn-md {
+		position: absolute;
+		font-size: 13px;
+		font-weight: $font-weight-bold;
+		pointer-events: none;
+		bottom: 14px;
+		left: 40px;
+		color: $primary;
+	}
+
+	&.onbtn-lg {
+		position: absolute;
+		color: #fff;
+		font-size: 15px;
+		font-weight: $font-weight-bold;
+		pointer-events: none;
+		bottom: 16px;
+		left: 15px;
+	}
+
+	&.offbtn-lg {
+		position: absolute;
+		font-size: 15px;
+		font-weight: $font-weight-bold;
+		pointer-events: none;
+		bottom: 16px;
+		left: 45px;
 		color: $primary;
 	}
 }
