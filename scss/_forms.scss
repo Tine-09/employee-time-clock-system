@@ -5,6 +5,7 @@ input {
 
 	&.uk-input:focus {
 		border-color: $primary;
+		color: $primary;
 	}
 
 	&.uk-checkbox:checked {
@@ -26,6 +27,7 @@ input {
 
 	&.uk-form-danger {
 		border-color: $danger;
+		color: $placeholderText;
 	}
 
 	&.uk-form-danger:focus {
@@ -39,6 +41,13 @@ input {
 	&.uk-form-success:focus {
 		border-color: $success;
 	}
+}
+.uk-form-danger {
+	color: $placeholderText;
+}
+
+.uk-form-success {
+	color: $placeholderText;
 }
 
 select {
