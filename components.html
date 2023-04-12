@@ -379,15 +379,15 @@
 			<h2>Forms</h2>
 			<hr />
 			<div class="form">
-				<form class="uk-form-stacked">
-					<div class="uk-margin">
+				<form class="uk-grid-small">
+					<div class="uk-width-1-2@s">
 						<label class="uk-form-label" for="form-stacked-text">Label</label>
 						<div class="uk-form-controls">
-							<input class="uk-input" id="form-stacked-text" type="text" placeholder="Placeholder" style="width: 50%" />
+							<input class="uk-input" id="form-stacked-text" type="text" placeholder="Placeholder" />
 						</div>
 					</div>
 
-					<div class="uk-margin" style="width: 50%">
+					<div class="uk-width-1-2@s m-t-sm">
 						<label class="uk-form-label" for="form-stacked-select">Select</label>
 						<div class="uk-form-controls">
 							<select class="uk-select" id="form-stacked-select">
@@ -397,28 +397,27 @@
 						</div>
 					</div>
 
-					<div class="uk-margin">
+					<div class= "uk-width-1-2@s m-t-sm">
 						<label class="uk-form-label" for="form-stacked-text">Error</label>
-						<input class="uk-input uk-form-danger" type="text" placeholder="form-danger" aria-label="form-danger" value="form-danger" style="width: 50%" />
-						<div class="uk-alert-danger m-t-remove" style="width: 50%" uk-alert>
-							<a class="uk-alert-close" uk-close></a>
-							<p><i class="fa-sharp fa-solid fa-circle-exclamation"></i> Warning Message</p>
+						<input class="uk-input uk-form-danger" type="text" placeholder="form-danger" aria-label="form-danger" value="form-danger" />
+						<div>
+							<p class="w-message"><i class="fa-sharp fa-solid fa-circle-exclamation"></i> Warning Message</p>
 						</div>
 					</div>
 
-					<div class="uk-margin">
+					<div class="uk-width-1-2@s m-t-sm">
 						<label class="uk-form-label" for="form-stacked-text">Success</label>
-						<input class="uk-input uk-form-success" type="text" placeholder="form-success" aria-label="form-success" value="form-success" style="width: 50%" />
+						<input class="uk-input uk-form-success" type="text" placeholder="form-success" aria-label="form-success" value="form-success"/>
 					</div>
 
-					<div class="uk-margin">
+					<div class="uk-width-1-2@s m-t-sm">
 						<label class="uk-form-label" for="form-stacked-text">Disabled</label>
-						<input class="uk-input" type="text" placeholder="disabled" aria-label="disabled" value="disabled" style="width: 50%" disabled />
+						<input class="uk-input" type="text" placeholder="disabled" aria-label="disabled" value="disabled" disabled />
 					</div>
 
-					<div class="uk-margin">
+					<div class="uk-width-1-2@s m-t-md">
 						<div class="uk-form-label">Checkbox</div>
-						<div class="uk-form-controls">
+						<div class="uk-grid-small uk-child-width-auto uk-grid">
 							<label><input class="uk-checkbox" type="checkbox" /> A</label> <br />
 							<label><input class="uk-checkbox" type="checkbox" /> B</label>
 						</div>
@@ -426,7 +425,7 @@
 
 					<div class="uk-margin">
 						<div class="uk-form-label">Radio</div>
-						<div class="uk-form-controls">
+						<div class="uk-grid-small uk-child-width-auto uk-grid">
 							<label><input class="uk-radio" type="radio" name="radio1" /> A</label><br />
 							<label><input class="uk-radio" type="radio" name="radio1" /> B </label>
 						</div>
@@ -434,12 +433,45 @@
 
 					<div>
 						<div class="uk-form-label">Toggle</div>
-						<div class="switch">
+						<div class="toggle">
 							<input type="checkbox" id="checkbox1" />
 							<label for="checkbox1"></label>
+							<label for="" class="onbtn">ON</label>
+							<label for="" class="offbtn">OFF</label>
 						</div>
 					</div>
 				</form>
+				<div class="m-t-md">
+					<h5>Form with Icons</h5>
+					<div>
+						<form class="uk-grid-small">
+							<div class="uk-width-1-2@s m-t-sm">
+								<div class="uk-inline">
+									<span class="uk-form-icon" uk-icon="icon: user"></span>
+									<input class="uk-input" type="text" aria-label="Not clickable icon">
+								</div>
+							</div>
+							<div class="uk-width-1-2@s m-t-sm">
+								<div class="uk-inline">
+									<span class="uk-form-icon" uk-icon="icon: mail"></span>
+									<input class="uk-input" type="text" aria-label="Not clickable icon">
+								</div>
+							</div>
+							<div class="uk-width-1-2@s m-t-sm">
+								<div class="uk-inline">
+									<span class="uk-form-icon" uk-icon="icon: location"></span>
+									<input class="uk-input" type="text" aria-label="Not clickable icon">
+								</div>
+							</div>
+							<div class="uk-width-1-2@s m-t-sm">
+								<div class="uk-inline">
+									<span class="uk-form-icon" uk-icon="icon: lock"></span>
+									<input class="uk-input" type="text" aria-label="Not clickable icon">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
 				<div class="m-t-md">
 					<h5>Form Sizes</h5>
 					<div>
