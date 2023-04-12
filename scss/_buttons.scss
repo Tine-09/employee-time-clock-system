@@ -6,7 +6,7 @@
 	font-size: 14px;
 	letter-spacing: 0.1em;
 	font-weight: 400;
-
+	border: 1px solid transparent;
 	&.btn-type {
 		&-default {
 			background-color: $secondary;
@@ -19,7 +19,6 @@
 			opacity: 0.5;
 			cursor: default;
 		}
-
 		&-circle {
 			border-radius: 50%;
 			background: $primary;
@@ -30,7 +29,6 @@
 			}
 		}
 	}
-
 	&.btn-border {
 		&-rounded {
 			background-color: $secondary;
@@ -53,7 +51,6 @@
 			}
 		}
 	}
-
 	&.btn-color {
 		&-primary {
 			background-color: $primary;
@@ -93,7 +90,6 @@
 			}
 		}
 	}
-
 	&.btn-outline {
 		&-primary {
 			border: 1px solid $primary;
@@ -141,7 +137,6 @@
 			}
 		}
 	}
-
 	&.btn-size {
 		&-xs {
 			background-color: $secondary;
@@ -177,7 +172,6 @@
 			}
 		}
 	}
-
 	&.btn-icon {
 		&-edit {
 			background-color: $secondary;
@@ -201,7 +195,6 @@
 			}
 		}
 	}
-
 	&.btn-icon-o {
 		&-edit {
 			background-color: $secondary;
@@ -231,7 +224,6 @@
 			}
 		}
 	}
-
 	&:hover {
 		color: #fff;
 	}
