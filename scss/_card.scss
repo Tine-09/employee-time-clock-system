@@ -1,0 +1,45 @@
+.card {
+	border-radius: 8px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+	&-primary {
+		background-color: $primary;
+
+		h5,
+		h2 {
+			color: #fff;
+		}
+
+		p {
+			color: #fff;
+		}
+	}
+
+	&-default {
+		h4 {
+			color: $primary;
+		}
+
+		p {
+			color: $primary;
+		}
+	}
+
+	&-disable {
+		border: 2px solid $primary;
+
+		h2,
+		h5 {
+			color: #808080;
+		}
+
+		p {
+			color: $placeholderText;
+		}
+	}
+
+	&-footer {
+		justify-content: space-between;
+		display: flex;
+	}
+}
