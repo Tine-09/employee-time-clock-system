@@ -6,7 +6,7 @@
 	font-size: 14px;
 	letter-spacing: 0.1em;
 	font-weight: 400;
-
+	border: 1px solid transparent;
 	&.btn-type {
 		&-default {
 			background-color: $secondary;
@@ -19,7 +19,6 @@
 			opacity: 0.5;
 			cursor: default;
 		}
-
 		&-circle {
 			border-radius: 50%;
 			background: $primary;
@@ -89,6 +88,7 @@
 			background-color: #fff;
 			color: #000;
 			&:hover {
+
 				background-color: $ghostDark;
 			}
 		}
@@ -231,8 +231,8 @@
 			}
 		}
 	}
-
 	&:hover {
 		color: #fff;
 	}
 }
+
