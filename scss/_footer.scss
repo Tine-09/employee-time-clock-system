@@ -1,0 +1,39 @@
+footer {
+	background-color: $primary;
+	img {
+		height: 60px;
+		width: 60px;
+	}
+	h4,
+	h6 {
+		letter-spacing: 1px;
+	}
+	h4 {
+		color: white;
+	}
+	h6 {
+		color: gray;
+	}
+	a,
+	p {
+		color: white;
+		display: block;
+		line-height: 35px;
+		letter-spacing: 1px;
+	}
+	a:hover {
+		text-decoration: none;
+		border-bottom: 1px solid $secondaryDark;
+		color: white;
+	}
+	i {
+		color: white;
+		font-size: 25px;
+	}
+	.address {
+		font-weight: 100;
+	}
+	.copyright {
+		gap: 250px;
+	}
+}
