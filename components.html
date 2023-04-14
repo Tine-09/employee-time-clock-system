@@ -299,6 +299,7 @@
 		<!-- BUTTONS -->
 		<div class="m-xl">
 			<h2>BUTTONS</h2>
+			<hr />
 			<div class="m-b-xl">
 				<ul uk-tab class="tab tab-border f-w-bold">
 					<li class="uk-active"><a href="#">Preview</a></li>
@@ -562,12 +563,236 @@
 		</div>
 
 		<!-- CARD TYPE -->
-
+		<div class="card-container m-xl">
+			<h2>CARD</h2>
+			<hr />
+			<h6>TYPE</h6>
+			<div class="uk-grid-medium uk-child-width-expand@s" uk-grid>
+				<!-- Title and Content   -->
+				<div>
+					<div class="card card-default uk-card uk-card-body">
+						<h4 class="">Title</h4>
+						<p>If a dog chews shoes whose shoes does he choose?</p>
+					</div>
+				</div>
+				<!-- Header, Title and content -->
+				<div>
+					<div class="card card-default uk-card uk-card-body">
+						<h4 class="">Header</h4>
+						<h2 class="">Title</h2>
+						<p>Card with header. If a dog chews shoes whose shoes does he choose?</p>
+					</div>
+				</div>
+				<!-- Header, Title, Content, and Footer -->
+				<div>
+					<div class="card card-default uk-card uk-card-body">
+						<div class="card-header">
+							<h4>Header</h4>
+						</div>
+						<div class="card-body">
+							<h2 class="">Title</h2>
+							<p>Card with header and footer. If a dog chews shoes whose shoes does he choose?</p>
+						</div>
+						<div class="card-footer">
+							<h4>Footer</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h6>COLOR</h6>
+			<div class="uk-grid-medium uk-child-width-expand@s" uk-grid>
+				<!-- Primary -->
+				<div>
+					<div class="card card-primary uk-card uk-card-body">
+						<div class="card-header">
+							<h5>Header</h5>
+						</div>
+						<div class="card-body">
+							<h2 class="">Title</h2>
+							<p>Card with header and footer. If a dog chews shoes whose shoes does he choose?</p>
+						</div>
+						<div class="card-footer">
+							<h5>Footer</h5>
+							<h5 class="m-remove">PRIMARY</h5>
+						</div>
+					</div>
+				</div>
+				<!-- Default -->
+				<div>
+					<div class="card card-default uk-card uk-card-body">
+						<div class="card-header">
+							<h5>Header</h5>
+						</div>
+						<div class="card-body">
+							<h2 class="">Title</h2>
+							<p>Card with header and footer. If a dog chews shoes whose shoes does he choose?</p>
+						</div>
+						<div class="card-footer">
+							<h5>Footer</h5>
+							<h5 class="m-remove">DEFAULT</h5>
+						</div>
+					</div>
+				</div>
+				<!-- Disabled -->
+				<div>
+					<div class="card card-disable uk-card uk-card-body">
+						<div class="card-header">
+							<h5>Header</h5>
+						</div>
+						<div class="card-body">
+							<h2 class="">Title</h2>
+							<p>Card with header and footer. If a dog chews shoes whose shoes does he choose?</p>
+						</div>
+						<div class="card-footer">
+							<h5>Footer</h5>
+							<h5 class="m-remove">DISABLED</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- FORMS -->
+		<div class="m-xl">
+			<h2>Forms</h2>
+			<hr />
+			<div class="form">
+				<form class="uk-grid-small">
+					<div class="uk-width-1-2@s">
+						<label class="uk-form-label" for="form-stacked-text">Label</label>
+						<div class="uk-form-controls">
+							<input class="uk-input" id="form-stacked-text" type="text" placeholder="Placeholder" />
+						</div>
+					</div>
+					<div class="uk-width-1-2@s m-t-sm">
+						<label class="uk-form-label" for="form-stacked-select">Select</label>
+						<div class="uk-form-controls">
+							<select class="uk-select" id="form-stacked-select">
+								<option>Option 01</option>
+								<option>Option 02</option>
+							</select>
+						</div>
+					</div>
+					<div class="uk-width-1-2@s m-t-sm">
+						<label class="uk-form-label" for="form-stacked-text">Error</label>
+						<input class="uk-input uk-form-danger" type="text" placeholder="form-danger" aria-label="form-danger" value="form-danger" />
+						<div class="color-t-danger m-t-xs f-s-xxs">
+							<div><i class="fa-sharp fa-solid fa-circle-exclamation"></i> Warning Message</div>
+						</div>
+					</div>
+					<div class="uk-width-1-2@s m-t-sm">
+						<label class="uk-form-label" for="form-stacked-text">Success</label>
+						<input class="uk-input uk-form-success" type="text" placeholder="form-success" aria-label="form-success" value="form-success" />
+					</div>
+					<div class="uk-width-1-2@s m-t-sm">
+						<label class="uk-form-label" for="form-stacked-text">Disabled</label>
+						<input class="uk-input" type="text" placeholder="disabled" aria-label="disabled" value="disabled" disabled />
+					</div>
+					<div class="uk-width-1-2@s m-t-md">
+						<div class="uk-form-label">Checkbox</div>
+						<div class="uk-grid-small uk-child-width-auto uk-grid">
+							<label><input class="uk-checkbox" type="checkbox" /> A</label> <br />
+							<label><input class="uk-checkbox" type="checkbox" /> B</label>
+						</div>
+					</div>
+					<div class="uk-margin">
+						<div class="uk-form-label">Radio</div>
+						<div class="uk-grid-small uk-child-width-auto uk-grid">
+							<label><input class="uk-radio" type="radio" name="radio1" /> A</label><br />
+							<label><input class="uk-radio" type="radio" name="radio1" /> B </label>
+						</div>
+					</div>
+					<div class="m-t-lg">
+						<h5>Toggle Sizes</h5>
+						<div class="toggle-sm">
+							<div class="uk-form-label">Small</div>
+							<div class="toggle">
+								<input type="checkbox" id="checkbox1" />
+								<label for="checkbox1"></label>
+								<label for="" class="onbtn-sm">ON</label>
+								<label for="" class="offbtn-sm">OFF</label>
+							</div>
+						</div>
+						<div class="toggle-md">
+							<div class="uk-form-label">Medium</div>
+							<div class="toggle">
+								<input type="checkbox" id="checkbox1" />
+								<label for="checkbox1"></label>
+								<label for="" class="onbtn-md">ON</label>
+								<label for="" class="offbtn-md">OFF</label>
+							</div>
+						</div>
+						<div class="toggle-lg">
+							<div class="uk-form-label">Large</div>
+							<div class="toggle">
+								<input type="checkbox" id="checkbox1" />
+								<label for="checkbox1"></label>
+								<label for="" class="onbtn-lg">ON</label>
+								<label for="" class="offbtn-lg">OFF</label>
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="m-t-lg">
+					<h5>Form with Icons</h5>
+					<div>
+						<form class="uk-grid-small">
+							<div class="uk-width-1-2@s">
+								<div class="uk-form-label color-t-placeholdertext">clickable icon Right</div>
+								<div class="uk-inline">
+									<a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: user"></a>
+									<input class="uk-input" type="text" aria-label="clickable icon" />
+								</div>
+							</div>
+							<div class="uk-width-1-2@s m-t-sm">
+								<div class="uk-form-label color-t-placeholdertext">not clickable icon Right</div>
+								<div class="uk-inline">
+									<span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: mail"></span>
+									<input class="uk-input" type="text" aria-label="Not clickable icon" />
+								</div>
+							</div>
+							<div class="uk-width-1-2@s m-t-sm">
+								<div class="uk-form-label color-t-placeholdertext">clickable icon Left</div>
+								<div class="uk-inline">
+									<a class="uk-form-icon" href="#" uk-icon="icon: location"></a>
+									<input class="uk-input" type="text" aria-label="Not clickable icon" />
+								</div>
+							</div>
+							<div class="uk-width-1-2@s m-t-sm">
+								<div class="uk-form-label color-t-placeholdertext">not clickable icon Left</div>
+								<div class="uk-inline">
+									<span class="uk-form-icon" uk-icon="icon: lock"></span>
+									<input class="uk-input" type="text" aria-label="Not clickable icon" />
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="m-t-lg">
+					<h5>Form Sizes</h5>
+					<div>
+						<form>
+							<div class="uk-margin">
+								<input class="uk-input uk-form-width-medium uk-form-small" type="text" placeholder="Small" aria-label="Small" />
+							</div>
+							<div class="uk-margin">
+								<input class="uk-input uk-form-width-medium" type="text" placeholder="Default" aria-label="Default" />
+							</div>
+							<div class="uk-margin">
+								<input class="uk-input uk-form-width-medium uk-form-large" type="text" placeholder="Large" aria-label="Large" />
+							</div>
+							<div class="uk-margin">
+								<textarea class="uk-textarea" rows="8" placeholder="Textarea" aria-label="Textarea" style="width: 50%"></textarea>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- MARGIN & PADDING -->
 		<div class="m-xl">
 			<h2>MARGIN</h2>
+			<hr />
 			<div class="uk-grid-column-large uk-child-width-1-2 uk-flex-between" uk-grid>
 				<div class="m-t-lg">
 					<div>
@@ -1620,6 +1845,7 @@
 		<!-- DROPDOWN -->
 		<div class="m-xl">
 			<h2>DROPDOWN</h2>
+      <hr />
 			<div class="m-b-xl">
 				<ul uk-tab class="tab tab-border f-w-bold">
 					<li class="uk-active"><a href="#">Preview</a></li>
@@ -2200,6 +2426,259 @@
 		</div>
 
 		<!-- MODAL -->
+		<div class="m-xl">
+			<h2 class="m-b-lg">MODALS</h2>
+			<hr />
+			<div class="m-b-xl">
+				<h4>Default Modal</h4>
+				<ul uk-tab class="tab tab-border f-w-bold">
+					<li class="uk-active"><a href="#">Preview</a></li>
+					<li class=""><a href="#">Markup</a></li>
+				</ul>
+
+				<ul class="uk-switcher uk-margin">
+					<li>
+						<!-- DEFAULT MODAL -->
+						<button class="uk-button btn btn-color-primary color-bg-secondary" type="button" uk-toggle="target: #modal-default">Default</button>
+						<div id="modal-default" uk-modal>
+							<div class="uk-modal-dialog uk-modal-body modal-content">
+								<div class="uk-position-relative">
+									<h2 class="uk-modal-title">MODAL DEFAULT</h2>
+									<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<pre>
+	&lt;!-- DEFAULT MODAL --&gt;
+	&lt;button class="uk-button btn btn-color-primary color-bg-secondary" type="button" uk-toggle="target: #modal-default">Default&lt;/button&gt;
+	&lt;div id="modal-default" uk-modal&gt;
+		&lt;div class="uk-modal-dialog uk-modal-body modal-content"&gt;
+			&lt;div class="uk-position-relative"&gt;
+				&lt;h2 class="uk-modal-title"&gt;MODAL DEFAULT&lt;/h2&gt;
+				&lt;button class="uk-modal-close uk-modal-close-default" type="button" uk-close&gt;&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+						</pre
+						>
+					</li>
+				</ul>
+			</div>
+			<div class="m-b-xl">
+				<h4>With Header and Footer Modal</h4>
+				<ul uk-tab class="tab tab-border f-w-bold">
+					<li class="uk-active"><a href="#">Preview</a></li>
+					<li class=""><a href="#">Markup</a></li>
+				</ul>
+
+				<ul class="uk-switcher uk-margin">
+					<li>
+						<!-- MODAL WITH HEADER AND FOOTER -->
+						<button class="uk-button btn btn-color-primary" href="#modal-header-and-footer" uk-toggle>Header and Footer</button>
+						<div id="modal-header-and-footer" uk-modal>
+							<div class="uk-modal-dialog modal-content uk-modal-body">
+								<div class="uk-position-relative">
+									<h2 class="uk-modal-title">MODAL HEADER</h2>
+									<h1>Title</h1>
+									<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+								</div>
+								<div class="p-b-remove">
+									<p class="m-t-md m-b-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<div class="uk-text-right">
+										<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">Cancel</button>
+										<button class="uk-button btn btn-type-default">Save</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<pre>
+	&lt;!-- MODAL WITH HEADER AND FOOTER --&gt;
+	&lt;button class="uk-button btn btn-color-primary" href="#modal-header-and-footer" uk-toggle&gt;Header and Footer&lt;/button&gt;
+	&lt;div id="modal-header-and-footer" uk-modal&gt;
+		&lt;div class="uk-modal-dialog modal-content uk-modal-body"&gt;
+			&lt;div class="uk-position-relative"&gt;
+				&lt;h2 class="uk-modal-title"&gt;MODAL HEADER&lt;/h2&gt;
+				&lt;h1&gt;Title&lt;/h1&gt;
+				&lt;button class="uk-modal-close uk-modal-close-default" type="button" uk-close&gt;&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class="p-b-remove"&gt;
+				&lt;p class="m-t-md m-b-xl"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+				&lt;div class="uk-text-right"&gt;
+					&lt;button class="uk-button btn btn-outline-secondary uk-modal-close" type="button"&gt;Cancel&lt;/button&gt;
+					&lt;button class="uk-button btn btn-type-default"&gt;Save&lt;/button&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+						</pre
+						>
+					</li>
+				</ul>
+			</div>
+			<div class="m-b-xl">
+				<h4>Without X Button Modal</h4>
+				<ul uk-tab class="tab tab-border f-w-bold">
+					<li class="uk-active"><a href="#">Preview</a></li>
+					<li class=""><a href="#">Markup</a></li>
+				</ul>
+
+				<ul class="uk-switcher uk-margin">
+					<li>
+						<!-- MODAL W/OUT X BUTTON -->
+						<button class="uk-button btn btn-color-primary" type="button" uk-toggle="target: #modal-no-close-button">W/out X</button>
+						<div id="modal-no-close-button" uk-modal>
+							<div class="uk-modal-dialog uk-modal-body modal-content">
+								<h2 class="uk-modal-title f-w-semi-bold">MODAL W/OUT X BUTTON</h2>
+								<p class="m-b-xl m-t-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<div class="uk-text-right">
+									<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">Cancel</button>
+									<button class="uk-button btn btn-type-default">Save</button>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<pre>
+	&lt;!-- MODAL W/OUT X BUTTON --&gt;
+	&lt;button class="uk-button btn btn-color-primary" type="button" uk-toggle="target: #modal-no-close-button"&gt;W/out X&lt;/button&gt;
+	&lt;div id="modal-no-close-button" uk-modal&gt;
+		&lt;div class="uk-modal-dialog uk-modal-body modal-content"&gt;
+			&lt;h2 class="uk-modal-title f-w-semi-bold"&gt;MODAL W/OUT X BUTTON&lt;/h2&gt;
+			&lt;p class="m-b-xl m-t-lg"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+			&lt;div class="uk-text-right"&gt;
+				&lt;button class="uk-button btn btn-outline-secondary uk-modal-close" type="button"&gt;Cancel&lt;/button&gt;
+				&lt;button class="uk-button btn btn-type-default"&gt;Save&lt;/button&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+						</pre
+						>
+					</li>
+				</ul>
+			</div>
+			<div class="m-b-xl">
+				<h4>Confirmation Modal</h4>
+				<ul uk-tab class="tab tab-border f-w-bold">
+					<li class="uk-active"><a href="#">Preview</a></li>
+					<li class=""><a href="#">Markup</a></li>
+				</ul>
+
+				<ul class="uk-switcher uk-margin">
+					<li>
+						<!-- MODAL CONFIRMATION -->
+						<button class="uk-button btn btn-color-primary" type="button" uk-toggle="target: #modal-confirmation">Confirmation</button>
+						<div id="modal-confirmation" uk-modal>
+							<div class="uk-modal-dialog uk-modal-body modal-content">
+								<div class="uk-position-relative">
+									<h2 class="uk-modal-title f-w-semi-bold">CONFIRMATION MODAL</h2>
+									<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+								</div>
+								<p class="m-b-md m-t-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ing elit, sed do eiusmod tempor in</p>
+								<div class="uk-text-right">
+									<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">No</button>
+									<button class="uk-button btn btn-type-default">Yes</button>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<pre>
+	&lt;!-- MODAL CONFIRMATION --&gt;
+	&lt;button class="uk-button btn btn-color-primary" type="button" uk-toggle="target: #modal-confirmation"&gt;Confirmation&lt;/button&gt;
+	&lt;div id="modal-confirmation" uk-modal&gt;
+		&lt;div class="uk-modal-dialog uk-modal-body modal-content"&gt;
+			&lt;div class="uk-position-relative"&gt;
+				&lt;h2 class="uk-modal-title f-w-semi-bold"&gt;CONFIRMATION MODAL&lt;/h2&gt;
+				&lt;button class="uk-modal-close uk-modal-close-default" type="button" uk-close&gt;&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;p class="m-b-md m-t-lg"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ing elit, sed do eiusmod tempor in&lt;/p&gt;
+			&lt;div class="uk-text-right"&gt;
+				&lt;button class="uk-button btn btn-outline-secondary uk-modal-close" type="button"&gt;No&lt;/button&gt;
+				&lt;button class="uk-button btn btn-type-default"&gt;Yes&lt;/button&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+						</pre
+						>
+					</li>
+				</ul>
+			</div>
+			<div class="m-b-xl">
+				<h4>Full Width Modal</h4>
+				<ul uk-tab class="tab tab-border f-w-bold">
+					<li class="uk-active"><a href="#">Preview</a></li>
+					<li class=""><a href="#">Markup</a></li>
+				</ul>
+
+				<ul class="uk-switcher uk-margin">
+					<li>
+						<!-- MODAL FULL WIDTH -->
+						<a class="uk-button btn btn-color-primary" href="#modal-full" uk-toggle>Full width</a>
+						<div id="modal-full" class="uk-modal-full" uk-modal>
+							<div class="uk-modal-dialog modal-content p-b-remove">
+								<div class="uk-grid-collapse uk-flex-middle p-b-remove" uk-grid>
+									<div class="uk-position-relative" uk-height-viewport>
+										<div class="uk-position-relative">
+											<h1>Full Width</h1>
+											<button class="uk-modal-close-full uk-modal-close uk-close-large" type="button" uk-close></button>
+											<p class="m-t-lg p-b-xl">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+												do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+												Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+												laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+												irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+												dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+											</p>
+										</div>
+										<div class="uk-text-right uk-position-bottom-right">
+											<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">Cancel</button>
+											<button class="uk-button btn btn-type-default">save</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<pre>
+	&lt;!-- MODAL FULL WIDTH --&gt;
+	&lt;a class="uk-button btn btn-color-primary" href="#modal-full" uk-toggle&gt;Full width&lt;/a&gt;
+	&lt;div id="modal-full" class="uk-modal-full" uk-modal&gt;
+		&lt;div class="uk-modal-dialog modal-content p-b-remove"&gt;
+			&lt;div class="uk-grid-collapse uk-flex-middle uk-padding-large p-b-remove" uk-grid&gt;
+				&lt;div class="uk-position-relative" uk-height-viewport&gt;
+					&lt;div class="uk-position-relative"&gt;
+						&lt;h1&gt;Full Width&lt;/h1&gt;
+						&lt;button class="uk-modal-close-full uk-modal-close uk-close-large" type="button" uk-close&gt;&lt;/button&gt;
+						&lt;p class="m-t-lg p-b-xl"&gt;
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+							veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+							commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+							velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class="uk-text-right uk-position-bottom-right"&gt;
+						&lt;button class="uk-button btn btn-outline-secondary uk-modal-close" type="button"&gt;Cancel&lt;/button&gt;
+						&lt;button class="uk-button btn btn-type-default"&gt;save&lt;/button&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+						</pre
+						>
+					</li>
+				</ul>
+			</div>
+		</div>
 
 		<!-- HEADER -->
 		<div class="m-xl">
