@@ -1,25 +1,37 @@
-.list{
-    font-size: $font-size-xxs;
-    &.list-size{
-        &-sm{
-            li{
-                margin-top: 16px;
-            }
-        }
-        &-md{
-            li{
-                margin-top: 8px;
-            }
-        }
-        &-lg{
-            li{
-                margin-top: 24px;
-            }
-        }
-        &-xl{   
-            li{
-                margin-top: 32px;
-            }
-        }
-    }
+.list {
+	font-size: $font-size-xxs;
+	&.list-size {
+		&-sm {
+			li:first-child {
+				margin-top: 0;
+			}
+			li {
+				margin-top: 16px;
+			}
+		}
+		&-md {
+			li:first-child {
+				margin-top: 0;
+			}
+			li {
+				margin-top: 8px;
+			}
+		}
+		&-lg {
+			li:first-child {
+				margin-top: 0;
+			}
+			li {
+				margin-top: 24px;
+			}
+		}
+		&-xl {
+			li:first-child {
+				margin-top: 0;
+			}
+			li {
+				margin-top: 32px;
+			}
+		}
+	}
 }
