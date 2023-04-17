@@ -1926,36 +1926,129 @@
 		<!-- AVATAR -->
 		<div class="m-xl">
 			<h2>AVATAR</h2>
-			<hr />
-			<div class="uk-grid-small" uk-grid>
-				<div class="uk-width-1-6">
-					<img class="img-lg" src="images/avatar.jpg" alt="avatar" />
-					<div>
-						<p class="m-t-md m-l-lg">
-							H: 190px <br />
-							W: 205px <br />
-							Radius: 100%
-						</p>
-					</div>
-				</div>
-				<div class="uk-width-1-6 m-l-xxl">
-					<img class="img-md" src="images/avatar.jpg" alt="avatar" />
-					<div>
-						<p class="m-t-md">
-							H & W: 87px <br />
-							Radius: 50%
-						</p>
-					</div>
-				</div>
-				<div class="uk-width-1-6">
-					<img class="img-sm" src="images/avatar.jpg" alt="avatar" />
-					<div>
-						<p class="m-t-md">
-							H & W: 55px <br />
-							Radius: 50%
-						</p>
-					</div>
-				</div>
+			<div>
+				<ul uk-tab class="tab tab-border f-w-bold">
+					<li class="uk-active"><a href="#">Preview</a></li>
+					<li class=""><a href="#">Markup</a></li>
+				</ul>
+
+				<!--large avatar-->
+				<ul class="uk-switcher uk-margin">
+					<li>
+						<div class="uk-grid-small" uk-grid>
+							<div class="uk-width-1-6">
+								<img class="img-lg" src="images/avatar.jpg" alt="avatar" />
+								<div>
+									<p class="m-t-md m-l-lg">
+										H: 190px <br />
+										W: 205px <br />
+										Radius: 100%
+									</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<pre>
+&lt;!-- Large Size Avatar --&gt;
+&lt;div class="uk-grid-small" uk-grid&gt;
+	&lt;div class="uk-width-1-6"&gt;
+		&lt;img class="img-lg" src="images/avatar.jpg" alt="avatar" /&gt;
+			&lt;div&gt;
+				&lt;p class="m-t-md m-l-lg"&gt;
+					H: 190px &lt;br /&gt;
+					W: 205px &lt;br /&gt;
+					Radius: 100%
+				&lt;/p&gt;
+			&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+							</pre
+						>
+					</li>
+				</ul>
+			</div>
+
+			<!--medium avatar-->
+			<div>
+				<ul uk-tab class="tab tab-border f-w-bold">
+					<li class="uk-active"><a href="#">Preview</a></li>
+					<li class=""><a href="#">Markup</a></li>
+				</ul>
+
+				<ul class="uk-switcher uk-margin">
+					<li>
+						<div class="uk-grid-small" uk-grid>
+							<div class="uk-width-1-6">
+								<img class="img-md" src="images/avatar.jpg" alt="avatar" />
+								<div>
+									<p class="m-t-md">
+										H & W: 87px <br />
+										Radius: 50%
+									</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<pre>
+&lt;!-- Medium Size Avatar --&gt;
+&lt;div class="uk-grid-small" uk-grid&gt;
+	&lt;div class="uk-width-1-6 m-l-xxl"&gt;
+		&lt;img class="img-md" src="images/avatar.jpg" alt="avatar" /&gt;
+			&lt;div&gt;
+				&lt;p class="m-t-md"&gt;
+					H & W: 87px &lt;br /&gt;
+					Radius: 50%
+				&lt;/p&gt;
+			&lt;/div&gt;
+	&lt;/div&gt;	
+&lt;/div&gt;
+							</pre
+						>
+					</li>
+				</ul>
+			</div>
+
+			<!--small avatar-->
+			<div>
+				<ul uk-tab class="tab tab-border f-w-bold">
+					<li class="uk-active"><a href="#">Preview</a></li>
+					<li class=""><a href="#">Markup</a></li>
+				</ul>
+
+				<ul class="uk-switcher uk-margin">
+					<li>
+						<div class="uk-grid-small" uk-grid>
+							<div class="uk-width-1-6">
+								<img class="img-sm" src="images/avatar.jpg" alt="avatar" />
+								<div>
+									<p class="m-t-md">
+										H & W: 55px <br />
+										Radius: 50%
+									</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<pre>
+&lt;!-- Small Size Avatar --&gt;
+&lt;div class="uk-grid-small" uk-grid&gt;
+	&lt;div class="uk-width-1-6"&gt;
+		&lt;img class="img-sm" src="images/avatar.jpg" alt="avatar" /&gt;
+		&lt;div&gt;
+			&lt;p class="m-t-md"&gt;
+				H & W: 55px &lt;br /&gt;
+				Radius: 50%
+			&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+							</pre
+						>
+					</li>
+				</ul>
 			</div>
 		</div>
 
