@@ -654,137 +654,288 @@
 		<!-- FORMS -->
 		<div class="m-xl">
 			<h2>Forms</h2>
-			<hr />
-			<div class="form">
-				<form class="uk-grid-small">
-					<div class="uk-width-1-2@s">
-						<label class="uk-form-label" for="form-stacked-text">Label</label>
-						<div class="uk-form-controls">
-							<input class="uk-input" id="form-stacked-text" type="text" placeholder="Placeholder" />
-						</div>
-					</div>
-					<div class="uk-width-1-2@s m-t-sm">
-						<label class="uk-form-label" for="form-stacked-select">Select</label>
-						<div class="uk-form-controls">
-							<select class="uk-select" id="form-stacked-select">
-								<option>Option 01</option>
-								<option>Option 02</option>
-							</select>
-						</div>
-					</div>
-					<div class="uk-width-1-2@s m-t-sm">
-						<label class="uk-form-label" for="form-stacked-text">Error</label>
-						<input class="uk-input uk-form-danger" type="text" placeholder="form-danger" aria-label="form-danger" value="form-danger" />
-						<div class="color-t-danger m-t-xs f-s-xxs">
-							<div><i class="fa-sharp fa-solid fa-circle-exclamation"></i> Warning Message</div>
-						</div>
-					</div>
-					<div class="uk-width-1-2@s m-t-sm">
-						<label class="uk-form-label" for="form-stacked-text">Success</label>
-						<input class="uk-input uk-form-success" type="text" placeholder="form-success" aria-label="form-success" value="form-success" />
-					</div>
-					<div class="uk-width-1-2@s m-t-sm">
-						<label class="uk-form-label" for="form-stacked-text">Disabled</label>
-						<input class="uk-input" type="text" placeholder="disabled" aria-label="disabled" value="disabled" disabled />
-					</div>
-					<div class="uk-width-1-2@s m-t-md">
-						<div class="uk-form-label">Checkbox</div>
-						<div class="uk-grid-small uk-child-width-auto uk-grid">
-							<label><input class="uk-checkbox" type="checkbox" /> A</label> <br />
-							<label><input class="uk-checkbox" type="checkbox" /> B</label>
-						</div>
-					</div>
-					<div class="uk-margin">
-						<div class="uk-form-label">Radio</div>
-						<div class="uk-grid-small uk-child-width-auto uk-grid">
-							<label><input class="uk-radio" type="radio" name="radio1" /> A</label><br />
-							<label><input class="uk-radio" type="radio" name="radio1" /> B </label>
-						</div>
-					</div>
-					<div class="m-t-lg">
-						<h5>Toggle Sizes</h5>
-						<div class="toggle-sm">
-							<div class="uk-form-label">Small</div>
-							<div class="toggle">
-								<input type="checkbox" id="checkbox1" />
-								<label for="checkbox1"></label>
-								<label for="" class="onbtn-sm">ON</label>
-								<label for="" class="offbtn-sm">OFF</label>
+
+			<!--Form Variants-->
+			<div class="m-b-xl">
+				<div>
+					<ul uk-tab class="tab tab-border f-w-bold">
+						<li class="uk-active"><a href="#">Preview</a></li>
+						<li class=""><a href="#">Markup</a></li>
+					</ul>
+					<ul class="uk-switcher uk-margin">
+						<li>
+							<div>
+								<h5>Form Variants</h5>
+								<form class="uk-grid-small">
+									<div class="uk-width-1-2@s">
+										<label class="uk-form-label" for="form-stacked-text">Label</label>
+										<div class="uk-form-controls">
+											<input class="uk-input" id="form-stacked-text" type="text" placeholder="Placeholder" />
+										</div>
+									</div>
+									<div class="uk-width-1-2@s m-t-sm">
+										<label class="uk-form-label" for="form-stacked-select">Select</label>
+										<div class="uk-form-controls">
+											<select class="uk-select" id="form-stacked-select">
+												<option>Option 01</option>
+												<option>Option 02</option>
+											</select>
+										</div>
+									</div>
+									<div class="uk-width-1-2@s m-t-sm">
+										<label class="uk-form-label" for="form-stacked-text">Error</label>
+										<input class="uk-input uk-form-danger" type="text" placeholder="form-danger" aria-label="form-danger" value="form-danger" />
+										<div class="color-t-danger m-t-xs f-s-xxs">
+											<div><i class="fa-sharp fa-solid fa-circle-exclamation"></i> Warning Message</div>
+										</div>
+									</div>
+									<div class="uk-width-1-2@s m-t-sm">
+										<label class="uk-form-label" for="form-stacked-text">Success</label>
+										<input class="uk-input uk-form-success" type="text" placeholder="form-success" aria-label="form-success" value="form-success" />
+									</div>
+									<div class="uk-width-1-2@s m-t-sm">
+										<label class="uk-form-label" for="form-stacked-text">Disabled</label>
+										<input class="uk-input" type="text" placeholder="disabled" aria-label="disabled" value="disabled" disabled />
+									</div>
+									<div class="uk-width-1-2@s m-t-md">
+										<div class="uk-form-label">Checkbox</div>
+										<div class="uk-grid-small uk-child-width-auto uk-grid">
+											<label><input class="uk-checkbox" type="checkbox" /> A</label> <br />
+											<label><input class="uk-checkbox" type="checkbox" /> B</label>
+										</div>
+									</div>
+									<div class="uk-margin">
+										<div class="uk-form-label">Radio</div>
+										<div class="uk-grid-small uk-child-width-auto uk-grid">
+											<label><input class="uk-radio" type="radio" name="radio1" /> A</label><br />
+											<label><input class="uk-radio" type="radio" name="radio1" /> B </label>
+										</div>
+									</div>
+								</form>
 							</div>
-						</div>
-						<div class="toggle-md">
-							<div class="uk-form-label">Medium</div>
-							<div class="toggle">
-								<input type="checkbox" id="checkbox1" />
-								<label for="checkbox1"></label>
-								<label for="" class="onbtn-md">ON</label>
-								<label for="" class="offbtn-md">OFF</label>
-							</div>
-						</div>
-						<div class="toggle-lg">
-							<div class="uk-form-label">Large</div>
-							<div class="toggle">
-								<input type="checkbox" id="checkbox1" />
-								<label for="checkbox1"></label>
-								<label for="" class="onbtn-lg">ON</label>
-								<label for="" class="offbtn-lg">OFF</label>
-							</div>
-						</div>
-					</div>
-				</form>
-				<div class="m-t-lg">
-					<h5>Form with Icons</h5>
-					<div>
-						<form class="uk-grid-small">
-							<div class="uk-width-1-2@s">
-								<div class="uk-form-label color-t-placeholdertext">clickable icon Right</div>
-								<div class="uk-inline">
-									<a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: user"></a>
-									<input class="uk-input" type="text" aria-label="clickable icon" />
-								</div>
-							</div>
-							<div class="uk-width-1-2@s m-t-sm">
-								<div class="uk-form-label color-t-placeholdertext">not clickable icon Right</div>
-								<div class="uk-inline">
-									<span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: mail"></span>
-									<input class="uk-input" type="text" aria-label="Not clickable icon" />
-								</div>
-							</div>
-							<div class="uk-width-1-2@s m-t-sm">
-								<div class="uk-form-label color-t-placeholdertext">clickable icon Left</div>
-								<div class="uk-inline">
-									<a class="uk-form-icon" href="#" uk-icon="icon: location"></a>
-									<input class="uk-input" type="text" aria-label="Not clickable icon" />
-								</div>
-							</div>
-							<div class="uk-width-1-2@s m-t-sm">
-								<div class="uk-form-label color-t-placeholdertext">not clickable icon Left</div>
-								<div class="uk-inline">
-									<span class="uk-form-icon" uk-icon="icon: lock"></span>
-									<input class="uk-input" type="text" aria-label="Not clickable icon" />
-								</div>
-							</div>
-						</form>
-					</div>
+						</li>
+						<li>
+							<pre>
+		&lt;!-- LABEL --&gt;
+		&lt;div class="uk-width-1-2@s"&gt;
+			&lt;label class="uk-form-label" for="form-stacked-text"&gt;Label&lt;/label&gt;
+			&lt;div class="uk-form-controls"&gt;
+				&lt;input class="uk-input" id="form-stacked-text" type="text" placeholder="Placeholder" /&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- SELECT --&gt;
+		&lt;div class="uk-width-1-2@s m-t-sm"&gt;
+			&lt;label class="uk-form-label" for="form-stacked-select"&gt;Select&lt;/label&gt;
+			&lt;div class="uk-form-controls"&gt;
+				&lt;select class="uk-select" id="form-stacked-select"&gt;
+					&lt;option&gt;Option 01&lt;/option&gt;
+					&lt;option&gt;Option 02&lt;/option&gt;
+				&lt;/select&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- ERROR --&gt;
+		&lt;div class="uk-width-1-2@s m-t-sm"&gt;
+			&lt;label class="uk-form-label" for="form-stacked-text"&gt;Error&lt;/label&gt;
+			&lt;input class="uk-input uk-form-danger" type="text" placeholder="form-danger" aria-label="form-danger" value="form-danger" /&gt;
+			&lt;div class="color-t-danger m-t-xs f-s-xxs"&gt;
+				&lt;div&gt;&lt;i class="fa-sharp fa-solid fa-circle-exclamation"&gt;&lt;/i&gt; Warning Message&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- SUCCESS --&gt;
+		&lt;div class="uk-width-1-2@s m-t-sm"&gt;
+			&lt;label class="uk-form-label" for="form-stacked-text"&gt;Success&lt;/label&gt;
+			&lt;input class="uk-input uk-form-success" type="text" placeholder="form-success" aria-label="form-success" value="form-success" /&gt;
+		&lt;/div&gt;
+
+		&lt;!-- DISABLED --&gt;
+		&lt;div class="uk-width-1-2@s m-t-sm"&gt;
+			&lt;label class="uk-form-label" for="form-stacked-text"&gt;Disabled&lt;/label&gt;
+			&lt;input class="uk-input" type="text" placeholder="disabled" aria-label="disabled" value="disabled" disabled /&gt;
+		&lt;/div&gt;
+
+		&lt;!-- CHECKBOX --&gt;
+		&lt;div class="uk-width-1-2@s m-t-md"&gt;
+			&lt;div class="uk-form-label"&gt;Checkbox&lt;/div&gt;
+			&lt;div class="uk-grid-small uk-child-width-auto uk-grid"&gt;
+				&lt;label&gt;&lt;input class="uk-checkbox" type="checkbox" /&gt; A&lt;/label&gt; &lt;br /&gt;
+				&lt;label&gt;&lt;input class="uk-checkbox" type="checkbox" /&gt; B&lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- RADIO BUTTON --&gt;
+		&lt;div class="uk-margin"&gt;
+			&lt;div class="uk-form-label"&gt;Radio&lt;/div&gt;
+			&lt;div class="uk-grid-small uk-child-width-auto uk-grid"&gt;
+				&lt;label&gt;&lt;input class="uk-radio" type="radio" name="radio1" /&gt; A&lt;/label&gt;&lt;br /&gt;
+				&lt;label&gt;&lt;input class="uk-radio" type="radio" name="radio1" /&gt; B &lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+							</pre
+							>
+						</li>
+					</ul>
 				</div>
-				<div class="m-t-lg">
-					<h5>Form Sizes</h5>
-					<div>
-						<form>
-							<div class="uk-margin">
-								<input class="uk-input uk-form-width-medium uk-form-small" type="text" placeholder="Small" aria-label="Small" />
+			</div>
+
+			<!--Forms with Icons-->
+			<div class="m-b-xl">
+				<div>
+					<ul uk-tab class="tab tab-border f-w-bold">
+						<li class="uk-active"><a href="#">Preview</a></li>
+						<li class=""><a href="#">Markup</a></li>
+					</ul>
+					<ul class="uk-switcher uk-margin">
+						<li>
+							<div class="m-t-lg">
+								<h5>Form with Icons</h5>
+								<div>
+									<form class="uk-grid-small">
+										<div class="uk-width-1-2@s">
+											<div class="uk-form-label color-t-placeholdertext">clickable icon Right</div>
+											<div class="uk-inline">
+												<a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: user"></a>
+												<input class="uk-input" type="text" aria-label="clickable icon" />
+											</div>
+										</div>
+										<div class="uk-width-1-2@s m-t-sm">
+											<div class="uk-form-label color-t-placeholdertext">not clickable icon Right</div>
+											<div class="uk-inline">
+												<span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: mail"></span>
+												<input class="uk-input" type="text" aria-label="Not clickable icon" />
+											</div>
+										</div>
+										<div class="uk-width-1-2@s m-t-sm">
+											<div class="uk-form-label color-t-placeholdertext">clickable icon Left</div>
+											<div class="uk-inline">
+												<a class="uk-form-icon" href="#" uk-icon="icon: location"></a>
+												<input class="uk-input" type="text" aria-label="Not clickable icon" />
+											</div>
+										</div>
+										<div class="uk-width-1-2@s m-t-sm">
+											<div class="uk-form-label color-t-placeholdertext">not clickable icon Left</div>
+											<div class="uk-inline">
+												<span class="uk-form-icon" uk-icon="icon: lock"></span>
+												<input class="uk-input" type="text" aria-label="Not clickable icon" />
+											</div>
+										</div>
+									</form>
+								</div>
 							</div>
-							<div class="uk-margin">
-								<input class="uk-input uk-form-width-medium" type="text" placeholder="Default" aria-label="Default" />
+						</li>
+						<li>
+							<pre>
+		&lt;!-- Form with Icons --&gt;
+			&lt;form class="uk-grid-small"&gt;
+
+				&lt;!-- clickable icon right --&gt;
+				&lt;div class="uk-width-1-2@s"&gt;
+					&lt;div class="uk-form-label color-t-placeholdertext"&gt;clickable icon Right&lt;/div&gt;
+					&lt;div class="uk-inline"&gt;
+						&lt;a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: user"&gt;&lt;/a&gt;
+						&lt;input class="uk-input" type="text" aria-label="clickable icon" /&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;!-- not clickable icon right --&gt;
+				&lt;div class="uk-width-1-2@s m-t-sm"&gt;
+					&lt;div class="uk-form-label color-t-placeholdertext"&gt;not clickable icon Right&lt;/div&gt;
+					&lt;div class="uk-inline"&gt;
+						&lt;span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: mail"&gt;&lt;/span&gt;
+						&lt;input class="uk-input" type="text" aria-label="Not clickable icon" /&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;!-- clickable icon left --&gt;
+				&lt;div class="uk-width-1-2@s m-t-sm"&gt;
+					&lt;div class="uk-form-label color-t-placeholdertext"&gt;clickable icon Left&lt;/div&gt;
+					&lt;div class="uk-inline"&gt;
+						&lt;a class="uk-form-icon" href="#" uk-icon="icon: location"&gt;&lt;/a&gt;
+						&lt;input class="uk-input" type="text" aria-label="Not clickable icon" /&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;!-- not clickable icon left --&gt;
+				&lt;div class="uk-width-1-2@s m-t-sm"&gt;
+					&lt;div class="uk-form-label color-t-placeholdertext"&gt;not clickable icon Left&lt;/div&gt;
+					&lt;div class="uk-inline"&gt;
+						&lt;span class="uk-form-icon" uk-icon="icon: lock"&gt;&lt;/span&gt;
+						&lt;input class="uk-input" type="text" aria-label="Not clickable icon" /&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/form&gt;
+							</pre
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!--Form Sizes-->
+			<div class="m-b-xl">
+				<div>
+					<ul uk-tab class="tab tab-border f-w-bold">
+						<li class="uk-active"><a href="#">Preview</a></li>
+						<li class=""><a href="#">Markup</a></li>
+					</ul>
+					<ul class="uk-switcher uk-margin">
+						<li>
+							<div class="m-t-lg">
+								<h5>Form Sizes</h5>
+								<div>
+									<form>
+										<div class="uk-margin">
+											<input class="uk-input uk-form-width-medium uk-form-small" type="text" placeholder="Small" aria-label="Small" />
+										</div>
+										<div class="uk-margin">
+											<input class="uk-input uk-form-width-medium" type="text" placeholder="Default" aria-label="Default" />
+										</div>
+										<div class="uk-margin">
+											<input class="uk-input uk-form-width-medium uk-form-large" type="text" placeholder="Large" aria-label="Large" />
+										</div>
+										<div class="uk-margin">
+											<textarea class="uk-textarea" rows="8" placeholder="Textarea" aria-label="Textarea" style="width: 50%"></textarea>
+										</div>
+									</form>
+								</div>
 							</div>
-							<div class="uk-margin">
-								<input class="uk-input uk-form-width-medium uk-form-large" type="text" placeholder="Large" aria-label="Large" />
-							</div>
-							<div class="uk-margin">
-								<textarea class="uk-textarea" rows="8" placeholder="Textarea" aria-label="Textarea" style="width: 50%"></textarea>
-							</div>
-						</form>
-					</div>
+						</li>
+						<li>
+							<pre>
+		&lt;!-- Form Sizes --&gt;
+		&lt;div class="m-t-lg"&gt;
+			&lt;h5&gt;Form Sizes&lt;/h5&gt;
+			&lt;div&gt;
+				&lt;form&gt;
+					
+					&lt;!-- small --&gt;
+					&lt;div class="uk-margin"&gt;
+						&lt;input class="uk-input uk-form-width-medium uk-form-small" type="text" placeholder="Small" aria-label="Small" /&gt;
+					&lt;/div&gt;
+
+					&lt;!-- default --&gt;
+					&lt;div class="uk-margin"&gt;
+						&lt;input class="uk-input uk-form-width-medium" type="text" placeholder="Default" aria-label="Default" /&gt;
+					&lt;/div&gt;
+
+					&lt;!-- large --&gt;
+					&lt;div class="uk-margin"&gt;
+						&lt;input class="uk-input uk-form-width-medium uk-form-large" type="text" placeholder="Large" aria-label="Large" /&gt;
+					&lt;/div&gt;
+
+					&lt;!-- textarea --&gt;
+					&lt;div class="uk-margin"&gt;
+						&lt;textarea class="uk-textarea" rows="8" placeholder="Textarea" aria-label="Textarea" style="width: 50%"&gt;&lt;/textarea&gt;
+					&lt;/div&gt;
+				&lt;/form&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+							</pre
+							>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
