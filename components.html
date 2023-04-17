@@ -1786,59 +1786,157 @@
 			<hr />
 
 			<div>
-				<div>
-					<h6>TAB WITH BORDER BOTTOM</h6>
-					<ul uk-tab class="tab tab-border f-w-bold">
-						<li class="uk-active"><a href="#">Tab One</a></li>
-						<li class=""><a href="#">Tab Two</a></li>
-						<li class=""><a href="#">Tab Three</a></li>
-						<li class="uk-disabled"><a>Disabled</a></li>
-					</ul>
-
-					<ul class="uk-switcher uk-margin">
-						<li>This is tab one content</li>
-						<li>This is tab two content</li>
-						<li>This is tab three content</li>
-					</ul>
-				</div>
-
-				<h6>TAB WITHOUT BORDER BOTTOM</h6>
-				<ul uk-tab class="tab tab-border-none">
-					<li class="uk-active"><a href="#">Tab One</a></li>
-					<li class=""><a href="#">Tab Two</a></li>
-					<li class=""><a href="#">Tab Three</a></li>
-					<li class="uk-disabled"><a>Disabled</a></li>
+				<h4>TAB WITH BORDER BOTTOM</h4>
+				<ul uk-tab class="tab tab-border f-w-bold">
+					<li class="uk-active"><a href="#">PREVIEW</a></li>
+					<li class=""><a href="#">MARKUP</a></li>
 				</ul>
 
 				<ul class="uk-switcher uk-margin">
-					<li>This is tab one content</li>
-					<li>This is tab two content</li>
-					<li>This is tab three content</li>
-				</ul>
-
-				<ul uk-tab class="tab tab-border-none">
-					<li class="uk-active"><a href="#">Tab one</a></li>
-					<li><a href="#">Tab Two</a></li>
 					<li>
-						<a href="#">More <span uk-icon="icon: triangle-down"></span></a>
-						<div uk-dropdown="mode: click">
-							<ul class="uk-nav uk-dropdown-nav">
-								<li class="uk-active"><a href="#">Active</a></li>
-								<li><a href="#">Item</a></li>
-								<li class="uk-nav-header">OTHERS</li>
-								<li><a href="#">Item</a></li>
-								<li><a href="#">Item</a></li>
-								<li class="uk-nav-divider"></li>
-								<li><a href="#">Item</a></li>
+						<div>
+							<div>
+								<ul uk-tab class="tab tab-border f-w-bold">
+									<li class="uk-active"><a href="#">Tab One</a></li>
+									<li class=""><a href="#">Tab Two</a></li>
+									<li class=""><a href="#">Tab Three</a></li>
+									<li class="uk-disabled"><a>Disabled</a></li>
+								</ul>
+
+								<ul class="uk-switcher uk-margin">
+									<li>This is tab one content</li>
+									<li>This is tab two content</li>
+									<li>This is tab three content</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<pre style="background: #f8f8f8; border: none">
+	&lt;ul uk-tab class="tab tab-border f-w-bold"&gt;
+		&lt;li class="uk-active"&gt;&lt;a href="#"&gt;Tab One&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=""&gt;&lt;a href="#"&gt;Tab Two&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=""&gt;&lt;a href="#"&gt;Tab Three&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="uk-disabled"&gt;&lt;a&gt;Disabled&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+
+	&lt;ul class="uk-switcher uk-margin"&gt;
+		&lt;li&gt;This is tab one content&lt;/li&gt;
+		&lt;li&gt;This is tab two content&lt;/li&gt;
+		&lt;li&gt;This is tab three content&lt;/li&gt;
+	&lt;/ul&gt;
+					</pre
+						>
+					</li>
+				</ul>
+			</div>
+
+			<div>
+				<h4>TAB WITHOUT BORDER BOTTOM</h4>
+
+				<div>
+					<h6>TAB WITH DISABLED</h6>
+					<ul uk-tab class="tab tab-border f-w-bold">
+						<li class="uk-active"><a href="#">PREVIEW</a></li>
+						<li class=""><a href="#">MARKUP</a></li>
+					</ul>
+
+					<ul class="uk-switcher uk-margin">
+						<li>
+							<ul uk-tab class="tab tab-border-none">
+								<li class="uk-active"><a href="#">Tab One</a></li>
+								<li class=""><a href="#">Tab Two</a></li>
+								<li class=""><a href="#">Tab Three</a></li>
+								<li class="uk-disabled"><a>Disabled</a></li>
 							</ul>
 
 							<ul class="uk-switcher uk-margin">
-								<li>This tab one</li>
-								<li>This tab two</li>
+								<li>This is tab one content</li>
+								<li>This is tab two content</li>
+								<li>This is tab three content</li>
 							</ul>
-						</div>
-					</li>
-				</ul>
+						</li>
+						<li>
+							<pre>
+&lt;ul uk-tab class="tab tab-border-none"&gt;
+	&lt;li class="uk-active"&gt;&lt;a href="#"&gt;Tab One&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=""&gt;&lt;a href="#"&gt;Tab Two&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=""&gt;&lt;a href="#"&gt;Tab Three&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="uk-disabled"&gt;&lt;a&gt;Disabled&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="uk-switcher uk-margin"&gt;
+	&lt;li&gt;This is tab one content&lt;/li&gt;
+	&lt;li&gt;This is tab two content&lt;/li&gt;
+	&lt;li&gt;This is tab three content&lt;/li&gt;
+&lt;/ul&gt;
+						</pre
+							>
+						</li>
+					</ul>
+				</div>
+
+				<div>
+					<h6>TAB WITH DROPDOWN</h6>
+					<ul uk-tab class="tab tab-border f-w-bold">
+						<li class="uk-active"><a href="#">PREVIEW</a></li>
+						<li class=""><a href="#">MARKUP</a></li>
+					</ul>
+
+					<ul class="uk-switcher uk-margin">
+						<li>
+							<ul uk-tab class="tab tab-border-none">
+								<li class="uk-active"><a href="#">Tab one</a></li>
+								<li><a href="#">Tab Two</a></li>
+								<li>
+									<a href="#">More <span uk-icon="icon: triangle-down"></span></a>
+									<div uk-dropdown="mode: click">
+										<ul class="uk-nav uk-dropdown-nav">
+											<li class="uk-active"><a href="#">Active</a></li>
+											<li><a href="#">Item</a></li>
+											<li class="uk-nav-header">OTHERS</li>
+											<li><a href="#">Item</a></li>
+											<li><a href="#">Item</a></li>
+											<li class="uk-nav-divider"></li>
+											<li><a href="#">Item</a></li>
+										</ul>
+
+										<ul class="uk-switcher uk-margin">
+											<li>This tab one</li>
+											<li>This tab two</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<pre>
+&lt;ul uk-tab class="tab tab-border-none"&gt;
+	&lt;li class="uk-active"&gt;&lt;a href="#"&gt;Tab one&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;Tab Two&lt;/a&gt;&lt;/li&gt;
+&lt;ul&gt;
+	&lt;a href="#"&gt;More &lt;span uk-icon="icon: triangle-down"&gt;&lt;/span&gt;&lt;/a&gt;
+	&lt;div uk-dropdown="mode: click"&gt;
+		&lt;ul class="uk-nav uk-dropdown-nav"&gt;
+			&lt;li class="uk-active"&gt;&lt;a href="#"&gt;Active&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#"&gt;Item&lt;/a&gt;&lt;/li&gt;
+			&lt;li class="uk-nav-header"&gt;OTHERS&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#"&gt;Item&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#"&gt;Item&lt;/a&gt;&lt;/li&gt;
+			&lt;li class="uk-nav-divider"&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#"&gt;Item&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+
+		&lt;ul class="uk-switcher uk-margin"&gt;
+			&lt;li&gt;This tab one&lt;/li&gt;
+			&lt;li&gt;This tab two&lt;/li&gt;
+		&lt;/ul&gt;
+
+						</pre
+							>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 
