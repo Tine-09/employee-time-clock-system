@@ -1,0 +1,25 @@
+footer {
+	background-color: $primary;
+	color: white;
+
+	img {
+		width: 80px;
+	}
+
+	h4 {
+		color: white;
+	}
+	i {
+		color: white;
+		font-size: 25px;
+	}
+	li {
+		a {
+			color: white;
+			&:hover {
+				color: $placeholderText;
+				text-decoration: none;
+			}
+		}
+	}
+}
