@@ -2052,81 +2052,181 @@
 		<!-- DROPDOWN -->
 		<div class="m-xl">
 			<h2>DROPDOWN</h2>
-			<hr />
-			<div class="m-t-lg">
-				<h6 class="f-w-bold f-s-xs" style="text-transform: uppercase">Mode</h6>
-				<div>
-					<div class="uk-inline">
-						<button class="uk-button btn btn-color-primary">Hover</button>
-						<div uk-dropdown class="uk-dropdown drpdwn">
-							<div class="card">
-								<div class="card-body">
-									<div class="card-title">Hover</div>
-									<p class="m-t-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quia veritatis, porro consequuntur inventore minima non vel.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="uk-inline">
-						<button class="uk-button btn btn-color-primary">Click</button>
-						<div uk-dropdown="mode: click" class="uk-dropdown drpdwn">
-							<div class="card">
-								<div class="card-body">
-									<div class="card-title">Click</div>
-									<p class="m-t-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quia veritatis, porro consequuntur inventore minima non vel.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+      <hr />
+			<div class="m-b-xl">
+				<ul uk-tab class="tab tab-border f-w-bold">
+					<li class="uk-active"><a href="#">Preview</a></li>
+					<li class=""><a href="#">Markup</a></li>
+				</ul>
 
-				<div class="uk-block m-t-lg">
-					<h6 class="f-w-bold f-s-xs" style="text-transform: uppercase">Contents</h6>
-					<div class="uk-inline">
-						<button class="uk-button btn btn-color-primary">Card</button>
-						<div uk-dropdown class="uk-dropdown drpdwn">
-							<div class="card">
-								<div class="card-body">
-									<div class="card-title">Card</div>
-									<p class="m-t-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quia veritatis, porro consequuntur inventore minima non vel.</p>
+				<ul class="uk-switcher uk-margin">
+					<li>
+						<div class="m-t-lg">
+							<h6 class="f-w-bold f-s-xs" style="text-transform: uppercase">Mode</h6>
+							<div>
+								<div class="uk-inline">
+									<button class="uk-button btn btn-color-primary">Hover</button>
+									<div uk-dropdown class="uk-dropdown drpdwn">
+										<div class="card">
+											<div class="card-body">
+												<div class="card-title">Hover</div>
+												<p class="m-t-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quia veritatis, porro consequuntur inventore minima non vel.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="uk-inline">
+									<button class="uk-button btn btn-color-primary">Click</button>
+									<div uk-dropdown="mode: click" class="uk-dropdown drpdwn">
+										<div class="card">
+											<div class="card-body">
+												<div class="card-title">Click</div>
+												<p class="m-t-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quia veritatis, porro consequuntur inventore minima non vel.</p>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
+					</li>
+					<li>
+						<pre>
+	&lt;div class="uk-inline"&gt;
+		&lt;button class="uk-button btn btn-color-primary"&gt;Hover&lt;/button&gt;
+		&lt;div uk-dropdown class="uk-dropdown drpdwn"&gt;
+			&lt;div class="card"&gt;
+				&lt;div class="card-body"&gt;
+					&lt;div class="card-title"&gt;Hover&lt;/div&gt;
+					&lt;p class="m-t-xs"&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quia veritatis, porro consequuntur inventore minima non vel.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="uk-inline"&gt;
+		&lt;button class="uk-button btn btn-color-primary"&gt;Click&lt;/button&gt;
+		&lt;div uk-dropdown="mode: click" class="uk-dropdown drpdwn"&gt;
+			&lt;div class="card"&gt;
+				&lt;div class="card-body"&gt;
+					&lt;div class="card-title"&gt;Click&lt;/div&gt;
+					&lt;p class="m-t-xs"&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quia veritatis, porro consequuntur inventore minima non vel.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+							</pre
+						>
+					</li>
+				</ul>
+			</div>
 
-					<div class="uk-inline">
-						<button class="uk-button btn btn-color-primary">List</button>
-						<div uk-dropdown class="uk-dropdown drpdwn-list">
-							<div class="card">
-								<div class="card-body">
-									<ul class="uk-nav uk-dropdown-nav">
-										<li><a href="#">Item 1</a></li>
-										<li><a href="#">Item 2</a></li>
-										<li><a href="#">Item 3</a></li>
-										<li><a href="#">Item 4</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
+			<div>
+				<ul uk-tab class="tab tab-border f-w-bold">
+					<li class="uk-active"><a href="#">Preview</a></li>
+					<li class=""><a href="#">Markup</a></li>
+				</ul>
 
-					<div class="uk-inline">
-						<button class="uk-button btn btn-color-primary">List with Title</button>
-						<div uk-dropdown class="uk-dropdown drpdwn-list">
-							<div class="card">
-								<div class="card-body">
-									<ul class="uk-nav uk-dropdown-nav">
-										<li class="uk-nav-header">Title</li>
-										<li><a href="#">Item 1</a></li>
-										<li><a href="#">Item 2</a></li>
-										<li><a href="#">Item 3</a></li>
-										<li><a href="#">Item 4</a></li>
-									</ul>
+				<ul class="uk-switcher uk-margin">
+					<li>
+						<div class="m-t-lg">
+							<div class="uk-block m-t-lg">
+								<h6 class="f-w-bold f-s-xs" style="text-transform: uppercase">Contents</h6>
+								<div class="uk-inline">
+									<button class="uk-button btn btn-color-primary">Card</button>
+									<div uk-dropdown class="uk-dropdown drpdwn">
+										<div class="card">
+											<div class="card-body">
+												<div class="card-title">Card</div>
+												<p class="m-t-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quia veritatis, porro consequuntur inventore minima non vel.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="uk-inline">
+									<button class="uk-button btn btn-color-primary">List</button>
+									<div uk-dropdown class="uk-dropdown drpdwn-list">
+										<div class="card">
+											<div class="card-body">
+												<ul class="uk-nav uk-dropdown-nav">
+													<li><a href="#">Item 1</a></li>
+													<li><a href="#">Item 2</a></li>
+													<li><a href="#">Item 3</a></li>
+													<li><a href="#">Item 4</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="uk-inline">
+									<button class="uk-button btn btn-color-primary">List with Title</button>
+									<div uk-dropdown class="uk-dropdown drpdwn-list">
+										<div class="card">
+											<div class="card-body">
+												<ul class="uk-nav uk-dropdown-nav">
+													<li class="uk-nav-header">Title</li>
+													<li><a href="#">Item 1</a></li>
+													<li><a href="#">Item 2</a></li>
+													<li><a href="#">Item 3</a></li>
+													<li><a href="#">Item 4</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
+					</li>
+					<li>
+						<pre>
+	&lt;div class="uk-inline"&gt;
+		&lt;button class="uk-button btn btn-color-primary"&gt;Card&lt;/button&gt;
+		&lt;div uk-dropdown class="uk-dropdown drpdwn"&gt;
+			&lt;div class="card"&gt;
+				&lt;div class="card-body"&gt;
+					&lt;div class="card-title"&gt;Card&lt;/div&gt;
+					&lt;p class="m-t-xs"&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quia veritatis, porro consequuntur inventore minima non vel.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class="uk-inline"&gt;
+		&lt;button class="uk-button btn btn-color-primary"&gt;List&lt;/button&gt;
+		&lt;div uk-dropdown class="uk-dropdown drpdwn-list"&gt;
+			&lt;div class="card"&gt;
+				&lt;div class="card-body"&gt;
+					&lt;ul class="uk-nav uk-dropdown-nav"&gt;
+						&lt;li&gt;&lt;a href="#"&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="#"&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="#"&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="#"&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class="uk-inline"&gt;
+		&lt;button class="uk-button btn btn-color-primary"&gt;List with Title&lt;/button&gt;
+		&lt;div uk-dropdown class="uk-dropdown drpdwn-list"&gt;
+			&lt;div class="card"&gt;
+				&lt;div class="card-body"&gt;
+					&lt;ul class="uk-nav uk-dropdown-nav"&gt;
+						&lt;li class="uk-nav-header"&gt;Title&lt;/li&gt;
+						&lt;li&gt;&lt;a href="#"&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="#"&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="#"&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="#"&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+						</pre
+						>
+					</li>
+				</ul>
 			</div>
 		</div>
 
