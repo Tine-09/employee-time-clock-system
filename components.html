@@ -862,7 +862,7 @@
 		<div class="m-xl">
 			<h2>Forms</h2>
 
-			<!--Form Variants-->
+			<!--Form Label-->
 			<div class="m-b-xl">
 				<div>
 					<ul uk-tab class="tab tab-border f-w-bold">
@@ -872,16 +872,45 @@
 					<ul class="uk-switcher uk-margin">
 						<li>
 							<div>
-								<h5>Form Variants</h5>
 								<form class="uk-grid-small">
 									<div class="uk-width-1-2@s">
-										<label class="uk-form-label" for="form-stacked-text">Label</label>
+										<h5 class="m-b-remove m-b-xs">Label</h5>
 										<div class="uk-form-controls">
 											<input class="uk-input" id="form-stacked-text" type="text" placeholder="Placeholder" />
 										</div>
 									</div>
+								</form>
+							</div>
+						</li>
+						<li>
+							<pre>
+	&lt;!-- LABEL --&gt;
+	&lt;div class="uk-width-1-2@s"&gt;
+		&lt;label class="uk-form-label" for="form-stacked-text"&gt;Label&lt;/label&gt;
+		&lt;div class="uk-form-controls"&gt;
+			&lt;input class="uk-input" id="form-stacked-text" type="text" placeholder="Placeholder" /&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+							</pre
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!--Form Select-->
+			<div class="m-b-xl">
+				<div>
+					<ul uk-tab class="tab tab-border f-w-bold">
+						<li class="uk-active"><a href="#">Preview</a></li>
+						<li class=""><a href="#">Markup</a></li>
+					</ul>
+					<ul class="uk-switcher uk-margin">
+						<li>
+							<div>
+								<form class="uk-grid-small">
 									<div class="uk-width-1-2@s m-t-sm">
-										<label class="uk-form-label" for="form-stacked-select">Select</label>
+										<h5 class="m-b-remove m-b-xs">Select</h5>
 										<div class="uk-form-controls">
 											<select class="uk-select" id="form-stacked-select">
 												<option>Option 01</option>
@@ -889,6 +918,38 @@
 											</select>
 										</div>
 									</div>
+								</form>
+							</div>
+						</li>
+						<li>
+							<pre>
+	&lt;!-- SELECT --&gt;
+		&lt;div class="uk-form-controls"&gt;
+			&lt;select class="uk-select" id="form-stacked-select"&gt;
+				&lt;option&gt;Option 01&lt;/option&gt;
+				&lt;option&gt;Option 02&lt;/option&gt;
+			&lt;/select&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+							</pre
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!--Form Controls-->
+			<div class="m-b-xl">
+				<div>
+					<ul uk-tab class="tab tab-border f-w-bold">
+						<li class="uk-active"><a href="#">Preview</a></li>
+						<li class=""><a href="#">Markup</a></li>
+					</ul>
+					<ul class="uk-switcher uk-margin">
+						<li>
+							<div>
+								<form class="uk-grid-small">
+									<h5 class="m-b-remove m-b-xs">Form Controls</h5>
 									<div class="uk-width-1-2@s m-t-sm">
 										<label class="uk-form-label" for="form-stacked-text">Error</label>
 										<input class="uk-input uk-form-danger" type="text" placeholder="form-danger" aria-label="form-danger" value="form-danger" />
@@ -904,6 +965,50 @@
 										<label class="uk-form-label" for="form-stacked-text">Disabled</label>
 										<input class="uk-input" type="text" placeholder="disabled" aria-label="disabled" value="disabled" disabled />
 									</div>
+								</form>
+							</div>
+						</li>
+						<li>
+							<pre>
+	&lt;!-- ERROR --&gt;
+	&lt;div class="uk-width-1-2@s m-t-sm"&gt;
+		&lt;label class="uk-form-label" for="form-stacked-text"&gt;Error&lt;/label&gt;
+		&lt;input class="uk-input uk-form-danger" type="text" placeholder="form-danger" aria-label="form-danger" value="form-danger" /&gt;
+		&lt;div class="color-t-danger m-t-xs f-s-xxs"&gt;
+			&lt;div&gt;&lt;i class="fa-sharp fa-solid fa-circle-exclamation"&gt;&lt;/i&gt; Warning Message&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+						
+	&lt;!-- SUCCESS --&gt;
+		&lt;div class="uk-width-1-2@s m-t-sm"&gt;
+		&lt;label class="uk-form-label" for="form-stacked-text"&gt;Success&lt;/label&gt;
+		&lt;input class="uk-input uk-form-success" type="text" placeholder="form-success" aria-label="form-success" value="form-success" /&gt;
+	&lt;/div&gt;
+						
+	&lt;!-- DISABLED --&gt;
+		&lt;div class="uk-width-1-2@s m-t-sm"&gt;
+		&lt;label class="uk-form-label" for="form-stacked-text"&gt;Disabled&lt;/label&gt;
+		&lt;input class="uk-input" type="text" placeholder="disabled" aria-label="disabled" value="disabled" disabled /&gt;
+	&lt;/div&gt;
+							</pre
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!--Form Buttons-->
+			<div class="m-b-xl">
+				<div>
+					<ul uk-tab class="tab tab-border f-w-bold">
+						<li class="uk-active"><a href="#">Preview</a></li>
+						<li class=""><a href="#">Markup</a></li>
+					</ul>
+					<ul class="uk-switcher uk-margin">
+						<li>
+							<div>
+								<form class="uk-grid-small">
+									<h5 class="m-b-remove m-b-xs">Form Buttons</h5>
 									<div class="uk-width-1-2@s m-t-md">
 										<div class="uk-form-label">Checkbox</div>
 										<div class="uk-grid-small uk-child-width-auto uk-grid">
@@ -923,63 +1028,23 @@
 						</li>
 						<li>
 							<pre>
-		&lt;!-- LABEL --&gt;
-		&lt;div class="uk-width-1-2@s"&gt;
-			&lt;label class="uk-form-label" for="form-stacked-text"&gt;Label&lt;/label&gt;
-			&lt;div class="uk-form-controls"&gt;
-				&lt;input class="uk-input" id="form-stacked-text" type="text" placeholder="Placeholder" /&gt;
-			&lt;/div&gt;
+	&lt;!-- CHECKBOX --&gt;
+	&lt;div class="uk-width-1-2@s m-t-md"&gt;
+		&lt;div class="uk-form-label"&gt;Checkbox&lt;/div&gt;
+		&lt;div class="uk-grid-small uk-child-width-auto uk-grid"&gt;
+			&lt;label&gt;&lt;input class="uk-checkbox" type="checkbox" /&gt; A&lt;/label&gt; &lt;br /&gt;
+			&lt;label&gt;&lt;input class="uk-checkbox" type="checkbox" /&gt; B&lt;/label&gt;
 		&lt;/div&gt;
-
-		&lt;!-- SELECT --&gt;
-		&lt;div class="uk-width-1-2@s m-t-sm"&gt;
-			&lt;label class="uk-form-label" for="form-stacked-select"&gt;Select&lt;/label&gt;
-			&lt;div class="uk-form-controls"&gt;
-				&lt;select class="uk-select" id="form-stacked-select"&gt;
-					&lt;option&gt;Option 01&lt;/option&gt;
-					&lt;option&gt;Option 02&lt;/option&gt;
-				&lt;/select&gt;
-			&lt;/div&gt;
+	&lt;/div&gt;
+						
+	&lt;!-- RADIO BUTTON --&gt;
+	&lt;div class="uk-margin"&gt;
+		&lt;div class="uk-form-label"&gt;Radio&lt;/div&gt;
+		&lt;div class="uk-grid-small uk-child-width-auto uk-grid"&gt;
+			&lt;label&gt;&lt;input class="uk-radio" type="radio" name="radio1" /&gt; A&lt;/label&gt;&lt;br /&gt;
+			&lt;label&gt;&lt;input class="uk-radio" type="radio" name="radio1" /&gt; B &lt;/label&gt;
 		&lt;/div&gt;
-
-		&lt;!-- ERROR --&gt;
-		&lt;div class="uk-width-1-2@s m-t-sm"&gt;
-			&lt;label class="uk-form-label" for="form-stacked-text"&gt;Error&lt;/label&gt;
-			&lt;input class="uk-input uk-form-danger" type="text" placeholder="form-danger" aria-label="form-danger" value="form-danger" /&gt;
-			&lt;div class="color-t-danger m-t-xs f-s-xxs"&gt;
-				&lt;div&gt;&lt;i class="fa-sharp fa-solid fa-circle-exclamation"&gt;&lt;/i&gt; Warning Message&lt;/div&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-
-		&lt;!-- SUCCESS --&gt;
-		&lt;div class="uk-width-1-2@s m-t-sm"&gt;
-			&lt;label class="uk-form-label" for="form-stacked-text"&gt;Success&lt;/label&gt;
-			&lt;input class="uk-input uk-form-success" type="text" placeholder="form-success" aria-label="form-success" value="form-success" /&gt;
-		&lt;/div&gt;
-
-		&lt;!-- DISABLED --&gt;
-		&lt;div class="uk-width-1-2@s m-t-sm"&gt;
-			&lt;label class="uk-form-label" for="form-stacked-text"&gt;Disabled&lt;/label&gt;
-			&lt;input class="uk-input" type="text" placeholder="disabled" aria-label="disabled" value="disabled" disabled /&gt;
-		&lt;/div&gt;
-
-		&lt;!-- CHECKBOX --&gt;
-		&lt;div class="uk-width-1-2@s m-t-md"&gt;
-			&lt;div class="uk-form-label"&gt;Checkbox&lt;/div&gt;
-			&lt;div class="uk-grid-small uk-child-width-auto uk-grid"&gt;
-				&lt;label&gt;&lt;input class="uk-checkbox" type="checkbox" /&gt; A&lt;/label&gt; &lt;br /&gt;
-				&lt;label&gt;&lt;input class="uk-checkbox" type="checkbox" /&gt; B&lt;/label&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-
-		&lt;!-- RADIO BUTTON --&gt;
-		&lt;div class="uk-margin"&gt;
-			&lt;div class="uk-form-label"&gt;Radio&lt;/div&gt;
-			&lt;div class="uk-grid-small uk-child-width-auto uk-grid"&gt;
-				&lt;label&gt;&lt;input class="uk-radio" type="radio" name="radio1" /&gt; A&lt;/label&gt;&lt;br /&gt;
-				&lt;label&gt;&lt;input class="uk-radio" type="radio" name="radio1" /&gt; B &lt;/label&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
+	&lt;/div&gt;
 							</pre
 							>
 						</li>
@@ -1102,9 +1167,6 @@
 										<div class="uk-margin">
 											<input class="uk-input uk-form-width-medium uk-form-large" type="text" placeholder="Large" aria-label="Large" />
 										</div>
-										<div class="uk-margin">
-											<textarea class="uk-textarea" rows="8" placeholder="Textarea" aria-label="Textarea" style="width: 50%"></textarea>
-										</div>
 									</form>
 								</div>
 							</div>
@@ -1131,11 +1193,6 @@
 					&lt;div class="uk-margin"&gt;
 						&lt;input class="uk-input uk-form-width-medium uk-form-large" type="text" placeholder="Large" aria-label="Large" /&gt;
 					&lt;/div&gt;
-
-					&lt;!-- textarea --&gt;
-					&lt;div class="uk-margin"&gt;
-						&lt;textarea class="uk-textarea" rows="8" placeholder="Textarea" aria-label="Textarea" style="width: 50%"&gt;&lt;/textarea&gt;
-					&lt;/div&gt;
 				&lt;/form&gt;
 			&lt;/div&gt;
 		&lt;/div&gt;
@@ -1146,6 +1203,48 @@
 				</div>
 			</div>
 		</div>
+
+		<!--Form Textarea-->
+		<div class="m-xl">
+			<div>
+				<ul uk-tab class="tab tab-border f-w-bold">
+					<li class="uk-active"><a href="#">Preview</a></li>
+					<li class=""><a href="#">Markup</a></li>
+				</ul>
+				<ul class="uk-switcher uk-margin">
+					<li>
+						<div class="m-t-lg">
+							<div>
+								<form>
+									<h5 class="m-b-remove m-b-xs">Form Textarea</h5>
+									<div class="uk-margin">
+										<textarea class="uk-textarea" rows="8" placeholder="Textarea" aria-label="Textarea" style="width: 50%"></textarea>
+									</div>
+								</form>
+							</div>
+						</div>
+					</li>
+					<li>
+						<pre>
+	&lt;!-- Form Textarea --&gt;
+	&lt;div class="m-t-lg"&gt;
+		&lt;h5&gt;Form Sizes&lt;/h5&gt;
+		&lt;div&gt;
+			&lt;form&gt;
+				&lt;!-- textarea --&gt;
+				&lt;div class="uk-margin"&gt;
+					&lt;textarea class="uk-textarea" rows="8" placeholder="Textarea" aria-label="Textarea" style="width: 50%"&gt;&lt;/textarea&gt;
+				&lt;/div&gt;
+			&lt;/form&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+						</pre
+						>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
 		<!-- MARGIN & PADDING -->
 		<div class="m-xl">
