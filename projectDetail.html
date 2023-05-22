@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Index</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/css/uikit.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- JS -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/js/uikit.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/js/uikit-icons.min.js"></script>
+		<script src="js/javascript.js"></script>
+
+		<!-- Fontawesome cdn  -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+		<!-- boxicon cdn  -->
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<!-- <style>
+			* {
+				border: 1px solid red;
+			}
+		</style> -->
+	</head>
+
+	<body>
+		<div class="uk-grid-collapse" uk-grid>
+			<div class="uk-width-1-6">
+				<!-- sidebar -->
+				<aside class="sidebar uk-width-1-6">
+					<header>
+						<div class="image-text">
+							<span class="image">
+								<img src="./images/logo.svg" alt="" />
+							</span>
+
+							<div class="text header-text">
+								<span class="name">QuickStrike</span>
+							</div>
+						</div>
+					</header>
+					<ul>
+						<li class="nav-link active">
+							<a href="#"><i class="bx bxs-grid-alt icon"></i> <span class="text">Dashboard</span></a>
+						</li>
+						<li class="nav-link">
+							<a href="#"><i class="bx bx-calendar icon"></i> <span class="text">Attendance</span></a>
+						</li>
+						<li class="nav-link">
+							<a href="#"><i class="bx bxs-folder-open icon"></i> <span class="text">Project</span></a>
+						</li>
+						<li class="nav-link">
+							<a href="#"><i class="bx bxs-user icon"></i> <span class="text">Profile</span></a>
+						</li>
+						<li class="nav-link">
+							<a href="#"><i class="bx bxs-group icon"></i> <span class="text">Employee List</span></a>
+						</li>
+						<hr style="margin: 30px 0px" />
+						<li class="nav-link">
+							<a href="#"><i class="bx bxs-cog icon"></i> <span class="text">Settings</span></a>
+						</li>
+						<li class="nav-link">
+							<a href="#"><i class="bx bx-log-out icon"></i> <span class="text">Logout</span></a>
+						</li>
+					</ul>
+				</aside>
+			</div>
+			<div class="uk-width-expand">
+				<main style="margin: 30px 50px 0px">
+					<div uk-height-overflow="offset-top: true" uk-overflow-auto></div>
+					<header class="uk-navbar-container" style="background: none">
+						<div class="uk-flex-between">
+							<div uk-navbar>
+								<div class="uk-navbar-left">
+									<ul class="uk-navbar-nav">
+										<h1 class="m-t-sm">Project Details</h1>
+									</ul>
+								</div>
+								<div class="uk-navbar-right">
+									<ul class="uk-navbar-nav uk-flex">
+										<li class="m-t-sm"><span uk-icon="bell"></span></li>
+										<li>juan@qstrike.com <img src="images/avatar.jpg" class="img-sm" /></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</header>
+
+					<section class="section">
+						<div class="proj-flex">
+							<h2 class="f-s-md">Customizer</h2>
+							<div>
+								<a href="#modal-full" uk-toggle class="uk-button btn btn-icon-o-edit"><i class="fa-solid fa-pencil"></i></a>
+								<div id="modal-full" class="uk-modal-full" uk-modal>
+									<div class="uk-modal-dialog modal-content p-b-remove">
+										<div class="uk-grid-collapse uk-flex-middle p-b-remove" uk-grid>
+											<div class="uk-position-relative uk-width-1-1" uk-height-viewport>
+												<div class="uk-position-relative">
+													<h2 class="uk-modal-title">EDIT PROJECT</h2>
+													<button class="uk-modal-close-full uk-modal-close uk-close-large" type="button" uk-close></button>
+													<form action="" class="m-b-xxl">
+														<div class="uk-child-width-1-4@m uk-grid-small uk-grid-match m-t-lg" uk-grid>
+															<div>
+																<label class="uk-form-label" for="form-stacked-text">Project Name</label>
+																<div class="uk-form-controls">
+																	<input class="uk-input" type="text" placeholder="" aria-label="Default" />
+																</div>
+															</div>
+															<div>
+																<label class="uk-form-label" for="form-stacked-text">Project Type</label>
+																<div class="uk-form-controls">
+																	<select class="uk-select" id="form-stacked-text">
+																		<option value="option1">Select Option</option>
+																		<option value="option2">Option 2</option>
+																		<option value="option3">Option 3</option>
+																		<option value="option3">Option 3</option>
+																	</select>
+																</div>
+															</div>
+															<div>
+																<label class="uk-form-label" for="form-stacked-text">Ratings</label>
+																<div class="uk-form-controls">
+																	<input class="uk-input" type="number" placeholder="Default" aria-label="Default" value="1" max="5" min="1" />
+																</div>
+															</div>
+															<div>
+																<label class="uk-form-label" for="form-stacked-text">Project Status</label>
+																<div class="uk-form-controls">
+																	<select class="uk-select" id="form-stacked-text">
+																		<option value="option1">Select Option</option>
+																		<option value="option2">Option 2</option>
+																		<option value="option3">Option 3</option>
+																		<option value="option3">Option 3</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+														<div class="uk-grid-small" uk-grid>
+															<div class="uk-width-1-2@m m-t-sm">
+																<div>
+																	<label class="uk-form-label" for="form-stacked-text">Project Description</label>
+																	<div class="uk-form-controls">
+																		<textarea class="uk-textarea" rows="9" placeholder="" aria-label="Textarea"></textarea>
+																	</div>
+																</div>
+															</div>
+															<div class="uk-width-1-2@m m-t-sm">
+																<div class="uk-grid-small uk-child-width-1-1@m" uk-grid>
+																	<div>
+																		<label class="uk-form-label" for="form-stacked-text">Project Thumbnail</label>
+																		<div class="uk-form-controls">
+																			<input class="uk-input" type="text" placeholder="" aria-label="Default" />
+																		</div>
+																	</div>
+																	<div style="margin-top: 30px">
+																		<label class="uk-form-label" for="form-stacked-text">Project Link</label>
+																		<div class="uk-form-controls">
+																			<input class="uk-input" type="text" placeholder="www.com" aria-label="Default" />
+																		</div>
+																	</div>
+																	<div class="uk-grid-small uk-child-width-1-2@m" uk-grid style="margin-top: 30px">
+																		<div>
+																			<label class="uk-form-label" for="form-stacked-text">Start Development</label>
+																			<div class="uk-form-controls">
+																				<input class="uk-input" type="date" placeholder="Default" aria-label="Default" value="1" max="5" min="1" />
+																			</div>
+																		</div>
+																		<div>
+																			<label class="uk-form-label" for="form-stacked-text">End Development</label>
+																			<div class="uk-form-controls">
+																				<input class="uk-input" type="date" placeholder="Default" aria-label="Default" value="1" max="5" min="1" />
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
+															<div class="m-t-sm">
+																<label class="uk-form-label" for="form-stacked-text">Project Scope</label>
+																<div class="uk-form-controls">
+																	<textarea class="uk-textarea" rows="9" placeholder="" aria-label="Textarea"></textarea>
+																</div>
+															</div>
+															<div class="m-t-sm">
+																<label class="uk-form-label" for="form-stacked-text">Project Accessibility</label>
+																<div class="uk-form-controls">
+																	<textarea class="uk-textarea" rows="9" placeholder="" aria-label="Textarea"></textarea>
+																</div>
+															</div>
+														</div>
+													</form>
+												</div>
+												<div class="uk-text-right uk-position-bottom-right">
+													<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">Cancel</button>
+													<button class="uk-button btn btn-type-default" uk-toggle="target: #modal-confirmation">Submit</button>
+													<div id="modal-confirmation" uk-modal>
+														<div class="uk-modal-dialog uk-modal-body modal-content">
+															<div class="uk-position-relative">
+																<h2 class="uk-modal-title f-w-semi-bold">CONFIRMATION MODAL</h2>
+																<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+															</div>
+															<p class="m-b-md m-t-lg">Are you sure you want to edit this project?</p>
+															<div class="uk-text-right">
+																<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">No</button>
+																<button class="uk-button btn btn-type-default">Yes</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="proj-flex-2">
+							<h6 class="proj-type">Production Sites</h6>
+							<div class="ratings">
+								<h6>4.5</h6>
+								<i class="bx bxs-star"></i>
+								<i class="bx bxs-star"></i>
+								<i class="bx bxs-star"></i>
+								<i class="bx bxs-star"></i>
+								<i class="bx bxs-star-half"></i>
+							</div>
+						</div>
+						<h6 class="proj-dev">Development Duration:<span class="year">2019-2022</span></h6>
+						<h6 class="proj-status">Status: <span class="operational">Operational</span></h6>
+						<p class="proj-des">Design your own custom uniforms using the PROLOOK Uniform Customizer. We offer tons of designs for all sports. Create your custom uniform today. There is an extensive variety of uniform materials here at Pro Look. PROLOOK SPORTS a sportswear company that has been mastering the skill of creating uniforms for the past 25.</p>
+						<div class="proj-btn">
+							<a href="#" class="uk-button btn btn-type-default">Visit Site</a>
+							<a href="#" class="uk-button btn btn-outline-secondary">Version Page</a>
+						</div>
+					</section>
+
+					<section class="section">
+						<h2 class="f-s-md">Project Scope</h2>
+						<p class="scope-desc f-s-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum sunt amet hic dolorum dicta exercitationem explicabo libero aperiam, quod facere dignissimos, tempora inventore sapiente, asperiores maxime quos a nam veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam debitis hic accusantium amet similique, repudiandae quaerat beatae quos, a culpa laborum recusandae tempora doloremque ratione. Iure, maiores. Nulla, voluptatibus unde.</p>
+
+						<h2 class="f-s-md">Project Accessibility</h2>
+						<p class="scope-desc f-s-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum sunt amet hic dolorum dicta exercitationem explicabo libero aperiam, quod facere dignissimos, tempora inventore sapiente, asperiores maxime quos a nam veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique distinctio accusantium sunt ut asperiores odio itaque, delectus repudiandae laborum, obcaecati nesciunt adipisci in dolorem illum sapiente suscipit. Doloribus, cumque ipsum.</p>
+					</section>
+				</main>
+			</div>
+		</div>
+
+		<script>
+			// Sample data for the line chart
+			const data = {
+				labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+				datasets: [
+					{
+						label: "Profit",
+						data: [50, 75, 60, 80, 65, 70, 85, 90, 75, 95, 80, 100].map((value) => value + 10),
+						backgroundColor: "rgba(0, 123, 255, 0.2)",
+						borderColor: "rgba(0, 123, 255, 1)",
+						borderWidth: 1,
+					},
+					{
+						label: "Visited",
+						data: [100, 120, 90, 110, 95, 105, 130, 120, 140, 125, 150, 130].map((value) => value + 30),
+						backgroundColor: "rgba(255, 99, 132, 0.2)",
+						borderColor: "rgba(255, 99, 132, 1)",
+						borderWidth: 1,
+					},
+				],
+			};
+
+			// Configuration options for the chart
+			const options = {
+				responsive: true,
+				scales: {
+					y: {
+						beginAtZero: false,
+						min: 10,
+					},
+				},
+			};
+
+			// Create the line chart
+			const ctx = document.getElementById("myChart").getContext("2d");
+			new Chart(ctx, {
+				type: "line",
+				data: data,
+				options: options,
+			});
+		</script>
+	</body>
+</html>
