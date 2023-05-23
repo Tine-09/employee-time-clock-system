@@ -120,9 +120,59 @@
                                         </div>
                                         <div class="">
                                             <button class="uk-button btn btn-type-default uk-width-1-1 uk-margin-small-bottom js-upload" tabindex="-1"><i class='bx bx-plus' style='color:#ffffff' ></i>Upload a photo</button>
-                                            <button class="uk-button btn btn-outline-secondary uk-width-1-1 uk-margin-small-bottom" type="button"></i>Reposition</button>
+                                            <button class="uk-button btn btn-outline-secondary uk-width-1-1 uk-margin-small-bottom" type="button"> <i class='bx bx-move' style='color:#ed1c24'  ></i>Reposition</button>
                                         </div>
                                     </div>
+							</div>
+						</div>
+					</section>
+
+                    <!-- AVATAR -->
+					<section class="section">
+						<div class="uk-flex" style="position: absolute; margin-top: -50px; margin-left: 10px;">
+							<a href="#modal-avatar" uk-toggle><img class="img-lg" src="images/avatar.jpg" alt="avatar" /></a>
+							<div class="m-t-xl m-l-sm">
+								<p class="m-b-remove m-t-sm">QX-123123-23</p>
+								<h2 class="f-t-uppercase m-t-remove">Juan de la cruz</h2>
+							</div>
+						</div>
+
+                        <!-- AVATAR MODAL -->
+						<div class="uk-modal-container" uk-modal>
+							<div class="uk-modal-dialog">
+								<button class="uk-modal-close-default" type="button" uk-close></button>
+								<div id="modal-avatar" uk-modal>
+                                    <div class="uk-modal-dialog">
+                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                                        <div>
+                                            <img src="./images/avatar.jpg" alt="" />
+        
+                                            <div class="uk-overlay uk-light uk-position-bottom uk-flex uk-flex-center@m uk-flex-right@l">
+                                                <a href="#modal-avatar" uk-toggle>
+                                                    <button class="uk-button btn btn-color-secondary"><i class="bx bx-camera"></i>Edit Profile</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+
+						<!-- EDIT AVATAR MODAL -->
+						<div class="uk-modal-container" uk-modal>
+							<div class="uk-modal-dialog">
+								<button class="uk-modal-close-default" type="button" uk-close></button>
+								<div id="modal-avatar" uk-modal>
+                                    <div class="uk-modal-dialog uk-modal-body modal-content">
+                                        <div class="uk-position-relative">
+                                            <h2 class="uk-modal-title f-w-semi-bold">EDIT PROFILE PICTURE</h2>
+                                            <button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+                                        </div>
+                                        <div class="">
+                                            <button class="uk-button btn btn-type-default uk-width-1-1 uk-margin-small-bottom js-upload" tabindex="-1"><i class='bx bx-plus' style='color:#ffffff' ></i>Upload a photo</button>
+                                            <button class="uk-button btn btn-outline-secondary uk-width-1-1 uk-margin-small-bottom" type="button"> <i class='bx bxs-edit-alt' style='color:#ed1c24'  ></i>Edit Thumbnail</button>
+                                        </div>
+                                    </div>
+								</div>
 							</div>
 						</div>
 					</section>
