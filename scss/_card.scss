@@ -1,5 +1,5 @@
 .qx-card {
-	box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.1);
+	border: 1px solid #ddd;
 	&-primary {
 		background-color: $primary;
 
@@ -39,5 +39,9 @@
 	&-footer {
 		justify-content: space-between;
 		display: flex;
+	}
+
+	&.shadow {
+		box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.1);
 	}
 }
