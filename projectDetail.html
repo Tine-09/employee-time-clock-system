@@ -105,83 +105,133 @@
 													<h2 class="uk-modal-title">EDIT PROJECT</h2>
 													<button class="uk-modal-close-full uk-modal-close uk-close-large" type="button" uk-close></button>
 													<form action="" class="m-b-xxl">
-														<div class="uk-child-width-1-4@m uk-grid-small uk-grid-match m-t-lg" uk-grid>
-															<div>
-																<label class="uk-form-label" for="form-stacked-text">Project Name</label>
-																<div class="uk-form-controls">
-																	<input class="uk-input" type="text" placeholder="" aria-label="Default" />
+														<div class="uk-child-width-1-2@m uk-grid-small uk-grid-match m-t-lg" uk-grid>
+															<div class="uk-child-width-1-1@m uk-grid-small uk-grid-match" uk-grid>
+																<div>
+																	<label class="uk-form-label" for="form-stacked-text">Project Name</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" type="text" placeholder="" aria-label="Default" />
+																	</div>
 																</div>
-															</div>
-															<div>
-																<label class="uk-form-label" for="form-stacked-text">Project Type</label>
-																<div class="uk-form-controls">
-																	<select class="uk-select" id="form-stacked-text">
-																		<option value="option1">Select Option</option>
-																		<option value="option2">Option 2</option>
-																		<option value="option3">Option 3</option>
-																		<option value="option3">Option 3</option>
-																	</select>
+																<div>
+																	<label class="uk-form-label" for="form-stacked-text">Project Type</label>
+																	<div class="uk-form-controls">
+																		<select class="uk-select" id="form-stacked-text">
+																			<option value="option1">Select Option</option>
+																			<option value="option2">Option</option>
+																			<option value="option3">Option 3</option>
+																			<option value="option3">Option 3</option>
+																		</select>
+																	</div>
 																</div>
-															</div>
-															<div>
-																<label class="uk-form-label" for="form-stacked-text">Ratings</label>
-																<div class="uk-form-controls">
-																	<input class="uk-input" type="number" placeholder="Default" aria-label="Default" value="1" max="5" min="1" />
-																</div>
-															</div>
-															<div>
-																<label class="uk-form-label" for="form-stacked-text">Project Status</label>
-																<div class="uk-form-controls">
-																	<select class="uk-select" id="form-stacked-text">
-																		<option value="option1">Select Option</option>
-																		<option value="option2">Option 2</option>
-																		<option value="option3">Option 3</option>
-																		<option value="option3">Option 3</option>
-																	</select>
-																</div>
-															</div>
-														</div>
-														<div class="uk-grid-small" uk-grid>
-															<div class="uk-width-1-2@m m-t-sm">
 																<div>
 																	<label class="uk-form-label" for="form-stacked-text">Project Description</label>
 																	<div class="uk-form-controls">
 																		<textarea class="uk-textarea" rows="9" placeholder="" aria-label="Textarea"></textarea>
 																	</div>
 																</div>
-															</div>
-															<div class="uk-width-1-2@m m-t-sm">
-																<div class="uk-grid-small uk-child-width-1-1@m" uk-grid>
-																	<div>
-																		<label class="uk-form-label" for="form-stacked-text">Project Thumbnail</label>
-																		<div class="uk-form-controls">
-																			<input class="uk-input" type="text" placeholder="" aria-label="Default" />
-																		</div>
+																<div>
+																	<div class="uk-form-label">Project Status</div>
+																	<div class="uk-grid-small uk-child-width-auto uk-grid">
+																		<label><input class="uk-radio" type="radio" name="radio1" /> Operational</label><br />
+																		<label><input class="uk-radio" type="radio" name="radio1" /> In Progress </label>
+																		<label><input class="uk-radio" type="radio" name="radio1" /> Under Maintenance </label>
 																	</div>
-																	<div style="margin-top: 30px">
+																</div>
+															</div>
+															<div class="uk-child-width-1-1@m uk-grid-small uk-grid-matchs" uk-grid>
+																<div>
+																	<div style="margin-top: 7px">
+																		<div class="js-upload uk-placeholder uk-text-center">
+																			<span uk-icon="icon: cloud-upload"></span>
+																			<span class="uk-text-middle">Project Thumbnail</span>
+																			<div uk-form-custom>
+																				<input type="file" multiple />
+																				<span class="uk-link">selecting one</span>
+																			</div>
+																		</div>
+
+																		<progress id="js-progressbar" class="uk-progress" value="0" max="100" hidden></progress>
+
+																		<script>
+																			var bar = document.getElementById("js-progressbar");
+
+																			UIkit.upload(".js-upload", {
+																				url: "",
+																				multiple: true,
+
+																				beforeSend: function () {
+																					console.log("beforeSend", arguments);
+																				},
+																				beforeAll: function () {
+																					console.log("beforeAll", arguments);
+																				},
+																				load: function () {
+																					console.log("load", arguments);
+																				},
+																				error: function () {
+																					console.log("error", arguments);
+																				},
+																				complete: function () {
+																					console.log("complete", arguments);
+																				},
+
+																				loadStart: function (e) {
+																					console.log("loadStart", arguments);
+
+																					bar.removeAttribute("hidden");
+																					bar.max = e.total;
+																					bar.value = e.loaded;
+																				},
+
+																				progress: function (e) {
+																					console.log("progress", arguments);
+
+																					bar.max = e.total;
+																					bar.value = e.loaded;
+																				},
+
+																				loadEnd: function (e) {
+																					console.log("loadEnd", arguments);
+
+																					bar.max = e.total;
+																					bar.value = e.loaded;
+																				},
+
+																				completeAll: function () {
+																					console.log("completeAll", arguments);
+
+																					setTimeout(function () {
+																						bar.setAttribute("hidden", "hidden");
+																					}, 1000);
+
+																					alert("Upload Completed");
+																				},
+																			});
+																		</script>
+																	</div>
+																	<div class="m-t-lg">
 																		<label class="uk-form-label" for="form-stacked-text">Project Link</label>
 																		<div class="uk-form-controls">
 																			<input class="uk-input" type="text" placeholder="www.com" aria-label="Default" />
 																		</div>
 																	</div>
-																	<div class="uk-grid-small uk-child-width-1-2@m" uk-grid style="margin-top: 30px">
-																		<div>
-																			<label class="uk-form-label" for="form-stacked-text">Start Development</label>
-																			<div class="uk-form-controls">
-																				<input class="uk-input" type="date" placeholder="Default" aria-label="Default" value="1" max="5" min="1" />
-																			</div>
+																	<div class="m-t-sm">
+																		<label class="uk-form-label" for="form-stacked-text">Start Development</label>
+																		<div class="uk-form-controls">
+																			<input class="uk-input" type="date" placeholder="Default" aria-label="Default" value="1" max="5" min="1" />
 																		</div>
-																		<div>
-																			<label class="uk-form-label" for="form-stacked-text">End Development</label>
-																			<div class="uk-form-controls">
-																				<input class="uk-input" type="date" placeholder="Default" aria-label="Default" value="1" max="5" min="1" />
-																			</div>
+																	</div>
+																	<div class="m-t-sm">
+																		<label class="uk-form-label" for="form-stacked-text">End Development</label>
+																		<div class="uk-form-controls">
+																			<input class="uk-input" type="date" placeholder="Default" aria-label="Default" value="1" max="5" min="1" />
 																		</div>
 																	</div>
 																</div>
 															</div>
 														</div>
-														<div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
+														<div class="uk-child-width-1-1@m uk-grid-small uk-grid-match" uk-grid>
 															<div class="m-t-sm">
 																<label class="uk-form-label" for="form-stacked-text">Project Scope</label>
 																<div class="uk-form-controls">
@@ -199,20 +249,7 @@
 												</div>
 												<div class="uk-text-right uk-position-bottom-right">
 													<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">Cancel</button>
-													<button class="uk-button btn btn-type-default" uk-toggle="target: #modal-confirmation">Submit</button>
-													<div id="modal-confirmation" uk-modal>
-														<div class="uk-modal-dialog uk-modal-body modal-content">
-															<div class="uk-position-relative">
-																<h2 class="uk-modal-title f-w-semi-bold">CONFIRMATION MODAL</h2>
-																<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
-															</div>
-															<p class="m-b-md m-t-lg">Are you sure you want to edit this project?</p>
-															<div class="uk-text-right">
-																<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">No</button>
-																<button class="uk-button btn btn-type-default">Yes</button>
-															</div>
-														</div>
-													</div>
+													<button class="uk-button btn btn-type-default">Submit</button>
 												</div>
 											</div>
 										</div>
@@ -237,6 +274,157 @@
 						<div class="proj-btn">
 							<a href="#" class="uk-button btn btn-type-default">Visit Site</a>
 							<a href="#" class="uk-button btn btn-outline-secondary">Version Page</a>
+						</div>
+					</section>
+
+					<section class="section">
+						<div class="proj-flex">
+							<h2 class="f-s-md">Resource Person</h2>
+							<div class="search-bar">
+								<div class="uk-inline">
+									<a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: search"></a>
+									<input class="uk-input" type="text" aria-label="clickable icon" placeholder="Search..." />
+								</div>
+							</div>
+						</div>
+						<div class="uk-child-width-1-3 uk-child-width-1-3@m uk-text-center m-t-sm uk-grid-match" uk-grid>
+							<div>
+								<div class="qx-card uk-card-body resource-person">
+									<a href="" uk-toggle="target: #resource-person">
+										<div class="proj-add">
+											<i class="bx bxs-plus-circle"></i>
+											<h2>Add Project</h2>
+										</div>
+									</a>
+									<div id="resource-person" uk-modal>
+										<div class="uk-modal-dialog uk-modal-body modal-content">
+											<div class="uk-position-relative">
+												<h2 class="uk-modal-title f-w-semi-bold">ADD RESOURCE PERSON</h2>
+												<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+											</div>
+											<div class="uk-child-width-1-2@m uk-grid-small uk-grid-match m-t-lg m-b-lg" uk-grid>
+												<div>
+													<label class="uk-form-label" for="form-stacked-text">Name</label>
+													<div class="uk-form-controls">
+														<input class="uk-input" type="text" placeholder="" aria-label="Default" />
+													</div>
+												</div>
+												<div>
+													<label class="uk-form-label" for="form-stacked-text">Resource Person Type</label>
+													<div class="uk-form-controls">
+														<select class="uk-select" id="form-stacked-text">
+															<option value="option1">Select Option</option>
+															<option value="option2">Team Lead</option>
+															<option value="option3">Tech Lead</option>
+															<option value="option3">Project Manager</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="uk-text-right">
+												<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">Cancel</button>
+												<button class="uk-button btn btn-type-default">Submit</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="qx-card uk-card-body resource-person">
+									<img class="img-md" src="images/avatar.jpg" alt="avatar" />
+									<h6 class="name">Juan Dela Cruz</h6>
+									<h6 class="position">Team Lead</h6>
+									<div class="view-profile">
+										<a href="#" class="uk-button btn btn-type-default">View Profile</a>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="qx-card uk-card-body resource-person">
+									<img class="img-md" src="images/avatar.jpg" alt="avatar" />
+									<h6 class="name">Juan Dela Cruz</h6>
+									<h6 class="position">Tech Lead</h6>
+									<div class="view-profile">
+										<a href="#" class="uk-button btn btn-type-default">View Profile</a>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="qx-card uk-card-body resource-person">
+									<img class="img-md" src="images/avatar.jpg" alt="avatar" />
+									<h6 class="name">Juan Dela Cruz</h6>
+									<h6 class="position">Project Manager</h6>
+									<div class="view-profile">
+										<a href="#" class="uk-button btn btn-type-default">View Profile</a>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="qx-card uk-card-body resource-person">
+									<img class="img-md" src="images/avatar.jpg" alt="avatar" />
+									<h6 class="name">Juan Dela Cruz</h6>
+									<h6 class="position">Quality Assurance</h6>
+									<div class="view-profile">
+										<a href="#" class="uk-button btn btn-type-default">View Profile</a>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="qx-card uk-card-body resource-person">
+									<img class="img-md" src="images/avatar.jpg" alt="avatar" />
+									<h6 class="name">Juan Dela Cruz</h6>
+									<h6 class="position">UI/UX Designer</h6>
+									<div class="view-profile">
+										<a href="#" class="uk-button btn btn-type-default">View Profile</a>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="qx-card uk-card-body resource-person">
+									<img class="img-md" src="images/avatar.jpg" alt="avatar" />
+									<h6 class="name">Juan Dela Cruz</h6>
+									<h6 class="position">Frontend Developer</h6>
+									<div class="view-profile">
+										<a href="#" class="uk-button btn btn-type-default">View Profile</a>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="qx-card uk-card-body resource-person">
+									<img class="img-md" src="images/avatar.jpg" alt="avatar" />
+									<h6 class="name">Juan Dela Cruz</h6>
+									<h6 class="position">Backend Developer</h6>
+									<div class="view-profile">
+										<a href="#" class="uk-button btn btn-type-default">View Profile</a>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="qx-card uk-card-body resource-person">
+									<img class="img-md" src="images/avatar.jpg" alt="avatar" />
+									<h6 class="name">Juan Dela Cruz</h6>
+									<h6 class="position">Team Lead</h6>
+									<div class="view-profile">
+										<a href="#" class="uk-button btn btn-type-default">View Profile</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="uk-text-center uk-margin">
+							<div class="uk-inline">
+								<ul class="uk-pagination uk-flex-middle" uk-margin>
+									<li uk-tooltip="Previous Page">
+										<a href="#"><span uk-pagination-previous></span></a>
+									</li>
+									<li class="page-number uk-active m-xs uk-text-center"><a href="">1</a></li>
+									<li class="page-number m-xs uk-text-center"><a href="">2</a></li>
+									<li class="page-number m-xs uk-text-center"><a href="">3</a></li>
+									<li uk-tooltip="Next Page">
+										<a href="#"><span uk-pagination-next></span></a>
+									</li>
+								</ul>
+								<h6 class="uk-position-bottom-center f-t-uppercase f-s-xxs" style="bottom: -25px">Page 1 out of 3</h6>
+							</div>
 						</div>
 					</section>
 
