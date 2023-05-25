@@ -1,0 +1,172 @@
+.section {
+	margin-top: 50px;
+	padding: 30px;
+	box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.1);
+	background: #ffffff;
+	margin-bottom: 50px;
+
+	.proj-flex {
+		display: flex;
+		justify-content: space-between;
+
+		.section-title {
+			margin-bottom: 30px;
+			font-size: $font-size-lg;
+			font-weight: $font-weight-semibold;
+		}
+	}
+
+	.proj-flex-2 {
+		display: flex;
+		justify-content: space-between;
+		max-width: 290px;
+
+		.proj-type {
+			font-weight: $font-weight-regular;
+			font-size: $font-size-xs;
+			margin-top: -15px;
+			color: gray;
+		}
+		.ratings {
+			margin-top: -15px;
+			display: flex;
+			justify-content: space-between;
+
+			h6 {
+				margin-top: 1px;
+				margin-right: 5px;
+				font-weight: $font-weight-regular;
+			}
+
+			i {
+				margin: 2px 3px;
+				color: orange;
+				font-size: 17px;
+			}
+		}
+	}
+
+	.proj-dev {
+		margin-top: 10px;
+		margin-bottom: 5px;
+		text-align: left;
+		font-weight: $font-weight-regular;
+		font-size: $font-size-xs;
+
+		.year {
+			font-weight: $font-weight-semibold;
+			margin-left: 7px;
+		}
+	}
+
+	.proj-status {
+		margin-top: 0px;
+		margin-bottom: 20px;
+		text-align: left;
+		font-weight: $font-weight-regular;
+		font-size: $font-size-xs;
+
+		.in-progress {
+			color: orange;
+			font-weight: $font-weight-semibold;
+		}
+		.maintenance {
+			color: red;
+			font-weight: $font-weight-semibold;
+		}
+		.completed {
+			color: blue;
+			font-weight: $font-weight-semibold;
+		}
+		.operational {
+			color: green;
+			font-weight: $font-weight-semibold;
+		}
+	}
+
+	.proj-des {
+		font-size: $font-size-sm;
+	}
+
+	.proj-btn {
+		text-align: right;
+		margin-top: 20pxpx;
+		.btn {
+			margin-right: 10px;
+		}
+	}
+
+	.resource-person {
+		.name {
+			font-weight: $font-weight-bold;
+			font-size: $font-size-md;
+			margin-top: 10px;
+			margin-bottom: 5px;
+		}
+		.position {
+			font-weight: $font-weight-regular;
+			font-size: $font-size-xs;
+			margin-top: 0px;
+			color: gray;
+		}
+
+		a {
+			text-transform: none;
+			text-decoration: none;
+			.proj-add {
+				justify-content: center;
+				padding: 22px 0px;
+				.bxs-plus-circle {
+					font-size: 95px;
+					color: $secondary;
+				}
+				h2 {
+					font-weight: $font-weight-regular;
+					margin-top: 10px;
+					font-size: $font-size-md;
+				}
+			}
+		}
+	}
+
+	.certification {
+		.cert-name {
+			font-size: $font-size-md;
+			margin-bottom: 0px;
+		}
+
+		.file-type {
+			font-size: $font-size-xs;
+			font-weight: $font-weight-regular;
+			margin-top: 7px;
+			color: gray;
+			margin-bottom: 12px;
+		}
+
+		.cert-btn {
+			color: $secondary;
+			cursor: pointer;
+			text-decoration: none;
+		}
+
+		a {
+			text-transform: none;
+			text-decoration: none;
+			.cert-flex {
+				justify-content: space-between;
+				display: flex;
+				padding: 0px 0px;
+				width: 340px;
+				.bxs-plus-circle {
+					font-size: 82px;
+					color: $secondary;
+				}
+				h2 {
+					font-weight: $font-weight-regular;
+					margin-top: 25px;
+					font-size: $font-size-md;
+				}
+			}
+		}
+	}
+}
