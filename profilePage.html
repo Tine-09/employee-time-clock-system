@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Profile</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/css/uikit.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- JS -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/js/uikit.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/js/uikit-icons.min.js"></script>
+		<script src="js/javascript.js"></script>
+
+		<!-- Fontawesome cdn  -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+		<!-- boxicon cdn  -->
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="uk-grid-collapse" uk-grid>
+			<div class="uk-width-1-6 ">
+				<!-- SIDEBAR -->
+				<aside class="sidebar uk-width-1-6" uk-height-viewport>
+					<header>
+						<div class="image-text">
+							<span class="image">
+								<img src="./images/logo.svg" alt="" />
+							</span>
+							<div class="text header-text">
+								<span class="name">QuickStrike</span>
+							</div>
+						</div>
+					</header>
+					<ul>
+						<li class="nav-link">
+							<a href="./components.html"><i class="bx bxs-grid-alt icon"></i> <span class="text">Dashboard</span></a>
+						</li>
+						<li class="nav-link">
+							<a href="./atttendance.html"><i class="bx bx-calendar icon"></i> <span class="text">Attendance</span></a>
+						</li>
+						<li class="nav-link">
+							<a href="#"><i class="bx bxs-folder-open icon"></i> <span class="text">Project</span></a>
+						</li>
+						<li class="nav-link active">
+							<a href="#"><i class="bx bxs-user icon"></i> <span class="text">Profile</span></a>
+						</li>
+						<li class="nav-link">
+							<a href="#"><i class="bx bxs-group icon"></i> <span class="text">Employee</span></a>
+						</li>
+						<hr style="margin: 30px 0px" />
+						<li class="nav-link">
+							<a href="#"><i class="bx bxs-cog icon"></i> <span class="text">Settings</span></a>
+						</li>
+						<li class="nav-link">
+							<a href="#"><i class="bx bx-log-out icon"></i> <span class="text">Logout</span></a>
+						</li>
+					</ul>
+				</aside>
+			</div>
+			<div class="uk-width-expand">
+				<div uk-height-overflow="offset-top: true" uk-overflow-auto></div>
+				<main style="padding: 30px 50px 0px">
+					
+                    <!-- HEADER -->
+					<header class="uk-navbar-container" style="background: none">
+						<div class="uk-flex-between">
+							<div uk-navbar class="m-x-lg">
+								<div class="uk-navbar-left">
+									<ul class="uk-navbar-nav">
+										<h1 class="m-t-sm">Profile</h1>
+									</ul>
+								</div>
+								<div class="uk-navbar-right">
+									<ul class="uk-navbar-nav uk-flex">
+										<li class="m-t-sm"><span uk-icon="bell"></span></li>
+										<li>juan@qstrike.com <img src="images/avatar.jpg" class="img-sm" /></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</header>
+
+                    <!-- COVER PHOTO -->
+					<section class="section">
+						<div class="uk-cover-container">
+							<canvas width="400" height="200"></canvas>
+							<a class="uk-button uk-button-default" href="#modal-container" uk-toggle> <img src="./images/cover-photo.png" alt="" uk-cover /> </a>
+						</div>
+
+                        <!-- COVER PHOTO MODAL -->
+						<div id="modal-container" class="uk-modal-container" uk-modal>
+							<div class="uk-modal-dialog">
+								<button class="uk-modal-close-default" type="button" uk-close></button>
+								<div>
+									<img src="./images/cover-photo.png" alt="" />
+
+									<div class="uk-overlay uk-light uk-position-bottom uk-flex uk-flex-center@m uk-flex-right@l">
+										<a href="#modal-cover" uk-toggle>
+                                            <button class="uk-button btn btn-color-secondary"><i class="bx bx-camera"></i>Edit Cover</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <!-- EDIT COVER PHOTO MODAL -->
+						<div class="uk-modal-container" uk-modal>
+							<div class="uk-modal-dialog">
+								<button class="uk-modal-close-default" type="button" uk-close></button>
+								<div id="modal-cover" uk-modal>
+                                    <div class="uk-modal-dialog uk-modal-body modal-content">
+                                        <div class="uk-position-relative">
+                                            <h2 class="uk-modal-title f-w-semi-bold">EDIT COVER PHOTO</h2>
+                                            <button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+                                        </div>
+                                        <div class="">
+                                            <button class="uk-button btn btn-type-default uk-width-1-1 uk-margin-small-bottom js-upload" tabindex="-1"><i class='bx bx-plus' style='color:#ffffff' ></i>Upload a photo</button>
+                                            <button class="uk-button btn btn-outline-secondary uk-width-1-1 uk-margin-small-bottom" type="button"> <i class='bx bx-move' style='color:#ed1c24'  ></i>Reposition</button>
+                                        </div>
+                                    </div>
+							</div>
+						</div>
+					</section>
+
+                    <!-- AVATAR -->
+					<section class="section">
+						<div class="uk-flex" style="position: absolute; margin-top: -50px; margin-left: 10px;">
+							<a href="#modal-avatar" uk-toggle><img class="img-lg" src="images/avatar.jpg" alt="avatar" /></a>
+							<div class="m-t-xl m-l-sm">
+								<p class="m-b-remove m-t-sm">QX-123123-23</p>
+								<h2 class="f-t-uppercase m-t-remove">Juan de la cruz</h2>
+							</div>
+						</div>
+
+                        <!-- AVATAR MODAL -->
+						<div class="uk-modal-container" uk-modal>
+							<div class="uk-modal-dialog">
+								<button class="uk-modal-close-default" type="button" uk-close></button>
+								<div id="modal-avatar" uk-modal>
+                                    <div class="uk-modal-dialog">
+                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                                        <div>
+                                            <img src="./images/avatar.jpg" alt="" />
+        
+                                            <div class="uk-overlay uk-light uk-position-bottom uk-flex uk-flex-center@m uk-flex-right@l">
+                                                <a href="#modal-avatar" uk-toggle>
+                                                    <button class="uk-button btn btn-color-secondary"><i class="bx bx-camera"></i>Edit Profile</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+
+						<!-- EDIT AVATAR MODAL -->
+						<div class="uk-modal-container" uk-modal>
+							<div class="uk-modal-dialog">
+								<button class="uk-modal-close-default" type="button" uk-close></button>
+								<div id="modal-avatar" uk-modal>
+                                    <div class="uk-modal-dialog uk-modal-body modal-content">
+                                        <div class="uk-position-relative">
+                                            <h2 class="uk-modal-title f-w-semi-bold">EDIT PROFILE PICTURE</h2>
+                                            <button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+                                        </div>
+                                        <div class="">
+                                            <button class="uk-button btn btn-type-default uk-width-1-1 uk-margin-small-bottom js-upload" tabindex="-1"><i class='bx bx-plus' style='color:#ffffff' ></i>Upload a photo</button>
+                                            <button class="uk-button btn btn-outline-secondary uk-width-1-1 uk-margin-small-bottom" type="button"> <i class='bx bxs-edit-alt' style='color:#ed1c24'  ></i>Edit Thumbnail</button>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</main>
+			</div>
+		</div>
+	</body>
+</html>
