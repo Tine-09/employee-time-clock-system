@@ -89,36 +89,36 @@
 							</div>
 						</div>
 					</header>
-					<section class="section">
-						<h2 class="section-title">Project Overview</h2>
+					<section class="m-t-md">
+						<!-- <h2 class="section-title">Project Overview</h2> -->
 						<div uk-filter="target: .js-filter">
 							<ul class="uk-subnav uk-subnav-pill uk-child-width-1-2 uk-child-width-1-4@m summary" uk-grid>
 								<div>
-									<li class="qx-card uk-card uk-card-default uk-card-body" uk-filter-control="">
+									<li uk-filter-control="">
 										<a href="#">All</a>
 										<h2 class="quantity">05</h2>
 									</li>
 								</div>
 								<div>
-									<li class="qx-card uk-card uk-card-default uk-card-body" uk-filter-control=".in-progress">
+									<li uk-filter-control=".in-progress">
 										<a href="#">In Progress</a>
 										<h2 class="quantity">01</h2>
 									</li>
 								</div>
 								<div>
-									<li class="qx-card uk-card uk-card-default uk-card-body" uk-filter-control=".operational">
+									<li uk-filter-control=".operational">
 										<a href="#">Operational</a>
 										<h2 class="quantity">02</h2>
 									</li>
 								</div>
 								<div>
-									<li class="qx-card uk-card uk-card-default uk-card-body" uk-filter-control=".maintenance">
+									<li uk-filter-control=".maintenance">
 										<a href="#">Maintenance</a>
 										<h2 class="quantity">01</h2>
 									</li>
 								</div>
 							</ul>
-							<div class="project-list">
+							<div class="project-list section">
 								<div class="title-search-handle">
 									<h2 class="section-title">Project List</h2>
 									<div class="search-bar">
@@ -128,9 +128,9 @@
 										</div>
 									</div>
 								</div>
-								<ul class="js-filter uk-child-width-1-2 uk-child-width-1-2@m uk-text-center" uk-grid>
+								<ul class="js-filter uk-child-width-1-2 uk-child-width-1-2@m uk-text- uk-grid-match" uk-grid>
 									<li>
-										<div class="qx-card shadow uk-card uk-card-body proj-card">
+										<div class="qx-card uk-card-body proj-card">
 											<a href="#modal-full" uk-toggle>
 												<div class="proj-add">
 													<i class="bx bxs-plus-circle"></i>
@@ -145,86 +145,133 @@
 																<h2 class="uk-modal-title">ADD PROJECT</h2>
 																<button class="uk-modal-close-full uk-modal-close uk-close-large" type="button" uk-close></button>
 																<form action="" class="m-b-xxl">
-																	<div class="uk-child-width-1-4@m uk-grid-small uk-grid-match m-t-lg" uk-grid>
-																		<div>
-																			<label class="uk-form-label" for="form-stacked-text">Project Name</label>
-																			<div class="uk-form-controls">
-																				<input class="uk-input" type="text" placeholder="" aria-label="Default" />
+																	<div class="uk-child-width-1-2@m uk-grid-small uk-grid-match m-t-lg" uk-grid>
+																		<div class="uk-child-width-1-1@m uk-grid-small uk-grid-match" uk-grid>
+																			<div>
+																				<label class="uk-form-label" for="form-stacked-text">Project Name</label>
+																				<div class="uk-form-controls">
+																					<input class="uk-input" type="text" placeholder="" aria-label="Default" />
+																				</div>
 																			</div>
-																		</div>
-																		<div>
-																			<label class="uk-form-label" for="form-stacked-text">Project Type</label>
-																			<div class="uk-form-controls">
-																				<select class="uk-select" id="form-stacked-text">
-																					<option value="option1">Select Option</option>
-																					<option value="option2">Option</option>
-																					<option value="option3">Option 3</option>
-																					<option value="option3">Option 3</option>
-																				</select>
+																			<div>
+																				<label class="uk-form-label" for="form-stacked-text">Project Type</label>
+																				<div class="uk-form-controls">
+																					<select class="uk-select" id="form-stacked-text">
+																						<option value="option1">Select Option</option>
+																						<option value="option2">Option</option>
+																						<option value="option3">Option 3</option>
+																						<option value="option3">Option 3</option>
+																					</select>
+																				</div>
 																			</div>
-																		</div>
-																		<div>
-																			<label class="uk-form-label" for="form-stacked-text">Ratings</label>
-																			<div class="uk-form-controls">
-																				<input class="uk-input" type="number" placeholder="Default" aria-label="Default" value="1" max="5" min="1" />
-																			</div>
-																		</div>
-																		<div>
-																			<label class="uk-form-label" for="form-stacked-text">Project Status</label>
-																			<div class="uk-form-controls">
-																				<select class="uk-select" id="form-stacked-text">
-																					<option value="option1">Select Option</option>
-																					<option value="option2">Operational</option>
-																					<option value="option3">In Progress</option>
-																					<option value="option3">Under Maintenance</option>
-																				</select>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="uk-grid-small" uk-grid>
-																		<div class="uk-width-1-2@m m-t-sm">
 																			<div>
 																				<label class="uk-form-label" for="form-stacked-text">Project Description</label>
 																				<div class="uk-form-controls">
 																					<textarea class="uk-textarea" rows="9" placeholder="" aria-label="Textarea"></textarea>
 																				</div>
 																			</div>
+																			<div>
+																				<div class="uk-form-label">Project Status</div>
+																				<div class="uk-grid-small uk-child-width-auto uk-grid">
+																					<label><input class="uk-radio" type="radio" name="radio1" /> Operational</label><br />
+																					<label><input class="uk-radio" type="radio" name="radio1" /> In Progress </label>
+																					<label><input class="uk-radio" type="radio" name="radio1" /> Under Maintenance </label>
+																				</div>
+																			</div>
 																		</div>
-																		<div class="uk-width-1-2@m m-t-sm">
-																			<div class="uk-grid-small uk-child-width-1-1@m" uk-grid>
-																				<div>
-																					<label class="uk-form-label" for="form-stacked-text">Project Thumbnail</label>
-																					<div class="uk-form-controls">
-																						<div class="uk-margin-small" uk-form-custom="target: true">
-																							<input type="file" />
-																							<input class="uk-input uk-form-width-medium" type="text" placeholder="Select file" disabled />
+																		<div class="uk-child-width-1-1@m uk-grid-small uk-grid-matchs" uk-grid>
+																			<div>
+																				<div style="margin-top:7px">
+																					<div class="js-upload uk-placeholder uk-text-center">
+																						<span uk-icon="icon: cloud-upload"></span>
+																						<span class="uk-text-middle">Project Thumbnail</span>
+																						<div uk-form-custom>
+																							<input type="file" multiple />
+																							<span class="uk-link">selecting one</span>
 																						</div>
 																					</div>
+
+																					<progress id="js-progressbar" class="uk-progress" value="0" max="100" hidden></progress>
+
+																					<script>
+																						var bar = document.getElementById("js-progressbar");
+
+																						UIkit.upload(".js-upload", {
+																							url: "",
+																							multiple: true,
+
+																							beforeSend: function () {
+																								console.log("beforeSend", arguments);
+																							},
+																							beforeAll: function () {
+																								console.log("beforeAll", arguments);
+																							},
+																							load: function () {
+																								console.log("load", arguments);
+																							},
+																							error: function () {
+																								console.log("error", arguments);
+																							},
+																							complete: function () {
+																								console.log("complete", arguments);
+																							},
+
+																							loadStart: function (e) {
+																								console.log("loadStart", arguments);
+
+																								bar.removeAttribute("hidden");
+																								bar.max = e.total;
+																								bar.value = e.loaded;
+																							},
+
+																							progress: function (e) {
+																								console.log("progress", arguments);
+
+																								bar.max = e.total;
+																								bar.value = e.loaded;
+																							},
+
+																							loadEnd: function (e) {
+																								console.log("loadEnd", arguments);
+
+																								bar.max = e.total;
+																								bar.value = e.loaded;
+																							},
+
+																							completeAll: function () {
+																								console.log("completeAll", arguments);
+
+																								setTimeout(function () {
+																									bar.setAttribute("hidden", "hidden");
+																								}, 1000);
+
+																								alert("Upload Completed");
+																							},
+																						});
+																					</script>
 																				</div>
-																				<div style="margin-top: 30px">
+																				<div class="m-t-lg">
 																					<label class="uk-form-label" for="form-stacked-text">Project Link</label>
 																					<div class="uk-form-controls">
 																						<input class="uk-input" type="text" placeholder="www.com" aria-label="Default" />
 																					</div>
 																				</div>
-																				<div class="uk-grid-small uk-child-width-1-2@m" uk-grid style="margin-top: 30px">
-																					<div>
-																						<label class="uk-form-label" for="form-stacked-text">Start Development</label>
-																						<div class="uk-form-controls">
-																							<input class="uk-input" type="date" placeholder="Default" aria-label="Default" value="1" max="5" min="1" />
-																						</div>
+																				<div class="m-t-sm">
+																					<label class="uk-form-label" for="form-stacked-text">Start Development</label>
+																					<div class="uk-form-controls">
+																						<input class="uk-input" type="date" placeholder="Default" aria-label="Default" value="1" max="5" min="1" />
 																					</div>
-																					<div>
-																						<label class="uk-form-label" for="form-stacked-text">End Development</label>
-																						<div class="uk-form-controls">
-																							<input class="uk-input" type="date" placeholder="Default" aria-label="Default" value="1" max="5" min="1" />
-																						</div>
+																				</div>
+																				<div class="m-t-sm">
+																					<label class="uk-form-label" for="form-stacked-text">End Development</label>
+																					<div class="uk-form-controls">
+																						<input class="uk-input" type="date" placeholder="Default" aria-label="Default" value="1" max="5" min="1" />
 																					</div>
 																				</div>
 																			</div>
 																		</div>
 																	</div>
-																	<div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
+																	<!-- <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
 																		<div class="m-t-sm">
 																			<label class="uk-form-label" for="form-stacked-text">Project Scope</label>
 																			<div class="uk-form-controls">
@@ -237,7 +284,7 @@
 																				<textarea class="uk-textarea" rows="9" placeholder="" aria-label="Textarea"></textarea>
 																			</div>
 																		</div>
-																	</div>
+																	</div> -->
 																</form>
 															</div>
 															<div class="uk-text-right uk-position-bottom-right">
@@ -251,7 +298,7 @@
 										</div>
 									</li>
 									<li class="operational">
-										<div class="qx-card uk-card uk-card-default uk-card-body proj-card">
+										<div class="qx-card uk-card-body proj-card">
 											<img class="proj-image" src="images/pdf-services.png" alt="" />
 											<div class="proj-info">
 												<h6 class="proj-title">PDF Services</h6>
@@ -272,7 +319,7 @@
 										</div>
 									</li>
 									<li class="in-progress">
-										<div class="qx-card uk-card uk-card-default uk-card-body proj-card">
+										<div class="qx-card uk-card-body proj-card">
 											<img class="proj-image" src="images/customizer.png" alt="" />
 											<div class="proj-info">
 												<h6 class="proj-title">Customizer</h6>
@@ -293,7 +340,7 @@
 										</div>
 									</li>
 									<li class="maintenance">
-										<div class="qx-card uk-card uk-card-default uk-card-body proj-card">
+										<div class="qx-card uk-card-body proj-card">
 											<img class="proj-image" src="images/prolook.png" alt="" />
 											<div class="proj-info">
 												<h6 class="proj-title">Prolook Website</h6>
@@ -314,7 +361,7 @@
 										</div>
 									</li>
 									<li class="operational">
-										<div class="qx-card uk-card uk-card-default uk-card-body proj-card">
+										<div class="qx-card uk-card-body proj-card">
 											<img class="proj-image" src="images/qx-api.png" alt="" />
 											<div class="proj-info">
 												<h6 class="proj-title">QX API</h6>
@@ -335,7 +382,7 @@
 										</div>
 									</li>
 									<li class="operational">
-										<div class="qx-card uk-card uk-card-default uk-card-body proj-card">
+										<div class="qx-card uk-card-body proj-card">
 											<img class="proj-image" src="images/image-services.png" alt="" />
 											<div class="proj-info">
 												<h6 class="proj-title">Image Services</h6>
@@ -356,22 +403,22 @@
 										</div>
 									</li>
 								</ul>
-							</div>
-						</div>
-						<div class="uk-text-center uk-margin">
-							<div class="uk-inline">
-								<ul class="uk-pagination uk-flex-middle" uk-margin>
-									<li uk-tooltip="Previous Page">
-										<a href="#"><span uk-pagination-previous></span></a>
-									</li>
-									<li class="page-number uk-active m-xs uk-text-center"><a href="">1</a></li>
-									<li class="page-number m-xs uk-text-center"><a href="">2</a></li>
-									<li class="page-number m-xs uk-text-center"><a href="">3</a></li>
-									<li uk-tooltip="Next Page">
-										<a href="#"><span uk-pagination-next></span></a>
-									</li>
-								</ul>
-								<h6 class="uk-position-bottom-center f-t-uppercase f-s-xxs" style="bottom: -25px">Page 1 out of 3</h6>
+								<div class="uk-text-center m-t-lg">
+									<div class="uk-inline">
+										<ul class="uk-pagination uk-flex-middle" uk-margin>
+											<li uk-tooltip="Previous Page">
+												<a href="#"><span uk-pagination-previous></span></a>
+											</li>
+											<li class="page-number uk-active m-xs uk-text-center"><a href="">1</a></li>
+											<li class="page-number m-xs uk-text-center"><a href="">2</a></li>
+											<li class="page-number m-xs uk-text-center"><a href="">3</a></li>
+											<li uk-tooltip="Next Page">
+												<a href="#"><span uk-pagination-next></span></a>
+											</li>
+										</ul>
+										<h6 class="uk-position-bottom-center f-t-uppercase f-s-xxs" style="bottom: -25px">Page 1 out of 3</h6>
+									</div>
+								</div>
 							</div>
 						</div>
 					</section>
