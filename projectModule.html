@@ -289,7 +289,20 @@
 															</div>
 															<div class="uk-text-right uk-position-bottom-right">
 																<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">Cancel</button>
-																<button class="uk-button btn btn-type-default">Submit</button>
+																<button class="uk-button btn btn-type-default" type="button" uk-toggle="target: #modal-confirmation">Submit</button>
+																<div id="modal-confirmation" uk-modal>
+																	<div class="uk-modal-dialog uk-modal-body modal-content">
+																		<div class="uk-position-relative">
+																			<h2 class="uk-modal-title f-w-semi-bold">CONFIRMATION</h2>
+																			<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+																		</div>
+																		<p class="m-b-md m-t-lg">Are you sure you want to add this project?</p>
+																		<div class="uk-text-right">
+																			<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">No</button>
+																			<button class="uk-button btn btn-type-default">Yes</button>
+																		</div>
+																	</div>
+																</div>
 															</div>
 														</div>
 													</div>
