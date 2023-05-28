@@ -1,39 +1,23 @@
 .qx-card {
 	border: 1px solid #ddd;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 	&-primary {
 		background-color: $primary;
-
-		h5,
-		h2 {
-			color: #fff;
-		}
-
-		p {
-			color: #fff;
-		}
+		color: #fff;
 	}
 
 	&-default {
-		h4 {
-			color: $primary;
-		}
-
-		p {
-			color: $primary;
-		}
+		background-color: #fff;
+		color: $primary;
 	}
 
 	&-disable {
 		border: 1px solid $primary;
-
-		h2,
-		h5 {
-			color: #808080;
-		}
-
-		p {
-			color: $placeholderText;
-		}
+		background-color: #fff;
+		color: $placeholderText;
 	}
 
 	&-footer {

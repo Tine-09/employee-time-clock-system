@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Attendance</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/css/uikit.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- JS -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/js/uikit.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/js/uikit-icons.min.js"></script>
+		<script src="js/javascript.js"></script>
+		<script src="attendance.js" async></script>
+
+		<!-- Fontawesome cdn  -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+		<!-- boxicon cdn  -->
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+		<!-- <style>
+			* {
+				border: 1px solid #ff0000;
+			}
+		</style> -->
+	</head>
+
+	<body>
+		<div class="uk-grid-collapse" uk-grid>
+			<!-- SIDEBAR -->
+			<div class="uk-width-1-6">
+				<aside class="sidebar uk-width-1-6" uk-height-viewport>
+					<header>
+						<div class="image-text">
+							<span class="image">
+								<img src="./images/logo.png" alt="" />
+							</span>
+
+							<div class="text header-text">
+								<span class="name">QuickStrike</span>
+							</div>
+						</div>
+					</header>
+					<ul>
+						<li class="nav-link">
+							<a href="./components.html"><i class="bx bxs-grid-alt icon"></i> <span class="text">Dashboard</span></a>
+						</li>
+						<li class="nav-link active">
+							<a href="./atttendance.html"><i class="bx bx-calendar icon"></i> <span class="text">Attendance</span></a>
+						</li>
+						<li class="nav-link">
+							<a href="#"><i class="bx bxs-folder-open icon"></i> <span class="text">Project</span></a>
+						</li>
+						<li class="nav-link">
+							<a href="#"><i class="bx bxs-user icon"></i> <span class="text">Profile</span></a>
+						</li>
+						<li class="nav-link">
+							<a href="#"><i class="bx bxs-group icon"></i> <span class="text">Employee List</span></a>
+						</li>
+						<hr style="margin: 30px 0px" />
+						<li class="nav-link">
+							<a href="#"><i class="bx bxs-cog icon"></i> <span class="text">Settings</span></a>
+						</li>
+						<li class="nav-link">
+							<a href="#"><i class="bx bx-log-out icon"></i> <span class="text">Logout</span></a>
+						</li>
+					</ul>
+				</aside>
+			</div>
+
+			<div class="uk-width-expand">
+				<main style="padding: 30px 50px 0px">
+					<div uk-height-overflow="offset-top: true" uk-overflow-auto></div>
+					<!--  HEADER -->
+					<header class="uk-navbar-container" style="background: none">
+						<div class="uk-flex-between">
+							<div uk-navbar>
+								<div class="uk-navbar-left">
+									<ul class="uk-navbar-nav">
+										<h1 class="m-t-sm">Attendance</h1>
+									</ul>
+								</div>
+								<div class="uk-navbar-right">
+									<ul class="uk-navbar-nav uk-flex">
+										<li class="m-t-sm"><span uk-icon="bell"></span></li>
+										<li>juan@qstrike.com <img src="images/avatar.jpg" class="img-sm" /></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</header>
+
+					<section class="section" style="background-color: transparent; box-shadow: none">
+						<!-- CLOCK IN/CLOCK OUT CARD -->
+
+						<div class="uk-flex uk-child-width-1-2@m">
+							<div class="qx-card uk-card-body clk" style="background: rgb(255, 255, 255)">
+								<div class="uk-flex uk-flex-between uk-flex-bottom m-b-md clk-head">
+									<div class="uk-flex uk-flex-column">
+										<span class="clk clk-head-time">7:30 AM</span>
+										<span>Tuesday, Apr. 18, 2023</span>
+									</div>
+
+									<div>
+										<button class="btn btn-size-sm btn-color-primary">Leave Request</button>
+									</div>
+								</div>
+
+								<div class="uk-text-center uk-flex uk-flex-between clk-card">
+									<div class="clk-card-in qx-card-primary uk-height-medium uk-width-1-2 p-sm">
+										<div class="clk-card-in-con uk-flex uk-flex-column uk-flex-between">
+											<div class="clk-card-info uk-flex uk-flex-column uk-flex-around">
+												<div class="uk-flex uk-flex-middle uk-flex-center">
+													<i class="bx bx-time clk-icon m-r-xs"></i>
+													<span class="clk-card-title">TIME IN</span>
+												</div>
+
+												<div class="uk-flex uk-flex-column clk-card-date">
+													<span>7:30 AM</span>
+													<span>Tuesday, May 16, 2023</span>
+												</div>
+											</div>
+
+											<div class="uk-flex uk-flex-column">
+												<button class="uk-button btn btn-type-default btn-size-md m-b-xs">Clock In</button>
+												<span class="clk-card-shift">Shift Start: 8:00 AM</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="clk-card-out qx-card-disable uk-height-medium uk-width-1-2 p-sm">
+										<div class="clk-card-out-con uk-flex uk-flex-column uk-flex-between">
+											<div class="clk-card-info uk-flex uk-flex-column uk-flex-around">
+												<div class="uk-flex uk-flex-middle uk-flex-center">
+													<i class="bx bx-time-five clk-icon m-r-xs"></i>
+													<span class="clk-card-title">TIME OUT</span>
+												</div>
+
+												<div class="uk-flex uk-flex-column clk-card-date">
+													<span>--:-- --</span>
+													<span>---, --- --, ----</span>
+												</div>
+											</div>
+
+											<div class="uk-flex uk-flex-column">
+												<button class="uk-button btn btn-type-disabled btn-size-md m-b-xs">Clock Out</button>
+												<span class="clk-card-shift">Shift End: 5:00 PM</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="clk-rndr uk-flex uk-flex-column uk-text-center m-t-lg">
+									<span class="clk-rndr-time">0 Hour</span>
+									<span>Time Rendered</span>
+								</div>
+							</div>
+
+							<!-- RECENT LEAVES -->
+							<div class="uk-card uk-card-body rcnt-box" style="background: transparent">
+								<div class="uk-flex uk-flex-between uk-flex-middle m-b-lg">
+									<span class="rcnt-box-title">Recent Leaves</span>
+									<button class="btn btn-outline-primary btn-size-sm">Sort By <i class="bx bxs-down-arrow"></i></button>
+									<div uk-dropdown="mode: click" class="uk-dropdown drpdwn">
+										<div class="card">
+											<div class="card-body">
+												<ul class="uk-nav uk-dropdown-nav">
+													<li><a href="#">Date</a></li>
+													<li><a href="#">Status</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="uk-flex uk-flex-column rcnt-lv">
+									<a class="rcnt-lv-card" uk-toggle="target: #modal-confirmation">
+										<div class="qx-card qx-card-default uk-flex uk-flex-between m-b-md p-sm rcnt">
+											<div class="uk-flex uk-flex-column uk-flex-between">
+												<div class="uk-flex uk-flex-column">
+													<span class="rcnt-title">Going for a trip</span>
+													<span class="rcnt-type">Vacation Leave</span>
+												</div>
+												<div class="uk-flex uk-flex-middle rcnt-date">
+													<i class="bx bx-calendar rcnt-date-icon m-r-xs"></i>
+													<span class="rcnt-date-day"> April 25-28, 2023</span>
+												</div>
+											</div>
+											<div>
+												<span class="uk-badge badge badge-approved">Approved</span>
+											</div>
+										</div>
+									</a>
+
+									<div class="rcnt-modal" id="modal-confirmation" uk-modal>
+										<div class="uk-modal-dialog uk-modal-body modal-content uk-width-1-2">
+											<div class="uk-position-relative m-b-lg">
+												<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+											</div>
+
+											<div class="uk-flex uk-flex-column uk-flex-between uk-height-small">
+												<div>
+													<span class="uk-badge badge badge-approved">Approved</span>
+												</div>
+
+												<div class="uk-flex uk-flex-column">
+													<span class="rcnt-modal-title">Going for a trip</span>
+													<span class="rcnt-modal-type">Vacation Leave</span>
+												</div>
+
+												<div class="uk-flex uk-flex-middle rcnt-modal-date">
+													<i class="bx bx-calendar p-r-xs rcnt-modal-date-icon"></i>
+													<span class="m-remove rcnt-modal-date-day"> April 25-28, 2023</span>
+												</div>
+											</div>
+
+											<p class="m-b-md m-t-lg">I am writing to inform you that I will be taking a vacation leave from April 25 to 28. I have completed all my pending work and have ensured that my tasks will be taken care of in my absence. I have also informed my colleagues about my leave and have provided them with the necessary information and instructions they may need.</p>
+
+											<div class="uk-flex uk-flex-column rcnt-modal-attch">
+												<div class="m-b-xs attch-title">
+													<span>Attachments</span>
+												</div>
+
+												<div class="uk-flex">
+													<div class="uk-flex uk-flex-middle p-l-xs p-t-xs p-b-xs m-r-sm attch-txt">
+														<i class="bx bxs-file-blank p-r-xs attch-icon"></i>
+														<span class="p-r-md attch-name">receipt.txt</span>
+														<i class="bx bx-x-circle p-r-xs"></i>
+													</div>
+
+													<div class="uk-flex uk-flex-middle p-l-xs p-t-xs p-b-xs attch-txt">
+														<i class="bx bxs-image-alt p-r-xs attch-icon"></i>
+														<span class="p-r-md attch-name">beach.jpg</span>
+														<i class="bx bx-x-circle p-r-xs"></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="uk-text-right">
+												<button class="uk-button btn btn-outline-secondary btn-size-sm uk-modal-close" type="button" uk-toggle="target: #rcnt-confirmation">Delete Request</button>
+												<div id="rcnt-confirmation" uk-modal>
+													<div class="uk-modal-dialog uk-modal-body modal-content">
+														<div class="uk-position-relative">
+															<h2 class="uk-modal-title f-w-semi-bold">DELETE LEAVE REQUEST?</h2>
+															<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+														</div>
+														<p class="m-b-md m-t-lg">Do you really want to delete this request? This process cannot be undone.</p>
+														<div class="uk-text-right">
+															<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">No</button>
+															<button class="uk-button btn btn-type-default">Yes</button>
+														</div>
+													</div>
+												</div>
+
+												<button class="uk-button btn btn-type-default btn-size-sm">Edit Request</button>
+											</div>
+										</div>
+									</div>
+
+									<div class="qx-card qx-card-default m-b-md clickable" id="myDiv">
+										<div class="uk-flex uk-flex-between p-sm">
+											<div class="uk-flex uk-flex-column uk-flex-between" style="height: 100px">
+												<div class="uk-flex uk-flex-column">
+													<span style="font-size: 18px; font-weight: 500; color: #323133">Unwinding in Nature</span>
+													<span class="vac-type" style="font-size: 14px">Vacation Leave</span>
+												</div>
+												<div class="uk-flex uk-flex-middle" style="gap: 5px">
+													<i class="bx bx-calendar" style="font-size: 18px"></i>
+													<span class="m-remove" style="font-size: 14px"> April 21, 2023</span>
+												</div>
+											</div>
+											<div>
+												<span class="uk-badge badge badge-pending">Pending</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="qx-card qx-card-default m-b-md clickable" id="myDiv">
+										<div class="uk-flex uk-flex-between p-sm">
+											<div class="uk-flex uk-flex-column uk-flex-between" style="height: 100px">
+												<div class="uk-flex uk-flex-column">
+													<span style="font-size: 18px; font-weight: 500; color: #323133">Disconnecting from Technology</span>
+													<span class="vac-type" style="font-size: 14px">Vacation Leave</span>
+												</div>
+												<div class="uk-flex uk-flex-middle" style="gap: 5px">
+													<i class="bx bx-calendar" style="font-size: 18px"></i>
+													<span class="m-remove" style="font-size: 14px">April 18, 2023</span>
+												</div>
+											</div>
+											<div>
+												<span class="uk-badge badge badge-rejected">Rejected</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="qx-card qx-card-default m-b-md clickable" id="myDiv">
+										<div class="uk-flex uk-flex-between p-sm">
+											<div class="uk-flex uk-flex-column uk-flex-between" style="height: 100px">
+												<div class="uk-flex uk-flex-column">
+													<span style="font-size: 18px; font-weight: 500; color: #323133">Rest and Recovery</span>
+													<span class="vac-type" style="font-size: 14px">Sick Leave</span>
+												</div>
+												<div class="uk-flex uk-flex-middle" style="gap: 5px">
+													<i class="bx bx-calendar" style="font-size: 18px"></i>
+													<span class="m-remove" style="font-size: 14px"> April 12-13, 2023</span>
+												</div>
+											</div>
+											<div>
+												<span class="uk-badge badge badge-approved">Approved</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="qx-card qx-card-default m-b-md clickable" id="myDiv">
+										<div class="uk-flex uk-flex-between p-sm">
+											<div class="uk-flex uk-flex-column uk-flex-between" style="height: 100px">
+												<div class="uk-flex uk-flex-column">
+													<span style="font-size: 18px; font-weight: 500; color: #323133">Contagious Illness</span>
+													<span class="vac-type" style="font-size: 14px">Sick Leave</span>
+												</div>
+												<div class="uk-flex uk-flex-middle" style="gap: 5px">
+													<i class="bx bx-calendar" style="font-size: 18px"></i>
+													<span class="m-remove" style="font-size: 14px"> April 8-11, 2023</span>
+												</div>
+											</div>
+											<div>
+												<span class="uk-badge badge badge-approved">Approved</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="qx-card qx-card-default m-b-md clickable" id="myDiv">
+										<div class="uk-flex uk-flex-between p-sm">
+											<div class="uk-flex uk-flex-column uk-flex-between" style="height: 100px">
+												<div class="uk-flex uk-flex-column">
+													<span style="font-size: 18px; font-weight: 500; color: #323133">Swimming Outing</span>
+													<span class="vac-type" style="font-size: 14px">Vacation Leave</span>
+												</div>
+												<div class="uk-flex uk-flex-middle" style="gap: 5px">
+													<i class="bx bx-calendar" style="font-size: 18px"></i>
+													<span class="m-remove" style="font-size: 14px"> April 7, 2023</span>
+												</div>
+											</div>
+											<div>
+												<span class="uk-badge badge badge-rejected">Rejected</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="qx-card qx-card-default m-b-md clickable" id="myDiv">
+										<div class="uk-flex uk-flex-between p-sm">
+											<div class="uk-flex uk-flex-column uk-flex-between" style="height: 100px">
+												<div class="uk-flex uk-flex-column">
+													<span style="font-size: 18px; font-weight: 500; color: #323133">Creating Family Balance</span>
+													<span class="vac-type" style="font-size: 14px">Paternity Leave</span>
+												</div>
+												<div class="uk-flex uk-flex-middle" style="gap: 5px">
+													<i class="bx bx-calendar" style="font-size: 18px"></i>
+													<span class="m-remove" style="font-size: 14px">April 3-6, 2023</span>
+												</div>
+											</div>
+											<div>
+												<span class="uk-badge badge badge-pending">Pending</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</main>
+			</div>
+		</div>
+	</body>
+</html>
