@@ -103,20 +103,19 @@
 		color: gray;
 	}
 
-		a {
-			text-transform: none;
-			text-decoration: none;
-			.proj-add {
-				justify-content: center;
-				.bxs-plus-circle {
-					font-size: 95px;
-					color: $secondary;
-				}
-				h2 {
-					font-weight: $font-weight-regular;
-					margin-top: 10px;
-					font-size: $font-size-md;
-				}
+	a {
+		text-transform: none;
+		text-decoration: none;
+		.proj-add {
+			justify-content: center;
+			.bxs-plus-circle {
+				font-size: 95px;
+				color: $secondary;
+			}
+			h2 {
+				font-weight: $font-weight-regular;
+				margin-top: 10px;
+				font-size: $font-size-md;
 			}
 		}
 	}
@@ -146,13 +145,13 @@
 		text-transform: none;
 		text-decoration: none;
 		.cert-flex {
-			justify-content: space-between;
 			display: flex;
 			padding: 0px 0px;
 			width: 340px;
 			.bxs-plus-circle {
 				font-size: 82px;
 				color: $secondary;
+				margin-right: 10px;
 			}
 			h2 {
 				font-weight: $font-weight-regular;
