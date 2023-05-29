@@ -1,0 +1,39 @@
+#calendar {
+	height: 600px;
+	a {
+		color: black;
+		font-family: $font-family-gotham;
+	}
+	.fc-event {
+		background-color: transparent !important;
+		text-align: center;
+		border: none;
+		&-title {
+			display: hidden;
+		}
+		&-image {
+			display: inline-block;
+			border-radius: 50%;
+		}
+	}
+	.fc-daygrid-day-main {
+		z-index: -1;
+	}
+	.fc-event-main {
+		z-index: 99;
+	}
+	.fc-daygrid-day-events {
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+	}
+	.fc-daygrid-day-bottom {
+		display: none;
+	}
+	.fc-toolbar-chunk {
+		button {
+			background-color: $primary;
+			text-transform: capitalize;
+		}
+	}
+}

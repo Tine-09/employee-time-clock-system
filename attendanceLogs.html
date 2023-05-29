@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Attendance</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/css/uikit.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- JS -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/js/uikit.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/js/uikit-icons.min.js"></script>
+		<script src="js/javascript.js"></script>
+
+		<!-- Fontawesome cdn  -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+		<!-- boxicon cdn  -->
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+		<!-- <style>
+			* {
+				border: 1px solid #ff0000;
+			}
+		</style> -->
+	</head>
+
+	<body>
+		<div class="uk-grid-collapse" uk-grid>
+			<!-- SIDEBAR -->
+			<div class="uk-width-1-6">
+				<aside class="sidebar uk-width-1-6" uk-height-viewport>
+					<header>
+						<div class="image-text">
+							<span class="image">
+								<img src="./images/logo.png" alt="" />
+							</span>
+
+							<div class="text header-text">
+								<span class="name">QuickStrike</span>
+							</div>
+						</div>
+					</header>
+					<ul>
+						<li class="nav-link">
+							<a href="./components.html"><i class="bx bxs-grid-alt icon"></i> <span class="text">Dashboard</span></a>
+						</li>
+						<li class="nav-link active">
+							<a href="./atttendance.html"><i class="bx bx-calendar icon"></i> <span class="text">Attendance</span></a>
+						</li>
+						<li class="nav-link">
+							<a href="#"><i class="bx bxs-folder-open icon"></i> <span class="text">Project</span></a>
+						</li>
+						<li class="nav-link">
+							<a href="#"><i class="bx bxs-user icon"></i> <span class="text">Profile</span></a>
+						</li>
+						<li class="nav-link">
+							<a href="#"><i class="bx bxs-group icon"></i> <span class="text">Employee List</span></a>
+						</li>
+						<hr style="margin: 30px 0px" />
+						<li class="nav-link">
+							<a href="#"><i class="bx bxs-cog icon"></i> <span class="text">Settings</span></a>
+						</li>
+						<li class="nav-link">
+							<a href="#"><i class="bx bx-log-out icon"></i> <span class="text">Logout</span></a>
+						</li>
+					</ul>
+				</aside>
+			</div>
+
+			<div class="uk-width-expand">
+				<main style="padding: 30px 50px 0px">
+					<div uk-height-overflow="offset-top: true" uk-overflow-auto></div>
+					<!--  HEADER -->
+					<header class="uk-navbar-container" style="background: none">
+						<div class="uk-flex-between">
+							<div uk-navbar>
+								<div class="uk-navbar-left">
+									<ul class="uk-navbar-nav">
+										<h1 class="m-t-sm">Attendance</h1>
+									</ul>
+								</div>
+								<div class="uk-navbar-right">
+									<ul class="uk-navbar-nav uk-flex">
+										<li class="m-t-sm"><span uk-icon="bell"></span></li>
+										<li>juan@qstrike.com <img src="images/avatar.jpg" class="img-sm" /></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</header>
+
+					<section class="section" style="background-color: white">
+						<div class="uk-flex uk-flex-between uk-flex-middle m-b-sm">
+							<div class="p-t-sm">
+								<h4>Attendance Logs</h4>
+							</div>
+
+							<div class="uk-flex uk-flex-between uk-width-1-4">
+								<button class="uk-button btn btn-outline-primary">2023 <i class="bx bxs-down-arrow"></i></button>
+								<div uk-dropdown="mode: click" class="uk-dropdown drpdwn">
+									<div class="card">
+										<div class="card-body">
+											<ul class="uk-nav uk-dropdown-nav">
+												<li><a href="#">2023</a></li>
+												<li><a href="#">2022</a></li>
+												<li><a href="#">2021</a></li>
+												<li><a href="#">2020</a></li>
+												<li><a href="#">2019</a></li>
+												<li><a href="#">2018</a></li>
+												<li><a href="#">2017</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<button class="uk-button btn btn-outline-primary">May <i class="bx bxs-down-arrow"></i></button>
+								<div uk-dropdown="mode: click" class="uk-dropdown drpdwn">
+									<div class="card">
+										<div class="card-body">
+											<ul class="uk-nav uk-dropdown-nav">
+												<li><a href="#">January</a></li>
+												<li><a href="#">February</a></li>
+												<li><a href="#">March</a></li>
+												<li><a href="#">April</a></li>
+												<li><a href="#">May</a></li>
+												<li><a href="#">June</a></li>
+												<li><a href="#">July</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<ul class="listing-table attendance-list p-remove">
+								<li class="uk-flex uk-flex-between attendance-list-header p-r-lg">
+									<span class="table-header uk-width-1-5">Date</span>
+									<span class="table-header">Time In</span>
+									<span class="table-header">Time Out</span>
+									<span class="table-header">Time Rendered</span>
+									<span class="table-header">Status</span>
+								</li>
+								<li class="uk-flex uk-flex-between attendance-list-item p-t-sm p-b-sm p-r-lg">
+									<span class="table-cell uk-width-1-5">Thursday, April 20, 2023</span>
+									<span class="table-cell">8:00 AM</span>
+									<span class="table-cell">5:00 PM</span>
+									<span class="table-cell">8 Hours</span>
+									<span class="table-cell">On Time</span>
+								</li>
+								<li class="uk-flex uk-flex-between attendance-list-item p-t-sm p-b-sm p-r-lg">
+									<span class="table-cell uk-width-1-5">Wednesday, April 19, 2023</span>
+									<span class="table-cell">8:00 AM</span>
+									<span class="table-cell">5:00 PM</span>
+									<span class="table-cell">8 Hours</span>
+									<span class="table-cell">On Time</span>
+								</li>
+								<li class="uk-flex uk-flex-between attendance-list-item p-t-sm p-b-sm p-r-lg">
+									<span class="table-cell uk-width-1-5">Tuesday, April 18, 2023</span>
+									<span class="table-cell">8:00 AM</span>
+									<span class="table-cell">5:00 PM</span>
+									<span class="table-cell">8 Hours</span>
+									<span class="table-cell">On Time</span>
+								</li>
+							</ul>
+						</div>
+					</section>
+				</main>
+			</div>
+		</div>
+	</body>
+</html>
