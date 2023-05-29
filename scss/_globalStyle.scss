@@ -27,3 +27,38 @@ body {
 		font-weight: $font-weight-bold;
 	}
 }
+
+.summary {
+	li {
+		text-align: center;
+		padding: 30px !important;
+		display: block !important;
+		background-color: white !important;
+		box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.1);
+		&:hover {
+			cursor: pointer;
+		}
+		a {
+			color: black;
+			justify-content: center;
+			font-size: 1.5rem;
+			font-weight: $font-weight-semibold;
+			text-transform: capitalize;
+			&:hover {
+				background-color: transparent;
+				text-decoration: none;
+			}
+		}
+		h2 {
+			margin: 10px 0;
+		}
+	}
+	.uk-active {
+		background-color: $primary !important;
+		a,
+		h2 {
+			color: white;
+			background-color: transparent;
+		}
+	}
+}
