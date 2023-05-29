@@ -45,13 +45,13 @@
 							<a href="./atttendance.html"><i class="bx bx-calendar icon"></i> <span class="text">Attendance</span></a>
 						</li>
 						<li class="nav-link">
-							<a href="#"><i class="bx bxs-folder-open icon"></i> <span class="text">Project</span></a>
+							<a href="projectModule.html"><i class="bx bxs-folder-open icon"></i> <span class="text">Project</span></a>
 						</li>
 						<li class="nav-link active">
-							<a href="#"><i class="bx bxs-user icon"></i> <span class="text">Profile</span></a>
+							<a href="profilePage.html"><i class="bx bxs-user icon"></i> <span class="text">Profile</span></a>
 						</li>
 						<li class="nav-link">
-							<a href="#"><i class="bx bxs-group icon"></i> <span class="text">Employee</span></a>
+							<a href="employeePage.html"><i class="bx bxs-group icon"></i> <span class="text">Employee</span></a>
 						</li>
 						<hr style="margin: 30px 0px" />
 						<li class="nav-link">
@@ -176,7 +176,374 @@
 							</div>
 						</div>
 					</section>
+					<!-- SWITCHER TAB -->
+					<section class="section" >
+						<div class="m-b-xl" style="margin-top: 170px;">
+							<ul uk-tab class="tab tab-border-none">
+								<li class="uk-active"><a href="#">Employee Data</a></li>
+								<li class=""><a href="#">Awards</a></li>
+								<li class=""><a href="#">Accomplishments</a></li>
+								<li class=""><a href="#">Leave and Request</a></li>
+							</ul>
+							
+							<ul class="uk-switcher uk-margin" style="background: #ffffff">
+								<!-- EMPLOYEE DATA -->
+								<li>
+									<div class="qx-card card-default uk-card uk-card-body">
+										<div class="m-sm">
+
+											<!-- PERSONAL INFORMATION -->
+											<div class="uk-flex uk-flex-between">
+												<h4 class="">Personal Information</h4>
+												<a href="#modal-personal-info" uk-toggle>
+												<button class="uk-button btn btn-icon-o-edit m-b-xs"><i class="fa-solid fa-pencil"></i></button></a>
+											</div>
+											<hr class="m-t-remove m-b-md">
+											<div class="uk-flex uk-flex-between m-b-xl">
+												<div class="uk-width-1-2">
+													<div>
+														<p class="uk-text-meta m-b-remove">FULL NAME</p>
+														<p class="f-s-sm f-w-medium m-t-remove">Juan De La Cruz</p>
+													</div>
+													<div>
+														<p class="uk-text-meta m-b-remove">EMAIL ADDRESS</p>
+														<p class="f-s-sm f-w-medium m-t-remove">juan@qstrike.com</p>
+													</div>
+													<div>
+														<p class="uk-text-meta m-b-remove">PHONE NUMBER</p>
+														<p class="f-s-sm f-w-medium m-t-remove">09152349756</p>
+													</div>
+												</div>
+
+												<div class="uk-width-1-2 uk-margin-left">
+													<div>
+														<p class="uk-text-meta m-b-remove">STATUS</p>
+														<p class="f-s-sm f-w-medium m-t-remove">Married</p>
+													</div>
+													<div>
+														<p class="uk-text-meta m-b-remove">HOME ADDRESS</p>
+														<p class="f-s-sm f-w-medium m-t-remove">San Fernand, Pampanga</p>
+													</div>
+												</div>
+											</div>
+
+											<!-- PERSONAL INFORMATION MODAL -->
+											<div id="modal-personal-info" uk-modal>
+												<div class="uk-modal-dialog uk-modal-body modal-content">
+													<h2 class="uk-modal-title f-w-semi-bold">Personal Information</h2>
+													<hr>
+													<div class="uk-flex uk-flex-between m-b-xl">
+														<div class="uk-width-1-2">
+															<div>
+																<label class="uk-text-meta">FULL NAME</label>
+																<div class="uk-form-controls">
+																	<input class="uk-input" id="form-stacked-text" type="text" placeholder="" />
+																</div>
+															</div>
+															<div class="m-t-sm">
+																<label class="uk-text-meta">EMAIL ADDRESS</label>
+																<div class="uk-form-controls">
+																	<input class="uk-input" id="form-stacked-text" type="email" placeholder="" />
+																</div>
+															</div>
+															<div class="m-t-sm">
+																<label class="uk-text-meta">PHONE NUMBER</label>
+																<div class="uk-form-controls">
+																	<input class="uk-input" id="form-stacked-text" type="number" placeholder="" />
+																</div>
+															</div>
+														</div>
+		
+														<div class="uk-width-1-2 uk-margin-left">
+															<div>
+																<label class="uk-text-meta">STATUS</label>
+																<div class="uk-form-controls">
+																	<input class="uk-input" id="form-stacked-text" type="text" placeholder="" />
+																</div>
+															</div>
+															<div class="m-t-sm">
+																<label class="uk-text-meta">HOME ADDRESS</label>
+																<div class="uk-form-controls">
+																	<input class="uk-input" id="form-stacked-text" type="text" placeholder="" />
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="uk-text-right">
+														<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">Cancel</button>
+														<button class="uk-button btn btn-type-default">Save</button>
+													</div>
+												</div>
+											</div>
+
+											<!-- OTHER INFORMATION -->
+											<div class="uk-flex uk-flex-between">
+												<h4 class="">Other Information</h4>
+												<a href="#modal-other-info" uk-toggle>
+												<button class="uk-button btn btn-icon-o-edit m-b-xs"><i class="fa-solid fa-pencil"></i></button></a>
+											</div>
+											<hr class="m-t-remove m-b-md">
+											<div class="uk-flex uk-flex-between m-b-xl">
+												<div class="uk-width-1-2">
+													<div>
+														<p class="uk-text-meta m-b-remove">JOINING DATE</p>
+														<p class="f-s-sm f-w-medium m-t-remove">06 March, 2022</p>
+													</div>
+													<div>
+														<p class="uk-text-meta m-b-remove">DEPARTMENT</p>
+														<p class="f-s-sm f-w-medium m-t-remove">Engineering Department</p>
+													</div>
+													<div>
+														<p class="uk-text-meta m-b-remove">EMPLOYMENT TYPE</p>
+														<p class="f-s-sm f-w-medium m-t-remove">Remote</p>
+													</div>
+												</div>
+
+												<div class="uk-width-1-2 uk-margin-left">
+													<div>
+														<p class="uk-text-meta m-b-remove">SHIFT</p>
+														<p class="f-s-sm f-w-medium m-t-remove">8am - 5pm</p>
+													</div>
+													<div>
+														<p class="uk-text-meta m-b-remove">MANAGER</p>
+														<p class="f-s-sm f-w-medium m-t-remove">Elmer Alvarado</p>
+													</div>
+												</div>
+											</div>
+
+											<!-- OTHER INFORMATION MODAL -->
+											<div id="modal-other-info" uk-modal>
+												<div class="uk-modal-dialog uk-modal-body modal-content">
+													<h2 class="uk-modal-title f-w-semi-bold">Other Information</h2>
+													<hr>
+													<div class="uk-flex uk-flex-between m-b-xl">
+														<div class="uk-width-1-2">
+															<div>
+																<label class="uk-text-meta">JOINING DATE</label>
+																<div class="uk-form-controls">
+																	<input class="uk-input" id="form-stacked-text" type="date" placeholder="" />
+																</div>
+															</div>
+															<div class="m-t-sm">
+																<label class="uk-text-meta">DEPARTMENT</label>
+																<div class="uk-form-controls">
+																	<select class="uk-select" id="form-stacked-select">
+																		<option>Engineering</option>
+																		<option>Creatives</option>
+																		<option>Human Resources</option>
+																	</select>
+																</div>
+															</div>
+															<div class="m-t-sm">
+																<label class="uk-text-meta">EMPLOYMENT TYPE</label>
+																<div class="uk-form-controls">
+																	<select class="uk-select" id="form-stacked-select">
+																		<option>Remote</option>
+																		<option>Onsite</option>
+																		<option>Hybrid</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+		
+														<div class="uk-width-1-2 uk-margin-left">
+															<div>
+																<label class="uk-text-meta">SHIFT</label>
+																<div class="uk-form-controls">
+																	<input class="uk-input" id="form-stacked-text" type="text" placeholder="" />
+																</div>
+															</div>
+															<div class="m-t-sm">
+																<label class="uk-text-meta">MANAGER</label>
+																<div class="uk-form-controls">
+																	<input class="uk-input" id="form-stacked-text" type="text" placeholder="" />
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="uk-text-right">
+														<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">Cancel</button>
+														<button class="uk-button btn btn-type-default">Save</button>
+													</div>
+												</div>
+											</div>
+
+											<!-- BENEFITS -->
+											<div class="uk-flex uk-flex-between">
+												<h4 class="">Benefits</h4>
+												<a href="#modal-benefits" uk-toggle>
+												<button class="uk-button btn btn-icon-o-edit m-b-xs"><i class="fa-solid fa-pencil"></i></button></a>
+											</div>
+											<hr class="m-t-remove m-b-md">
+											<div class="uk-flex uk-flex-between m-b-xl">
+												<div class="uk-width-1-2">
+													<div>
+														<p class="uk-text-meta m-b-remove">PAGIBIG</p>
+														<p class="f-s-sm f-w-medium m-t-remove">1234-4321-1123</p>
+													</div>
+													<div>
+														<p class="uk-text-meta m-b-remove">PHILHEALTH</p>
+														<p class="f-s-sm f-w-medium m-t-remove">2235-5523-5555</p>
+													</div>
+													<div>
+														<p class="uk-text-meta m-b-remove">HEALTHCARD</p>
+														<p class="f-s-sm f-w-medium m-t-remove">4444-1212-1423</p>
+													</div>
+												</div>
+
+												<div class="uk-width-1-2 uk-margin-left">
+													<div>
+														<p class="uk-text-meta m-b-remove">SSS NUMBER</p>
+														<p class="f-s-sm f-w-medium m-t-remove">32-5236489-9</p>
+													</div>
+													<div>
+														<p class="uk-text-meta m-b-remove">TIN</p>
+														<p class="f-s-sm f-w-medium m-t-remove">231-654-789-963</p>
+													</div>
+												</div>
+											</div>
+
+											<!-- BENEFITS MODAL -->
+											<div id="modal-benefits" uk-modal>
+												<div class="uk-modal-dialog uk-modal-body modal-content">
+													<h2 class="uk-modal-title f-w-semi-bold">Benefits</h2>
+													<hr>
+													<div class="uk-flex uk-flex-between m-b-xl">
+														<div class="uk-width-1-2">
+															<div>
+																<label class="uk-text-meta">PAGIBIG</label>
+																<div class="uk-form-controls">
+																	<input class="uk-input" id="form-stacked-text" type="text" placeholder="" />
+																</div>
+															</div>
+															<div class="m-t-sm">
+																<label class="uk-text-meta">PHILHEALTH</label>
+																<div class="uk-form-controls">
+																	<input class="uk-input" id="form-stacked-text" type="text" placeholder="" />
+																</div>
+															</div>
+															<div class="m-t-sm">
+																<label class="uk-text-meta">HEALTHCARD</label>
+																<div class="uk-form-controls">
+																	<input class="uk-input" id="form-stacked-text" type="text" placeholder="" />
+																</div>
+															</div>
+														</div>
+		
+														<div class="uk-width-1-2 uk-margin-left">
+															<div>
+																<label class="uk-text-meta">SSS NUMBER</label>
+																<div class="uk-form-controls">
+																	<input class="uk-input" id="form-stacked-text" type="text" placeholder="" />
+																</div>
+															</div>
+															<div class="m-t-sm">
+																<label class="uk-text-meta">TIN</label>
+																<div class="uk-form-controls">
+																	<input class="uk-input" id="form-stacked-text" type="text" placeholder="" />
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="uk-text-right">
+														<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">Cancel</button>
+														<button class="uk-button btn btn-type-default">Save</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<!-- AWARDS -->
+								<li>
+									<div class="qx-card card-default uk-card uk-card-body">
+										<div class="m-sm">
+											<div>AWARDS</div>
+										</div>
+									</div>
+								</li>
+
+								<!-- ACCOMPLISHMENTS -->
+								<li>
+									<div class="qx-card card-default uk-card uk-card-body">
+										<div class="m-sm">
+											<div>ACCOMPLISHMENTS</div>
+										</div>
+									</div>
+								</li>
+
+								<!-- LEAVE AND REQUEST -->
+								<li>
+									<div class="qx-card card-default uk-card uk-card-body">
+										<div class="m-sm">
+											<div>LEAVE AND REQUEST</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</section>
 				</main>
+				<footer class="p-x-xxl p-t-xl">
+					<div class="uk-grid-large" uk-grid>
+						<div class="uk-text-center uk-width-1-5@m">
+							<img src="./images/logo.svg" alt="QuickStrike-logo" />
+							<h4 class="m-xs">QUICKSTRIKE</h4>
+						</div>
+						<div class="uk-width-expand">
+							<h4 class="color-t-secondary">CONTACTS</h4>
+							<div class="uk-flex-middle uk-grid-small" uk-grid>
+								<div class="uk-width-auto"><i class="bx bx-location-plus"></i></div>
+								<div class="uk-width-expand">
+									<div class="address">4J29+PHH, San Fernando, Pampanga</div>
+								</div>
+							</div>
+							<div class="uk-flex-middle uk-grid-small" uk-grid>
+								<div class="uk-width-auto">
+									<i class="bx bx-phone"></i>
+								</div>
+								<div class="ul-width-expand">
+									<div class="address">+63 952 691 5931</div>
+								</div>
+							</div>
+							<div class="uk-flex-middle uk-grid-small" uk-grid>
+								<div class="uk-width-auto">
+									<i class="bx bx-envelope"></i>
+								</div>
+								<div class="uk-width-expand">
+									<div class="address">hr@qstrike.com</div>
+								</div>
+							</div>
+						</div>
+						<div class="uk-width-1-5@m">
+							<h4 class="color-t-secondary">PAGES</h4>
+							<ul class="uk-list list list-size-lg">
+								<li><a class="f-w-bold">Dashboard</a></li>
+								<li><a class="f-w-bold">Attendance</a></li>
+								<li><a class="f-w-bold">Profile</a></li>
+								<li><a class="f-w-bold">Employees</a></li>
+								<li><a class="f-w-bold">Projects</a></li>
+							</ul>
+						</div>
+						<div class="uk-width-1-5@m">
+							<h4 class="color-t-secondary">LEGAL NOTICES</h4>
+							<ul class="uk-list list list-size-lg">
+								<li><a class="f-w-bold">Privacy Policy</a></li>
+								<li><a class="f-w-bold">Terms of Use</a></li>
+								<li><a class="f-w-bold">Disclaimer</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="uk-grid-large uk-child-width-auto uk-flex uk-flex-right p-b-sm" uk-grid>
+						<div>
+							<h6 class="m-remove color-t-placeholdertext">QuickStrike MNFG PH © 2023</h6>
+						</div>
+						<div>
+							<h6 class="m-remove color-t-placeholdertext">Dashboard latest update: March 27, 2013</h6>
+						</div>
+					</div>
+				</footer>
 			</div>
 		</div>
 	</body>
