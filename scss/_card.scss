@@ -1,43 +1,20 @@
 .qx-card {
 	border: 1px solid #ddd;
-
+  
 	&-primary {
 		background-color: $primary;
-
-		h5,
-		h2 {
-			color: #fff;
-		}
-
-		p {
-			color: #fff;
-		}
+		color: #fff;
 	}
 
 	&-default {
 		background-color: #fff;
-
-		h4 {
-			color: $primary;
-		}
-
-		p {
-			color: $primary;
-		}
+		color: $primary;
 	}
 
 	&-disable {
 		border: 1px solid $primary;
 		background-color: #fff;
-
-		h2,
-		h5 {
-			color: #808080;
-		}
-
-		p {
-			color: $placeholderText;
-		}
+		color: $placeholderText;
 	}
 
 	&-footer {

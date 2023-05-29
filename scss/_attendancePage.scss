@@ -1,0 +1,175 @@
+body {
+	background-color: #eceff1;
+}
+
+.clickable {
+	cursor: pointer;
+	/* Additional styling if desired */
+}
+
+.clk {
+	.clk-head {
+		color: $primary;
+
+		&-time {
+			line-height: 30px;
+			font-size: $font-size-xl;
+			font-weight: $font-weight-bold;
+		}
+	}
+
+	.clk-card {
+		gap: 25px;
+
+		&-in {
+			&-con {
+				height: 100%;
+			}
+		}
+
+		&-out {
+			&-con {
+				height: 100%;
+			}
+		}
+
+		&-info {
+			height: 50%;
+		}
+
+		&-title {
+			font-size: $font-size-lg;
+			font-weight: bold;
+		}
+
+		&-date {
+			width: 100%;
+			font-size: $font-size-xs;
+		}
+
+		&-shift {
+			font-size: 12px;
+		}
+
+		.clk-icon {
+			font-size: $font-size-md;
+		}
+	}
+
+	.clk-rndr {
+		color: $primary;
+
+		&-time {
+			line-height: 30px;
+			font-size: $font-size-lg;
+			font-weight: $font-weight-bold;
+		}
+	}
+}
+.rcnt-box {
+	&-title {
+		color: $primary;
+		font-size: $font-size-md;
+		font-weight: $font-weight-medium;
+	}
+
+	.rcnt-lv {
+		overflow-y: scroll;
+		height: 402px;
+
+		&-card {
+			text-decoration: none;
+		}
+
+		.rcnt {
+			height: 100px;
+
+			&-title {
+				color: $primary;
+				font-size: $font-size-md;
+				font-weight: $font-weight-medium;
+			}
+			&-type {
+				color: $placeholderText;
+				font-size: $font-size-xxs;
+			}
+			&-date {
+				color: $primary;
+				font-weight: $font-weight-regular;
+
+				&-icon {
+					font-size: $font-size-sm;
+				}
+
+				&-day {
+					font-size: $font-size-xxs;
+				}
+			}
+		}
+	}
+}
+
+.rcnt-modal {
+	&-title {
+		font-size: $font-size-xl;
+		font-weight: $font-weight-medium;
+		color: $primary;
+		line-height: 40px;
+	}
+
+	&-type {
+		font-size: $font-size-xs;
+		color: $placeholderText;
+	}
+
+	&-date {
+		color: $primary;
+
+		&-icon {
+			font-size: $font-size-md;
+		}
+
+		&-day {
+			font-size: $font-size-xs;
+		}
+	}
+
+	&-attch {
+		color: $primary;
+
+		.attch-title {
+			font-size: $font-size-xxs;
+			font-weight: $font-weight-medium;
+		}
+
+		.attch-txt {
+			cursor: pointer;
+			background-color: $background;
+
+			.attch-icon {
+				font-size: $font-size-sm;
+			}
+
+			.attch-name {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+// Scroll Bar
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+li {
+	box-sizing: border-box;
+}

@@ -88,7 +88,6 @@
 			background-color: #fff;
 			color: #000;
 			&:hover {
-
 				background-color: $ghostDark;
 			}
 		}
@@ -153,13 +152,9 @@
 			}
 		}
 		&-sm {
-			background-color: $secondary;
 			font-size: 12px;
 			padding: 0px 12px;
 			line-height: 28px;
-			&:hover {
-				background-color: $secondaryDark;
-			}
 		}
 		&-md {
 			background-color: $secondary;
@@ -235,4 +230,3 @@
 		color: #fff;
 	}
 }
-

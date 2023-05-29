@@ -1,0 +1,16 @@
+.badge {
+	padding: 0px 15px;
+	border-radius: 0px;
+
+	&-approved {
+		background: $success;
+	}
+
+	&-pending {
+		background: $warning;
+	}
+
+	&-rejected {
+		background: $danger;
+	}
+}
