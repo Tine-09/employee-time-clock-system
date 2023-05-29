@@ -1,0 +1,32 @@
+.js-filter {
+	li {
+		.qx-card:hover {
+			background-color: $background;
+		}
+	}
+}
+.status-activity {
+	top: 10px;
+	right: 10px;
+	background: $success;
+}
+.employee-card {
+	img {
+		height: 100px;
+		width: 100px;
+		border-radius: 50%;
+	}
+}
+.employee-new-modal,
+.employee-details-modal {
+	&:hover {
+		text-decoration: none;
+	}
+}
+.plus-icon {
+	font-size: 100px;
+	color: $secondary;
+	&-small {
+		font-size: 50px;
+	}
+}
