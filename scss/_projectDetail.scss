@@ -119,7 +119,7 @@
 			}
 		}
 	}
-}
+
 
 .certification {
 	.cert-name {
@@ -145,13 +145,13 @@
 		text-transform: none;
 		text-decoration: none;
 		.cert-flex {
-			justify-content: space-between;
 			display: flex;
 			padding: 0px 0px;
 			width: 340px;
 			.bxs-plus-circle {
 				font-size: 82px;
 				color: $secondary;
+				margin-right: 10px;
 			}
 			h2 {
 				font-weight: $font-weight-regular;
