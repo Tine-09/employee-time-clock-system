@@ -1,0 +1,107 @@
+.attendance-flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.attendance-list {
+	list-style: none;
+	border-left: 1px solid $background;
+	border-right: 1px solid $background;
+
+	&-header {
+		background-color: $background;
+		color: $placeholderText;
+	}
+
+	&-items {
+		color: $primary;
+		border-bottom: 1px solid $background;
+	}
+}
+
+// .qx-card {
+// 	overflow: hidden; /* Hides any overflowing content */
+// }
+
+// .qx-card > div {
+// 	white-space: nowrap; /* Prevents content from wrapping to multiple lines */
+// 	overflow: hidden; /* Hides any overflowing content */
+// 	text-overflow: ellipsis; /* Adds ellipsis (...) for truncated text */
+// }
+
+.rcnt-list-item {
+	gap: 10px;
+
+	a {
+		text-decoration: none;
+	}
+
+	.item-con {
+		width: 320px;
+
+		// Header
+		.item-header {
+			&-name {
+				color: $primary;
+				line-height: normal;
+				font-size: $font-size-md;
+				font-weight: $font-weight-medium;
+			}
+
+			&-pos {
+				line-height: normal;
+				color: $placeholderText;
+				font-size: $font-size-xxs;
+			}
+
+			&-date {
+				color: $placeholderText;
+				font-size: $font-size-xxs;
+			}
+		}
+
+		// Content
+		.item-cntnt {
+			&-date {
+				font-size: $font-size-xxs;
+			}
+
+			&-title {
+				color: $primary;
+				line-height: normal;
+				font-size: $font-size-lg;
+				font-weight: $font-weight-medium;
+			}
+
+			&-type {
+				line-height: normal;
+				color: $placeholderText;
+				font-size: $font-size-xs;
+			}
+
+			&-msg {
+				height: 150px;
+				color: $primary;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				font-size: $font-size-xxs;
+			}
+
+			&-attch {
+				.attch-title {
+					color: $primary;
+					font-size: $font-size-xxs;
+					font-weight: $font-weight-medium;
+				}
+
+				.attch-cntnt {
+					font-size: $font-size-xxs;
+				}
+			}
+
+			&-btn {
+				gap: 20px;
+			}
+		}
+	}
+}
