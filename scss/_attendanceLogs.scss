@@ -3,27 +3,6 @@
 	justify-content: space-between;
 }
 
-.badge {
-	padding: 0px 15px;
-	border-radius: 0px;
-
-	&-approved {
-		background: $success;
-	}
-
-	&-pending {
-		background: $warning;
-	}
-
-	&-rejected {
-		background: $danger;
-	}
-}
-
-.vac-type {
-	color: $placeholderText;
-}
-
 .attendance-list {
 	list-style: none;
 
@@ -36,21 +15,4 @@
 		color: $primary;
 		border-bottom: 1px solid $background;
 	}
-}
-
-// Scroll Bar
-
-::-webkit-scrollbar {
-	width: 5px;
-}
-::-webkit-scrollbar-track {
-	background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-	background: rgba(0, 0, 0, 0.1);
-}
-
-li {
-	box-sizing: border-box;
 }
