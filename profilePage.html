@@ -24,7 +24,7 @@
 
 	<body>
 		<div class="uk-grid-collapse" uk-grid>
-			<div class="uk-width-1-6 ">
+			<div class="uk-width-1-6">
 				<!-- SIDEBAR -->
 				<aside class="sidebar uk-width-1-6" uk-height-viewport>
 					<header>
@@ -66,8 +66,7 @@
 			<div class="uk-width-expand">
 				<div uk-height-overflow="offset-top: true" uk-overflow-auto></div>
 				<main style="padding: 30px 50px 0px">
-					
-                    <!-- HEADER -->
+					<!-- HEADER -->
 					<header class="uk-navbar-container" style="background: none">
 						<div class="uk-flex-between">
 							<div uk-navbar class="m-x-lg">
@@ -86,14 +85,14 @@
 						</div>
 					</header>
 
-                    <!-- COVER PHOTO -->
+					<!-- COVER PHOTO -->
 					<div>
 						<div class="uk-cover-container">
 							<canvas width="400" height="200"></canvas>
 							<a class="uk-button uk-button-default" href="#modal-container" uk-toggle> <img src="./images/cover-photo.png" alt="" uk-cover /> </a>
 						</div>
 
-                        <!-- COVER PHOTO MODAL -->
+						<!-- COVER PHOTO MODAL -->
 						<div id="modal-container" class="uk-modal-container" uk-modal>
 							<div class="uk-modal-dialog">
 								<button class="uk-modal-close-default" type="button" uk-close></button>
@@ -102,104 +101,105 @@
 
 									<div class="uk-overlay uk-light uk-position-bottom uk-flex uk-flex-center@m uk-flex-right@l">
 										<a href="#modal-cover" uk-toggle>
-                                            <button class="uk-button btn btn-color-secondary"><i class="bx bx-camera"></i>Edit Cover</button></a>
+											<button class="uk-button btn btn-color-secondary"><i class="bx bx-camera"></i>Edit Cover</button></a
+										>
 									</div>
 								</div>
 							</div>
 						</div>
 
-                        <!-- EDIT COVER PHOTO MODAL -->
+						<!-- EDIT COVER PHOTO MODAL -->
 						<div class="uk-modal-container" uk-modal>
 							<div class="uk-modal-dialog">
 								<button class="uk-modal-close-default" type="button" uk-close></button>
 								<div id="modal-cover" uk-modal>
-                                    <div class="uk-modal-dialog uk-modal-body modal-content">
-                                        <div class="uk-position-relative">
-                                            <h2 class="uk-modal-title f-w-semi-bold">EDIT COVER PHOTO</h2>
-                                            <button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
-                                        </div>
-                                        <div class="">
-                                            <button class="uk-button btn btn-type-default uk-width-1-1 uk-margin-small-bottom js-upload" tabindex="-1"><i class='bx bx-plus' style='color:#ffffff' ></i>Upload a photo</button>
-                                            <button class="uk-button btn btn-outline-secondary uk-width-1-1 uk-margin-small-bottom" type="button"> <i class='bx bx-move' style='color:#ed1c24'  ></i>Reposition</button>
-                                        </div>
-                                    </div>
-							</div>
-						</div>
-					</div>
-
-                    <!-- AVATAR -->
-					<div>
-						<div class="uk-flex" style="position: absolute; margin-top: -50px; margin-left: 10px;">
-							<a href="#modal-avatar" uk-toggle><img class="img-lg" src="images/avatar.jpg" alt="avatar" /></a>
-							<div class="m-t-xl m-l-sm">
-								<p class="m-b-remove m-t-sm">QX-123123-23</p>
-								<h2 class="f-t-uppercase m-t-remove">Juan de la cruz</h2>
-							</div>
-						</div>
-
-                        <!-- AVATAR MODAL -->
-						<div class="uk-modal-container" uk-modal>
-							<div class="uk-modal-dialog">
-								<button class="uk-modal-close-default" type="button" uk-close></button>
-								<div id="modal-avatar" uk-modal>
-                                    <div class="uk-modal-dialog">
-                                        <button class="uk-modal-close-default" type="button" uk-close></button>
-                                        <div>
-                                            <img src="./images/avatar.jpg" alt="" />
-        
-                                            <div class="uk-overlay uk-light uk-position-bottom uk-flex uk-flex-center@m uk-flex-right@l">
-                                                <a href="#modal-avatar" uk-toggle>
-                                                    <button class="uk-button btn btn-color-secondary"><i class="bx bx-camera"></i>Edit Profile</button></a>
-                                            </div>
-                                        </div>
-                                    </div>
+									<div class="uk-modal-dialog uk-modal-body modal-content">
+										<div class="uk-position-relative">
+											<h2 class="uk-modal-title f-w-semi-bold">EDIT COVER PHOTO</h2>
+											<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+										</div>
+										<div class="">
+											<button class="uk-button btn btn-type-default uk-width-1-1 uk-margin-small-bottom js-upload" tabindex="-1"><i class="bx bx-plus" style="color: #ffffff"></i>Upload a photo</button>
+											<button class="uk-button btn btn-outline-secondary uk-width-1-1 uk-margin-small-bottom" type="button"><i class="bx bx-move" style="color: #ed1c24"></i>Reposition</button>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 
-						<!-- EDIT AVATAR MODAL -->
-						<div class="uk-modal-container" uk-modal>
-							<div class="uk-modal-dialog">
-								<button class="uk-modal-close-default" type="button" uk-close></button>
-								<div id="modal-avatar" uk-modal>
-                                    <div class="uk-modal-dialog uk-modal-body modal-content">
-                                        <div class="uk-position-relative">
-                                            <h2 class="uk-modal-title f-w-semi-bold">EDIT PROFILE PICTURE</h2>
-                                            <button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
-                                        </div>
-                                        <div class="">
-                                            <button class="uk-button btn btn-type-default uk-width-1-1 uk-margin-small-bottom js-upload" tabindex="-1"><i class='bx bx-plus' style='color:#ffffff' ></i>Upload a photo</button>
-                                            <button class="uk-button btn btn-outline-secondary uk-width-1-1 uk-margin-small-bottom" type="button"> <i class='bx bxs-edit-alt' style='color:#ed1c24'  ></i>Edit Thumbnail</button>
-                                        </div>
-                                    </div>
+						<!-- AVATAR -->
+						<div>
+							<div class="uk-flex" style="position: absolute; margin-top: -50px; margin-left: 10px">
+								<a href="#modal-avatar" uk-toggle><img class="img-lg" src="images/avatar.jpg" alt="avatar" /></a>
+								<div class="m-t-xl m-l-sm">
+									<p class="m-b-remove m-t-sm">QX-123123-23</p>
+									<h2 class="f-t-uppercase m-t-remove">Juan de la cruz</h2>
+								</div>
+							</div>
+
+							<!-- AVATAR MODAL -->
+							<div class="uk-modal-container" uk-modal>
+								<div class="uk-modal-dialog">
+									<button class="uk-modal-close-default" type="button" uk-close></button>
+									<div id="modal-avatar" uk-modal>
+										<div class="uk-modal-dialog">
+											<button class="uk-modal-close-default" type="button" uk-close></button>
+											<div>
+												<img src="./images/avatar.jpg" alt="" />
+
+												<div class="uk-overlay uk-light uk-position-bottom uk-flex uk-flex-center@m uk-flex-right@l">
+													<a href="#modal-avatar" uk-toggle>
+														<button class="uk-button btn btn-color-secondary"><i class="bx bx-camera"></i>Edit Profile</button></a
+													>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- EDIT AVATAR MODAL -->
+							<div class="uk-modal-container" uk-modal>
+								<div class="uk-modal-dialog">
+									<button class="uk-modal-close-default" type="button" uk-close></button>
+									<div id="modal-avatar" uk-modal>
+										<div class="uk-modal-dialog uk-modal-body modal-content">
+											<div class="uk-position-relative">
+												<h2 class="uk-modal-title f-w-semi-bold">EDIT PROFILE PICTURE</h2>
+												<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+											</div>
+											<div class="">
+												<button class="uk-button btn btn-type-default uk-width-1-1 uk-margin-small-bottom js-upload" tabindex="-1"><i class="bx bx-plus" style="color: #ffffff"></i>Upload a photo</button>
+												<button class="uk-button btn btn-outline-secondary uk-width-1-1 uk-margin-small-bottom" type="button"><i class="bx bxs-edit-alt" style="color: #ed1c24"></i>Edit Thumbnail</button>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<!-- SWITCHER TAB -->
-					<div>
-						<div class="m-b-xl" style="margin-top: 170px;">
+						<!-- SWITCHER TAB -->
+						<div class="m-b-xl" style="margin-top: 170px">
 							<ul uk-tab class="tab tab-border-none">
 								<li class="uk-active"><a href="#">Employee Data</a></li>
 								<li class=""><a href="#">Awards</a></li>
 								<li class=""><a href="#">Accomplishments</a></li>
 								<li class=""><a href="#">Leave and Request</a></li>
 							</ul>
-							
+
 							<ul class="uk-switcher uk-margin" style="background: #ffffff">
 								<!-- EMPLOYEE DATA -->
 								<li>
-									<div class="qx-card card-default uk-card uk-card-body">
+									<section class="section">
 										<div class="m-sm">
-
 											<!-- PERSONAL INFORMATION -->
 											<div class="uk-flex uk-flex-between">
 												<h4 class="">Personal Information</h4>
 												<a href="#modal-personal-info" uk-toggle>
-												<button class="uk-button btn btn-icon-o-edit m-b-xs"><i class="fa-solid fa-pencil"></i></button></a>
+													<button class="uk-button btn btn-icon-o-edit m-b-xs"><i class="fa-solid fa-pencil"></i></button
+												></a>
 											</div>
-											<hr class="m-t-remove m-b-md">
+											<hr class="m-t-remove m-b-md" />
 											<div class="uk-flex uk-flex-between m-b-xl">
 												<div class="uk-width-1-2">
 													<div>
@@ -232,7 +232,7 @@
 											<div id="modal-personal-info" uk-modal>
 												<div class="uk-modal-dialog uk-modal-body modal-content">
 													<h2 class="uk-modal-title f-w-semi-bold">Personal Information</h2>
-													<hr>
+													<hr />
 													<div class="uk-flex uk-flex-between m-b-xl">
 														<div class="uk-width-1-2">
 															<div>
@@ -254,7 +254,7 @@
 																</div>
 															</div>
 														</div>
-		
+
 														<div class="uk-width-1-2 uk-margin-left">
 															<div>
 																<label class="uk-text-meta">STATUS</label>
@@ -281,9 +281,10 @@
 											<div class="uk-flex uk-flex-between">
 												<h4 class="">Other Information</h4>
 												<a href="#modal-other-info" uk-toggle>
-												<button class="uk-button btn btn-icon-o-edit m-b-xs"><i class="fa-solid fa-pencil"></i></button></a>
+													<button class="uk-button btn btn-icon-o-edit m-b-xs"><i class="fa-solid fa-pencil"></i></button
+												></a>
 											</div>
-											<hr class="m-t-remove m-b-md">
+											<hr class="m-t-remove m-b-md" />
 											<div class="uk-flex uk-flex-between m-b-xl">
 												<div class="uk-width-1-2">
 													<div>
@@ -316,7 +317,7 @@
 											<div id="modal-other-info" uk-modal>
 												<div class="uk-modal-dialog uk-modal-body modal-content">
 													<h2 class="uk-modal-title f-w-semi-bold">Other Information</h2>
-													<hr>
+													<hr />
 													<div class="uk-flex uk-flex-between m-b-xl">
 														<div class="uk-width-1-2">
 															<div>
@@ -346,7 +347,7 @@
 																</div>
 															</div>
 														</div>
-		
+
 														<div class="uk-width-1-2 uk-margin-left">
 															<div>
 																<label class="uk-text-meta">SHIFT</label>
@@ -373,9 +374,10 @@
 											<div class="uk-flex uk-flex-between">
 												<h4 class="">Benefits</h4>
 												<a href="#modal-benefits" uk-toggle>
-												<button class="uk-button btn btn-icon-o-edit m-b-xs"><i class="fa-solid fa-pencil"></i></button></a>
+													<button class="uk-button btn btn-icon-o-edit m-b-xs"><i class="fa-solid fa-pencil"></i></button
+												></a>
 											</div>
-											<hr class="m-t-remove m-b-md">
+											<hr class="m-t-remove m-b-md" />
 											<div class="uk-flex uk-flex-between m-b-xl">
 												<div class="uk-width-1-2">
 													<div>
@@ -408,7 +410,7 @@
 											<div id="modal-benefits" uk-modal>
 												<div class="uk-modal-dialog uk-modal-body modal-content">
 													<h2 class="uk-modal-title f-w-semi-bold">Benefits</h2>
-													<hr>
+													<hr />
 													<div class="uk-flex uk-flex-between m-b-xl">
 														<div class="uk-width-1-2">
 															<div>
@@ -430,7 +432,7 @@
 																</div>
 															</div>
 														</div>
-		
+
 														<div class="uk-width-1-2 uk-margin-left">
 															<div>
 																<label class="uk-text-meta">SSS NUMBER</label>
@@ -453,74 +455,69 @@
 												</div>
 											</div>
 										</div>
-									</div>
+									</section>
 								</li>
 
 								<!-- AWARDS -->
 								<li>
-									<div class="qx-card card-default uk-card uk-card-body">
+									<section class="section">
 										<div class="m-sm">
 											<!-- AWARDS LIST -->
 											<div class="uk-flex uk-flex-between">
-												<h4 class="">Your Awards</h4>
-												<button class="uk-button btn btn-icon-o-edit m-b-xs"><i class='bx bxs-filter-alt' style='color:#ffffff'  ></i>Filter</button>
+												<h4>Your Awards</h4>
+												<button class="uk-button btn btn-icon-o-edit m-b-xs"><i class="bx bxs-filter-alt" style="color: #ffffff"></i>Filter</button>
 											</div>
 
-											<div class="">
+											<div>
 												<div class="uk-child-width-1-2 uk-child-width-1-3@m" uk-grid uk-grid uk-lightbox="animation: slide">
-													<div class="">
-														<div class="qx-card card-default uk-card uk-card-body uk-height-medium" style="background: #eceff1">
+													<div>
+														<div class="qx-card card-default uk-card uk-card-body uk-height-1-1" style="background: #eceff1">
 															<div class="uk-flex uk-flex-center">
-																<a href="#modal-add-awards" uk-toggle>
-																<i class='bx bxs-plus-circle m-b-remove m-t-lg' style='color:#ed1c24; font-size: 100px;'  ></i></a>
+																<a href="#modal-add-awards" uk-toggle> <i class="bx bxs-plus-circle m-b-remove m-t-lg" style="color: #ed1c24; font-size: 100px"></i></a>
 															</div>
 															<p class="f-a-center m-t-remove">Add an award</p>
 														</div>
 													</div>
 													<div>
 														<a class="uk-inline" href="./images/awards-cert.png" data-caption="Caption 2">
-															<img src="./images/awards-cert.png" width="1800" height="1200" alt="">
+															<img src="./images/awards-cert.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
 													<div>
 														<a class="uk-inline" href="./images/awards-cert.png" data-caption="Caption 3">
-															<img src="./images/awards-cert.png" width="1800" height="1200" alt="">
+															<img src="./images/awards-cert.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
-												</div>
 
-												<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: slide">
 													<div>
 														<a class="uk-inline" href="./images/awards-cert.png" data-caption="Caption 2">
-															<img src="./images/awards-cert.png" width="1800" height="1200" alt="">
+															<img src="./images/awards-cert.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
 													<div>
 														<a class="uk-inline" href="./images/awards-cert.png" data-caption="Caption 2">
-															<img src="./images/awards-cert.png" width="1800" height="1200" alt="">
+															<img src="./images/awards-cert.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
 													<div>
 														<a class="uk-inline" href="./images/awards-cert.png" data-caption="Caption 3">
-															<img src="./images/awards-cert.png" width="1800" height="1200" alt="">
+															<img src="./images/awards-cert.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
-												</div>
 
-												<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: slide">
 													<div>
 														<a class="uk-inline" href="./images/awards-cert.png" data-caption="Caption 2">
-															<img src="./images/awards-cert.png" width="1800" height="1200" alt="">
+															<img src="./images/awards-cert.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
 													<div>
 														<a class="uk-inline" href="./images/awards-cert.png" data-caption="Caption 2">
-															<img src="./images/awards-cert.png" width="1800" height="1200" alt="">
+															<img src="./images/awards-cert.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
 													<div>
 														<a class="uk-inline" href="./images/awards-cert.png" data-caption="Caption 3">
-															<img src="./images/awards-cert.png" width="1800" height="1200" alt="">
+															<img src="./images/awards-cert.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
 												</div>
@@ -543,7 +540,7 @@
 														</ul>
 													</div>
 												</div>
-												<hr class="m-b-lg">
+												<hr class="m-b-lg" />
 
 												<!-- ADD AWARDS MODAL  -->
 												<div id="modal-add-awards" uk-modal>
@@ -552,20 +549,20 @@
 															<h2 class="uk-modal-title f-w-semi-bold">UPLOAD A FILE</h2>
 															<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
 														</div>
-														<p class="m-b-md m-t-lg">Add your certificate here to let your co-worker know what you have been achieved  for these past days!</p>
+														<p class="m-b-md m-t-lg">Add your certificate here to let your co-worker know what you have been achieved for these past days!</p>
 
 														<div>
 															<p class="m-b-remove">Attachments</p>
 															<div class="js-upload uk-placeholder uk-text-center m-t-remove">
 																<span uk-icon="icon: cloud-upload"></span>
 																<div uk-form-custom>
-																	<input type="file" multiple>
+																	<input type="file" multiple />
 																	<span class="uk-link">Upload a file</span>
 																</div>
-																<span class="uk-text-middle">or drag and drop <br></span>
+																<span class="uk-text-middle">or drag and drop <br /></span>
 																<span class="uk-text-middle uk-text-meta">PDF file up to 100MB</span>
 															</div>
-															
+
 															<progress id="js-progressbar" class="uk-progress" value="0" max="100" hidden></progress>
 														</div>
 														<div>
@@ -582,18 +579,16 @@
 														</div>
 													</div>
 												</div>
-												
+
 												<!-- AWARDS -->
 												<div>
 													<div class="uk-slider-container-offset" uk-slider>
-
 														<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-													
 															<ul class="uk-slider-items uk-child-width-1-3@s uk-grid">
 																<li>
 																	<div class="qx-card uk-card-default">
 																		<div class="uk-card-media-top">
-																			<img src="./images/avatar.jpg" width="1800" height="1200" alt="">
+																			<img src="./images/avatar.jpg" width="1800" height="1200" alt="" />
 																		</div>
 																		<div class="uk-card-body">
 																			<h3 class="uk-card-title">EMPLOYEE OF THE MONTH</h3>
@@ -604,18 +599,22 @@
 																<li>
 																	<div class="qx-card uk-card-default">
 																		<div class="uk-card-media-top">
-																			<img src="./images/avatar.jpg" width="1800" height="1200" alt="">
+																			<img src="./images/avatar.jpg" width="1800" height="1200" alt="" />
 																		</div>
 																		<div class="uk-card-body">
 																			<h3 class="uk-card-title">TEAM PLAYER</h3>
-																			<p>This award recognizes an employee <br> who has demonstrated exceptional teamwork, collaboration, and support for their <br> colleagues.</p>
+																			<p>
+																				This award recognizes an employee <br />
+																				who has demonstrated exceptional teamwork, collaboration, and support for their <br />
+																				colleagues.
+																			</p>
 																		</div>
 																	</div>
 																</li>
 																<li>
 																	<div class="qx-card uk-card-default">
 																		<div class="uk-card-media-top">
-																			<img src="./images/avatar.jpg" width="1800" height="1200" alt="">
+																			<img src="./images/avatar.jpg" width="1800" height="1200" alt="" />
 																		</div>
 																		<div class="uk-card-body">
 																			<h3 class="uk-card-title">LEADERSHIP</h3>
@@ -626,7 +625,7 @@
 																<li>
 																	<div class="qx-card uk-card-default">
 																		<div class="uk-card-media-top">
-																			<img src="./images/avatar.jpg" width="1800" height="1200" alt="">
+																			<img src="./images/avatar.jpg" width="1800" height="1200" alt="" />
 																		</div>
 																		<div class="uk-card-body">
 																			<h3 class="uk-card-title">CUSTOMER SERVICE</h3>
@@ -637,137 +636,364 @@
 																<li>
 																	<div class="qx-card uk-card-default">
 																		<div class="uk-card-media-top">
-																			<img src="./images/avatar.jpg" width="1800" height="1200" alt="">
+																			<img src="./images/avatar.jpg" width="1800" height="1200" alt="" />
 																		</div>
 																		<div class="uk-card-body">
 																			<h3 class="uk-card-title">INNOVATION</h3>
-																			<p>This award recognizes an employee who has <br> introduced new ideas, processes, or products that <br> have contributed to the success of the <br> company.</p>
+																			<p>
+																				This award recognizes an employee who has <br />
+																				introduced new ideas, processes, or products that <br />
+																				have contributed to the success of the <br />
+																				company.
+																			</p>
 																		</div>
 																	</div>
 																</li>
 															</ul>
-													
+
 															<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
 															<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-													
 														</div>
-													
+
 														<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-													
 													</div>
 												</div>
 											</div>
-											
-											
 										</div>
-									</div>
+									</section>
 								</li>
 
 								<!-- ACCOMPLISHMENTS -->
 								<li>
-									<div class="qx-card card-default uk-card uk-card-body">
+									<section class="section">
 										<div class="m-sm">
 											<!-- ACCOMPLISHMENTS LIST -->
 											<div class="uk-flex uk-flex-between">
 												<h4 class="">Your Accomplishments</h4>
-												<button class="uk-button btn btn-icon-o-edit m-b-xs"><i class='bx bxs-filter-alt' style='color:#ffffff'  ></i>Filter</button>
+												<button class="uk-button btn btn-icon-o-edit m-b-xs"><i class="bx bxs-filter-alt" style="color: #ffffff"></i>Filter</button>
 											</div>
 
-											<div class="">
+											<div>
 												<div class="uk-child-width-1-2 uk-child-width-1-3@m" uk-grid uk-grid uk-lightbox="animation: slide">
-													<div class="">
-														<div class="qx-card card-default uk-card uk-card-body uk-height-medium" style="background: #eceff1">
+													<div>
+														<div class="qx-card card-default uk-card uk-card-body uk-height-1-1" style="background: #eceff1">
 															<div class="uk-flex uk-flex-center">
-																<a href="#modal-add-awards" uk-toggle>
-																<i class='bx bxs-plus-circle m-b-remove m-t-lg' style='color:#ed1c24; font-size: 100px;'  ></i></a>
+																<a href="#modal-add-awards" uk-toggle> <i class="bx bxs-plus-circle m-b-remove m-t-lg" style="color: #ed1c24; font-size: 100px"></i></a>
 															</div>
 															<p class="f-a-center m-t-remove">Add a certificate.</p>
 														</div>
 													</div>
 													<div>
 														<a class="uk-inline" href="./images/cert-certificate.png" data-caption="Caption 2">
-															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="">
+															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
 													<div>
 														<a class="uk-inline" href="./images/cert-certificate.png" data-caption="Caption 3">
-															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="">
+															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
-												</div>
 
-												<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: slide">
 													<div>
 														<a class="uk-inline" href="./images/cert-certificate.png" data-caption="Caption 2">
-															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="">
+															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
 													<div>
 														<a class="uk-inline" href="./images/cert-certificate.png" data-caption="Caption 2">
-															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="">
+															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
 													<div>
 														<a class="uk-inline" href="./images/cert-certificate.png" data-caption="Caption 3">
-															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="">
+															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
-												</div>
 
-												<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: slide">
 													<div>
 														<a class="uk-inline" href="./images/cert-certificate.png" data-caption="Caption 2">
-															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="">
+															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
 													<div>
 														<a class="uk-inline" href="./images/cert-certificate.png" data-caption="Caption 2">
-															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="">
+															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
 													<div>
 														<a class="uk-inline" href="./images/cert-certificate.png" data-caption="Caption 3">
-															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="">
+															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
-												</div>
 
-												<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: slide">
 													<div>
 														<a class="uk-inline" href="./images/cert-certificate.png" data-caption="Caption 2">
-															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="">
+															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
 													<div>
 														<a class="uk-inline" href="./images/cert-certificate.png" data-caption="Caption 2">
-															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="">
+															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
 													<div>
 														<a class="uk-inline" href="./images/cert-certificate.png" data-caption="Caption 3">
-															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="">
+															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
-												</div>
 
-												<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: slide">
 													<div>
 														<a class="uk-inline" href="./images/cert-certificate.png" data-caption="Caption 2">
-															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="">
+															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
 													<div>
 														<a class="uk-inline" href="./images/cert-certificate.png" data-caption="Caption 2">
-															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="">
+															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
 													<div>
 														<a class="uk-inline" href="./images/cert-certificate.png" data-caption="Caption 3">
-															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="">
+															<img src="./images/cert-certificate.png" width="1800" height="1200" alt="" />
 														</a>
 													</div>
 												</div>
+											</div>
 
+											<!-- PAGINATION -->
+											<div class="uk-text-center m-t-lg m-b-lg">
+												<div class="uk-inline">
+													<ul class="uk-pagination uk-flex-middle" uk-margin>
+														<li uk-tooltip="Previous Page">
+															<a href="#"><span uk-pagination-previous></span></a>
+														</li>
+														<li class="page-number uk-active m-xs uk-text-center"><a href="">1</a></li>
+														<li class="page-number m-xs uk-text-center"><a href="">2</a></li>
+														<li class="page-number m-xs uk-text-center"><a href="">3</a></li>
+														<li class="page-number m-xs uk-text-center"><a href="">4</a></li>
+														<li class="page-number m-xs uk-text-center"><a href="">5</a></li>
+														<li uk-tooltip="Next Page">
+															<a href="#"><span uk-pagination-next></span></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+
+											<!-- ADD ACCOMPLISHMENTS MODAL  -->
+											<div id="modal-add-awards " uk-modal>
+												<div class="uk-modal-dialog uk-modal-body modal-content">
+													<div class="uk-position-relative">
+														<h2 class="uk-modal-title f-w-semi-bold">UPLOAD A FILE</h2>
+														<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+													</div>
+													<p class="m-b-md m-t-lg">Add your certificate here to let your co-worker know what you have been achieved for these past days!</p>
+
+													<div>
+														<p class="m-b-remove">Attachments</p>
+														<div class="js-upload uk-placeholder uk-text-center m-t-remove">
+															<span uk-icon="icon: cloud-upload"></span>
+															<div uk-form-custom>
+																<input type="file" multiple />
+																<span class="uk-link">Upload a file</span>
+															</div>
+															<span class="uk-text-middle">or drag and drop <br /></span>
+															<span class="uk-text-middle uk-text-meta">PDF file up to 100MB</span>
+														</div>
+
+														<progress id="js-progressbar" class="uk-progress" value="0" max="100" hidden></progress>
+													</div>
+													<div>
+														<form>
+															<div class="uk-margin">
+																<p class="m-b-remove m-t-md">Description (Optional)</p>
+																<textarea class="uk-textarea" rows="8" placeholder="Add details" aria-label="Textarea"></textarea>
+															</div>
+														</form>
+													</div>
+													<div class="uk-text-right">
+														<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">Cancel</button>
+														<button class="uk-button btn btn-type-default">Submit</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</section>
+								</li>
+
+								<!-- LEAVE AND REQUEST -->
+								<li>
+									<section class="m-t-md">
+										<div uk-filter="target: .js-filter">
+											<ul class="uk-subnav uk-subnav-pill uk-child-width-1-2 uk-child-width-1-6@m summary" uk-grid>
+												<div>
+													<li class="uk-active" uk-filter-control>
+														<a href="#"
+															>All <br />
+															Requests</a
+														>
+														<h2 class="quantity">34</h2>
+													</li>
+												</div>
+												<div>
+													<li uk-filter-control="[data-req='ob']">
+														<a href="#"
+															>Official <br />
+															Business</a
+														>
+														<h2 class="quantity">08</h2>
+													</li>
+												</div>
+												<div>
+													<li uk-filter-control="[data-req='fail']">
+														<a href="#">Failure to Login/Logout</a>
+														<h2 class="quantity">03</h2>
+													</li>
+												</div>
+												<div>
+													<li uk-filter-control="[data-req='cs']">
+														<a href="#"
+															>Change of <br />
+															Schedule</a
+														>
+														<h2 class="quantity">03</h2>
+													</li>
+												</div>
+												<div>
+													<li uk-filter-control="[data-req='leave']">
+														<a href="#"
+															>Leave <br />
+															Requests</a
+														>
+														<h2 class="quantity">10</h2>
+													</li>
+												</div>
+												<div>
+													<li uk-filter-control="[data-req='ot']">
+														<a href="#"
+															>Overtime <br />
+															Requests</a
+														>
+														<h2 class="quantity">10</h2>
+													</li>
+												</div>
+											</ul>
+
+											<div class="section m-t-md">
+												<div class="uk-flex uk-flex-between">
+													<h4 class="">Recents</h4>
+												</div>
+												<ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m" uk-grid>
+													<li data-req="#">
+														<div class="qx-card uk-card uk-card-body uk-height-1-1" style="background: #eceff1">
+															<div class="uk-flex uk-flex-center">
+																<a href="#modal-form" uk-toggle> <i class="bx bx-file m-b-remove m-t-xl" style="color: #ed1c24; font-size: 80px"></i></a>
+															</div>
+															<p class="f-a-center m-t-remove">Form Request</p>
+														</div>
+													</li>
+													<li data-req="leave">
+														<div class="qx-card uk-card uk-card-body">
+															<a style="text-decoration: none" href="#req-view-pending" uk-toggle>
+																<div class="uk-card-badge uk-label m-md" style="background: #ffa500">Pending</div>
+																<div class="m-t-xxl">
+																	<h1 class="uk-card-title m-t-md">Leave</h1>
+																	<div class="m-t-xl">
+																		<p class="m-b-remove">Undertime</p>
+																		<p class="m-t-remove">09 May 2023</p>
+																	</div>
+																</div>
+															</a>
+														</div>
+													</li>
+													<li data-req="leave">
+														<div class="qx-card uk-card uk-card-body">
+															<a style="text-decoration: none" href="#req-view-denied" uk-toggle>
+																<div class="uk-card-badge uk-label m-md" style="background: #ed1c24">Denied</div>
+																<div class="m-t-xxl">
+																	<h1 class="uk-card-title m-t-md">Leave</h1>
+																	<div class="m-t-xl">
+																		<p class="m-b-remove">Vacation Leave</p>
+																		<p class="m-t-remove">21 April - 26 April 2023</p>
+																	</div>
+																</div>
+															</a>
+														</div>
+													</li>
+													<li data-req="ob">
+														<div class="qx-card uk-card uk-card-body">
+															<a style="text-decoration: none" href="#req-view-approved" uk-toggle>
+																<div class="uk-card-badge uk-label m-md" style="background: #28a745">Approved</div>
+																<div class="m-t-xxl">
+																	<h1 class="uk-card-title m-t-md">Official Business</h1>
+																	<div class="m-t-xl">
+																		<p class="m-b-remove">Onsite Working</p>
+																		<p class="m-t-remove">29 March 2023</p>
+																	</div>
+																</div>
+															</a>
+														</div>
+													</li>
+													<li data-req="leave">
+														<div class="qx-card uk-card uk-card-body">
+															<div class="uk-card-badge uk-label m-md" style="background: #28a745">Approved</div>
+															<div class="m-t-xxl">
+																<h1 class="uk-card-title m-t-md">Leave</h1>
+																<div class="m-t-xl">
+																	<p class="m-b-remove">Sick Leave</p>
+																	<p class="m-t-remove">25 March - 27 March 2023</p>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li data-req="cs">
+														<div class="qx-card uk-card uk-card-body">
+															<div class="uk-card-badge uk-label m-md" style="background: #28a745">Approved</div>
+															<div class="m-t-xxl">
+																<h1 class="uk-card-title m-t-md">Change of Schedule</h1>
+																<div class="m-t-xl">
+																	<p class="m-b-remove">Flexible Shift</p>
+																	<p class="m-t-remove">15 Feb 2023</p>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li data-req="ot">
+														<div class="qx-card uk-card uk-card-body">
+															<div class="uk-card-badge uk-label m-md" style="background: #ed1c24">Denied</div>
+															<div class="m-t-xxl">
+																<h1 class="uk-card-title m-t-md">Overtime</h1>
+																<div class="m-t-xl">
+																	<p class="m-b-remove">2 hours overtime</p>
+																	<p class="m-t-remove">07 Feb 2023</p>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li data-req="fail">
+														<div class="qx-card uk-card uk-card-body">
+															<div class="uk-card-badge uk-label m-md" style="background: #28a745">Approved</div>
+															<div class="m-t-xxl">
+																<h1 class="uk-card-title m-t-md">Failure to Login/Logout</h1>
+																<div class="m-t-xl">
+																	<p class="m-b-remove">Forgot to clock</p>
+																	<p class="m-t-remove">16 Jan 2023</p>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li data-req="leave">
+														<div class="qx-card uk-card uk-card-body">
+															<div class="uk-card-badge uk-label m-md" style="background: #ed1c24">Denied</div>
+															<div class="m-t-xxl">
+																<h1 class="uk-card-title m-t-md">Leave</h1>
+																<div class="m-t-xl">
+																	<p class="m-b-remove">Vacation Leave</p>
+																	<p class="m-t-remove">02 Jan - 05 Jan 2023</p>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
 												<!-- PAGINATION -->
 												<div class="uk-text-center m-t-lg m-b-lg">
 													<div class="uk-inline">
@@ -786,38 +1012,389 @@
 														</ul>
 													</div>
 												</div>
-												<hr class="m-b-lg">
+											</div>
 
-												<!-- ADD ACCOMPLISHMENTS MODAL  -->
-												<div id="modal-add-awards " uk-modal>
-													<div class="uk-modal-dialog uk-modal-body modal-content">
-														<div class="uk-position-relative">
-															<h2 class="uk-modal-title f-w-semi-bold">UPLOAD A FILE</h2>
-															<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
-														</div>
-														<p class="m-b-md m-t-lg">Add your certificate here to let your co-worker know what you have been achieved  for these past days!</p>
+											<!-- FORM REQUEST MODAL -->
+											<div id="modal-form" uk-modal>
+												<div class="uk-modal-dialog uk-modal-body modal-content">
+													<div class="uk-position-relative">
+														<h2 class="uk-modal-title f-w-semi-bold">FORM REQUEST</h2>
+														<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+													</div>
 
-														<div>
-															<p class="m-b-remove">Attachments</p>
-															<div class="js-upload uk-placeholder uk-text-center m-t-remove">
-																<span uk-icon="icon: cloud-upload"></span>
-																<div uk-form-custom>
-																	<input type="file" multiple>
-																	<span class="uk-link">Upload a file</span>
+													<div class="uk-form-controls">
+														<label class="uk-form-label" for="form-stacked-text">Form Type</label>
+														<select class="uk-select" id="formSelect" onclick="display();">
+															<option value="a">Official Business</option>
+															<option value="b">Failure to Login/Logout</option>
+															<option value="c">Change of Schedule</option>
+															<option value="d">Leave Request</option>
+															<option value="e">Overtime Request</option>
+														</select>
+													</div>
+
+													<script>
+														function display() {
+															var x = document.getElementById("formSelect").value;
+
+															if (x == "a") {
+																document.getElementById("ob").style.display = "block";
+																document.getElementById("fail").style.display = "none";
+																document.getElementById("cs").style.display = "none";
+																document.getElementById("ot").style.display = "none";
+																document.getElementById("leave").style.display = "none";
+															} else if (x == "b") {
+																document.getElementById("ob").style.display = "none";
+																document.getElementById("fail").style.display = "block";
+																document.getElementById("cs").style.display = "none";
+																document.getElementById("ot").style.display = "none";
+																document.getElementById("leave").style.display = "none";
+															} else if (x == "c") {
+																document.getElementById("ob").style.display = "none";
+																document.getElementById("fail").style.display = "none";
+																document.getElementById("cs").style.display = "block";
+																document.getElementById("ot").style.display = "none";
+																document.getElementById("leave").style.display = "none";
+															} else if (x == "d") {
+																document.getElementById("ob").style.display = "none";
+																document.getElementById("fail").style.display = "none";
+																document.getElementById("cs").style.display = "none";
+																document.getElementById("ot").style.display = "block";
+																document.getElementById("leave").style.display = "none";
+															} else {
+																document.getElementById("ob").style.display = "none";
+																document.getElementById("fail").style.display = "none";
+																document.getElementById("cs").style.display = "none";
+																document.getElementById("ot").style.display = "none";
+																document.getElementById("leave").style.display = "block";
+															}
+														}
+													</script>
+
+													<!-- FORM REQUEST MODAL OB -->
+													<div id="ob" style="display: none">
+														<div class="uk-flex uk-flex-between m-b-xl">
+															<div class="uk-width-1-2">
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Date</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="date" placeholder="" />
+																	</div>
 																</div>
-																<span class="uk-text-middle">or drag and drop <br></span>
-																<span class="uk-text-middle uk-text-meta">PDF file up to 100MB</span>
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Time Start</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="time" placeholder="" />
+																	</div>
+																</div>
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Reason</label>
+																	<div class="uk-form-controls">
+																		<textarea class="uk-textarea" rows="6" placeholder="Include comments for your approver" aria-label="Textarea"></textarea>
+																	</div>
+																</div>
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Approved by:</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="text" placeholder="" />
+																	</div>
+																</div>
 															</div>
-															
-															<progress id="js-progressbar" class="uk-progress" value="0" max="100" hidden></progress>
-														</div>
-														<div>
-															<form>
-																<div class="uk-margin">
-																	<p class="m-b-remove m-t-md">Description (Optional)</p>
-																	<textarea class="uk-textarea" rows="8" placeholder="Add details" aria-label="Textarea"></textarea>
+
+															<div class="uk-width-1-2 uk-margin-left">
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Person/Place to Visit</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="text" placeholder="" />
+																	</div>
 																</div>
-															</form>
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Time End</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="time" placeholder="" />
+																	</div>
+																</div>
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Attachments</label>
+																	<div class="js-upload uk-placeholder uk-text-center m-t-remove">
+																		<span uk-icon="icon: cloud-upload"></span>
+																		<div uk-form-custom>
+																			<input type="file" multiple />
+																			<span class="uk-link">Upload a file</span>
+																		</div>
+																		<span class="uk-text-middle">or drag and drop <br /></span>
+																		<span class="uk-text-middle uk-text-meta">PDF file up to 100MB</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="uk-text-right">
+															<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">Cancel</button>
+															<button class="uk-button btn btn-type-default">Submit</button>
+														</div>
+													</div>
+
+													<!-- FORM REQUEST MODAL FAILURE -->
+													<div id="fail" style="display: none">
+														<div class="uk-flex uk-flex-between m-b-xl">
+															<div class="uk-width-1-2">
+																<div class="m-t-sm">
+																	<div class="f-w-medium">LOG-IN</div>
+																	<label class="uk-form-label" for="form-stacked-text">Date</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="date" placeholder="" />
+																	</div>
+																</div>
+																<div class="m-t-sm">
+																	<div class="f-w-medium">LOG-OUT</div>
+																	<label class="uk-form-label" for="form-stacked-text">Date</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="date" placeholder="" />
+																	</div>
+																</div>
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Reason</label>
+																	<div class="uk-form-controls">
+																		<textarea class="uk-textarea" rows="6" placeholder="Include comments for your approver" aria-label="Textarea"></textarea>
+																	</div>
+																</div>
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Approved by:</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="text" placeholder="" />
+																	</div>
+																</div>
+															</div>
+
+															<div class="uk-width-1-2 uk-margin-left m-t-md">
+																<div class="m-t-sm m-b-lg">
+																	<label class="uk-form-label" for="form-stacked-text">Time</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="time" placeholder="" />
+																	</div>
+																</div>
+																<div class="p-t-xs">
+																	<label class="uk-form-label" for="form-stacked-text">Time</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="time" placeholder="" />
+																	</div>
+																</div>
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Attachments</label>
+																	<div class="js-upload uk-placeholder uk-text-center m-t-remove">
+																		<span uk-icon="icon: cloud-upload"></span>
+																		<div uk-form-custom>
+																			<input type="file" multiple />
+																			<span class="uk-link">Upload a file</span>
+																		</div>
+																		<span class="uk-text-middle">or drag and drop <br /></span>
+																		<span class="uk-text-middle uk-text-meta">PDF file up to 100MB</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="uk-text-right">
+															<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">Cancel</button>
+															<button class="uk-button btn btn-type-default">Submit</button>
+														</div>
+													</div>
+
+													<!-- FORM REQUEST MODAL CS -->
+													<div id="cs" style="display: none">
+														<div class="uk-flex uk-flex-between m-b-xl">
+															<div class="uk-width-1-2">
+																<div class="m-t-sm">
+																	<div class="f-w-medium">ORIGINAL SCHEDULE</div>
+																	<label class="uk-form-label" for="form-stacked-text">Date</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="date" placeholder="" />
+																	</div>
+																</div>
+																<div class="m-t-sm">
+																	<div class="f-w-medium">NEW SCHEDULE</div>
+																	<label class="uk-form-label" for="form-stacked-text">Date</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="date" placeholder="" />
+																	</div>
+																</div>
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Reason</label>
+																	<div class="uk-form-controls">
+																		<textarea class="uk-textarea" rows="6" placeholder="Include comments for your approver" aria-label="Textarea"></textarea>
+																	</div>
+																</div>
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Approved by:</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="text" placeholder="" />
+																	</div>
+																</div>
+															</div>
+
+															<div class="uk-width-1-2 uk-margin-left m-t-md">
+																<div class="m-t-sm m-b-lg">
+																	<label class="uk-form-label" for="form-stacked-text">Time</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="time" placeholder="" />
+																	</div>
+																</div>
+																<div class="p-t-xs">
+																	<label class="uk-form-label" for="form-stacked-text">Time</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="time" placeholder="" />
+																	</div>
+																</div>
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Attachments</label>
+																	<div class="js-upload uk-placeholder uk-text-center m-t-remove">
+																		<span uk-icon="icon: cloud-upload"></span>
+																		<div uk-form-custom>
+																			<input type="file" multiple />
+																			<span class="uk-link">Upload a file</span>
+																		</div>
+																		<span class="uk-text-middle">or drag and drop <br /></span>
+																		<span class="uk-text-middle uk-text-meta">PDF file up to 100MB</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="uk-text-right">
+															<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">Cancel</button>
+															<button class="uk-button btn btn-type-default">Submit</button>
+														</div>
+													</div>
+
+													<!-- FORM REQUEST MODAL OT -->
+													<div id="ot" style="display: none">
+														<div class="uk-flex uk-flex-between m-b-xl">
+															<div class="uk-width-1-2">
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Date</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="date" placeholder="" />
+																	</div>
+																</div>
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Start Time</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="time" placeholder="" />
+																	</div>
+																</div>
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Reason</label>
+																	<div class="uk-form-controls">
+																		<textarea class="uk-textarea" rows="6" placeholder="Include comments for your approver " aria-label="Textarea"></textarea>
+																	</div>
+																</div>
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Approved by:</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="text" placeholder="" />
+																	</div>
+																</div>
+															</div>
+
+															<div class="uk-width-1-2 uk-margin-left">
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Actual No. of Hours</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="text" placeholder="" />
+																	</div>
+																</div>
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">End Time</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="time" placeholder="" />
+																	</div>
+																</div>
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Attachments</label>
+																	<div class="js-upload uk-placeholder uk-text-center m-t-remove">
+																		<span uk-icon="icon: cloud-upload"></span>
+																		<div uk-form-custom>
+																			<input type="file" multiple />
+																			<span class="uk-link">Upload a file</span>
+																		</div>
+																		<span class="uk-text-middle">or drag and drop <br /></span>
+																		<span class="uk-text-middle uk-text-meta">PDF file up to 100MB</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="uk-text-right">
+															<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">Cancel</button>
+															<button class="uk-button btn btn-type-default">Submit</button>
+														</div>
+													</div>
+
+													<!-- FORM REQUEST MODAL LEAVE -->
+													<div id="leave" style="display: none">
+														<div class="uk-flex uk-flex-between m-b-xl">
+															<div class="uk-width-1-2">
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Type of Leave</label>
+																	<div class="m-t-xs">
+																		<div class="uk-child-width uk-grid">
+																			<label><input class="uk-checkbox" type="checkbox" /> Vacation Leave</label>
+																			<label><input class="uk-checkbox" type="checkbox" /> Sick Leave</label>
+																			<label><input class="uk-checkbox" type="checkbox" /> Maternity Leave</label>
+																			<label><input class="uk-checkbox" type="checkbox" /> Paternity Leave</label>
+																		</div>
+																	</div>
+																</div>
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Time Start</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="time" placeholder="" />
+																	</div>
+																</div>
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Reason</label>
+																	<div class="uk-form-controls">
+																		<textarea class="uk-textarea" rows="6" placeholder="Include comments for your approver" aria-label="Textarea"></textarea>
+																	</div>
+																</div>
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Approved by:</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="text" placeholder="" />
+																	</div>
+																</div>
+															</div>
+
+															<div class="uk-width-1-2 uk-margin-left">
+																<div class="m-t-lg p-t-xs">
+																	<div class="uk-child-width uk-grid">
+																		<label><input class="uk-checkbox" type="checkbox" /> Undertime</label>
+																		<label><input class="uk-checkbox" type="checkbox" /> Late</label>
+																		<label><input class="uk-checkbox" type="checkbox" /> Others</label>
+																	</div>
+																</div>
+																<div class="m-t-lg p-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Time End</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="time" placeholder="" />
+																	</div>
+																</div>
+																<div class="m-t-sm">
+																	<label class="uk-form-label" for="form-stacked-text">Attachments</label>
+																	<div class="js-upload uk-placeholder uk-text-center m-t-remove">
+																		<span uk-icon="icon: cloud-upload"></span>
+																		<div uk-form-custom>
+																			<input type="file" multiple />
+																			<span class="uk-link">Upload a file</span>
+																		</div>
+																		<span class="uk-text-middle">or drag and drop <br /></span>
+																		<span class="uk-text-middle uk-text-meta">PDF file up to 100MB</span>
+																	</div>
+																</div>
+																<div class="m-t-lg p-t-xs">
+																	<label class="uk-form-label" for="form-stacked-text">Date</label>
+																	<div class="uk-form-controls">
+																		<input class="uk-input" id="form-stacked-text" type="date" placeholder="" />
+																	</div>
+																</div>
+															</div>
 														</div>
 														<div class="uk-text-right">
 															<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">Cancel</button>
@@ -825,28 +1402,149 @@
 														</div>
 													</div>
 												</div>
-												
-				
 											</div>
-											
-											
-										</div>
-									</div>
-								</li>
 
-								<!-- LEAVE AND REQUEST -->
-								<li>
-									<div class="qx-card card-default uk-card uk-card-body">
-										<div class="m-sm">
-											<div>LEAVE AND REQUEST</div>
+											<!-- FORM MODAL VIEW -->
+											<!-- FORM MODAL VIEW PENDING -->
+											<div class="rcnt-modal" id="req-view-pending" uk-modal>
+												<div class="uk-modal-dialog uk-modal-body modal-content uk-width-1-2">
+													<div class="uk-position-relative m-b-lg">
+														<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+													</div>
+
+													<div class="uk-flex uk-flex-column uk-flex-between uk-height-small">
+														<div>
+															<span class="uk-badge badge badge-pending">PENDING</span>
+														</div>
+
+														<div class="uk-flex uk-flex-column">
+															<span class="rcnt-modal-title">Leave</span>
+															<span class="rcnt-modal-type">Undertime</span>
+														</div>
+
+														<div class="uk-flex uk-flex-middle rcnt-modal-date m-t-lg">
+															<i class="bx bx-calendar p-r-xs rcnt-modal-date-icon"></i>
+															<span class="m-remove rcnt-modal-date-day">09 May 2023</span>
+														</div>
+														<div class="uk-flex uk-flex-middle rcnt-modal-date">
+															<span>1:00PM - 5:00PM</span>
+														</div>
+													</div>
+
+													<p class="m-b-md m-t-xl">I am requesting to leave work early on Tuesday, May 9th, as I need to attend my sister's graduation ceremony. The event is taking place in another city, and I need to travel there in advance to ensure that I am there on time. I understand that this will result in undertime, and I am willing to make up the time missed on another day if required. Thank you for your understanding.</p>
+
+													<div class="uk-text-right">
+														<button class="uk-button btn btn-outline-secondary btn-size-sm uk-modal-close" type="button" uk-toggle="target: #rcnt-confirmation">Delete Request</button>
+														<div id="rcnt-confirmation" uk-modal>
+															<div class="uk-modal-dialog uk-modal-body modal-content">
+																<div class="uk-position-relative">
+																	<h2 class="uk-modal-title f-w-semi-bold">DELETE LEAVE REQUEST?</h2>
+																	<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+																</div>
+																<p class="m-b-md m-t-lg">Do you really want to delete this request? This process cannot be undone.</p>
+																<div class="uk-text-right">
+																	<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">No</button>
+																	<button class="uk-button btn btn-type-default">Yes</button>
+																</div>
+															</div>
+														</div>
+
+														<button class="uk-button btn btn-type-default btn-size-sm">Edit Request</button>
+													</div>
+												</div>
+											</div>
+
+											<!-- FORM MODAL VIEW DENIED-->
+											<div class="rcnt-modal" id="req-view-denied" uk-modal>
+												<div class="uk-modal-dialog uk-modal-body modal-content uk-width-1-2">
+													<div class="uk-position-relative m-b-lg">
+														<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+													</div>
+
+													<div class="uk-flex uk-flex-column uk-flex-between uk-height-small">
+														<div>
+															<span class="uk-badge badge badge-rejected">DENIED</span>
+														</div>
+
+														<div class="uk-flex uk-flex-column">
+															<span class="rcnt-modal-title">Leave</span>
+															<span class="rcnt-modal-type">Vacation Leave</span>
+														</div>
+
+														<div class="uk-flex uk-flex-middle rcnt-modal-date m-t-lg">
+															<i class="bx bx-calendar p-r-xs rcnt-modal-date-icon"></i>
+															<span class="m-remove rcnt-modal-date-day">21 - 26 April 2023</span>
+														</div>
+														<div class="uk-flex uk-flex-middle rcnt-modal-date">
+															<span>6 days on leave</span>
+														</div>
+													</div>
+
+													<p class="m-b-md m-t-xl">I am writing to inform you that I will be taking a vacation leave from April 21 to 26. I have completed all my pending work and have ensured that my tasks will be taken care of in my absence. I have also informed my colleagues about my leave and have provided them with the necessary information and instructions they may need.</p>
+
+													<div>
+														<h3 class="m-t-xl m-b-remove">Feedback</h3>
+														<p class="m-b-md m-t-remove">
+															Thank you for submitting your request for vacation leave from April 21 to April 26. Unfortunately, we are unable to grant your request at this time. <br /><br />
+
+															Due to heavy workload and conflict with other team members' schedules, we are unable to approve your leave request. <br /><br />
+
+															We understand that taking time off is important to maintain a healthy work-life balance, and we regret any inconvenience this may cause you. However, we need to ensure that we maintain adequate staffing levels to meet our business needs and to avoid any disruption to our operations.
+														</p>
+													</div>
+												</div>
+											</div>
+
+											<!-- FORM MODAL VIEW APPROVED-->
+											<div class="rcnt-modal" id="req-view-approved" uk-modal>
+												<div class="uk-modal-dialog uk-modal-body modal-content uk-width-1-2">
+													<div class="uk-position-relative m-b-lg">
+														<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+													</div>
+
+													<div class="uk-flex uk-flex-column uk-flex-between uk-height-small">
+														<div>
+															<span class="uk-badge badge badge-approved">APPROVED</span>
+														</div>
+
+														<div class="uk-flex uk-flex-column">
+															<span class="rcnt-modal-title">Official Business</span>
+															<span class="rcnt-modal-type">Onsite Working</span>
+														</div>
+
+														<div class="uk-flex uk-flex-middle rcnt-modal-date m-t-lg">
+															<i class="bx bx-calendar p-r-xs rcnt-modal-date-icon"></i>
+															<span class="m-remove rcnt-modal-date-day">29 March 2023</span>
+														</div>
+													</div>
+
+													<p class="m-b-md m-t-xl">
+														I am writing to request permission to work onsite at our company's office for a single day on March 29, 2023 . I would like to work in the office for a need for better collaboration with a my team member. <br /><br />
+
+														I understand that our company has implemented a remote work policy to ensure the safety and well-being of its employees. However, I believe that working onsite for one day will help me to be more productive and efficient in completing my tasks.
+													</p>
+
+													<div>
+														<h3 class="m-t-xl m-b-remove">Feedback</h3>
+														<p class="m-b-md m-t-remove">
+															Thank you for your request to work onsite at our company's office for a single day on March 29, 2023 . We have reviewed your request and have approved it. <br /><br />
+
+															We understand that there may be circumstances that require you to work onsite, and we appreciate your willingness to comply with our safety protocols and guidelines. <br /><br />
+
+															Please ensure that you follow all necessary safety protocols while in the office. If you need any assistance or have any questions, please do not hesitate to reach out to your manager or our Human Resources department. <br /><br />
+
+															Thank you!
+														</p>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
+									</section>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</main>
-
 				<footer class="p-x-xxl p-t-xl">
 					<div class="uk-grid-large" uk-grid>
 						<div class="uk-text-center uk-width-1-5@m">
