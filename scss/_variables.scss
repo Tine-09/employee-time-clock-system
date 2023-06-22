@@ -35,7 +35,7 @@ $secondaryDark: #d51920;
 $success: #28a745;
 $successDark: #1f8536;
 
-$warning: #ed9a47;
+$warning: #ffa500;
 $warningDark: #cb8035;
 
 $danger: #dc3545;
@@ -48,3 +48,11 @@ $background: #eceff1;
 $border: #d0d0d0;
 $placeholderText: #afafaf;
 $tabHover: #d3d3d3;
+
+// Break Points
+$breakpointXs: 319px;
+$breakpointSm: 480px;
+$breakpointMd: 640px;
+$breakpointLg: 960px;
+$breakpointXl: 1200px;
+$breakpointXxl: 1600px;
