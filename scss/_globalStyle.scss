@@ -1,7 +1,9 @@
 body {
 	background-color: $background;
 }
-
+main {
+	padding: 30px 50px 0;
+}
 .fa-classic,
 .fa-regular,
 .fa-solid,
@@ -60,5 +62,20 @@ body {
 			color: white;
 			background-color: transparent;
 		}
+	}
+}
+@media (width <= $breakpointLg) {
+	main {
+		padding: 10px 10px 0;
+	}
+
+	.summary-card-medium {
+		padding-left: 0;
+	}
+}
+
+@media (width <= $breakpointMd) {
+	.summary-card {
+		width: 50%;
 	}
 }
