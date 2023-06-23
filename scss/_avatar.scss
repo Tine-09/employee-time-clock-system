@@ -1,4 +1,9 @@
 .img {
+	&-xs {
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+	}
 	&-sm {
 		width: 55px;
 		height: 55px;
