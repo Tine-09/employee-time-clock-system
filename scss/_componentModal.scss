@@ -12,12 +12,3 @@
 		font-size: 18px !important;
 	}
 }
-
-@media (width <= $breakpointMd) {
-	.modal-content {
-		padding: 20px;
-	}
-	.edit-btn-modal {
-		position: unset !important;
-	}
-}
