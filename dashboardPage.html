@@ -19,6 +19,8 @@
 
 		<!-- boxicon cdn  -->
 		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	</head>
 	<body>
 		<div class="uk-grid-collapse" uk-grid>
@@ -82,6 +84,122 @@
 							</div>
 						</div>
 					</header>
+
+					<!-- Attendance Page Summary  -->
+					<!-- Projects Page Summary -->
+					<section class="section m-b-lg m-t-lg">
+						<h2 class="f-s-md m-b-remove">Project Developent 2023</h2>
+						<canvas id="myChart"></canvas>
+						<script>
+							Chart.Utils = {
+								months: function (params) {
+									const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+									return months.slice(0, params.count);
+								},
+
+								numbers: function (params) {
+									const result = [];
+									for (let i = 0; i < params.count; ++i) {
+										result.push(Chart.Utils.randomScalingFactor(params.min, params.max));
+									}
+									return result;
+								},
+								randomScalingFactor: function (min, max) {
+									return Math.round(Math.random() * (max - min) + min);
+								},
+								CHART_COLORS: {
+									red: "rgba(255, 99, 132, 0.9)",
+									blue: "rgba(54, 162, 235, 0.9)",
+									green: "rgba(75, 192, 192, 0.9)",
+									orange: "rgba(255, 148, 112, 0.9)",
+									purple: "rgba(159, 90, 253, 0.9)",
+								},
+							};
+
+							// Setup
+							const DATA_COUNT = 12;
+							const NUMBER_CFG = { count: DATA_COUNT, min: -100, max: 100 };
+
+							const labels = Chart.Utils.months({ count: DATA_COUNT });
+							const data = {
+								labels: labels,
+								datasets: [
+									{
+										label: "Customizer",
+										data: Chart.Utils.numbers(NUMBER_CFG),
+										backgroundColor: Chart.Utils.CHART_COLORS.red,
+										stack: "Stack 0",
+									},
+									{
+										label: "PDF Services",
+										data: Chart.Utils.numbers(NUMBER_CFG),
+										backgroundColor: Chart.Utils.CHART_COLORS.blue,
+										stack: "Stack 0",
+									},
+									{
+										label: "Prolok Website",
+										data: Chart.Utils.numbers(NUMBER_CFG),
+										backgroundColor: Chart.Utils.CHART_COLORS.green,
+										stack: "Stack 1",
+									},
+									{
+										label: "QXD EPI",
+										data: Chart.Utils.numbers(NUMBER_CFG),
+										backgroundColor: Chart.Utils.CHART_COLORS.orange,
+										stack: "Stack 1",
+									},
+									{
+										label: "Image Services",
+										data: Chart.Utils.numbers(NUMBER_CFG),
+										backgroundColor: Chart.Utils.CHART_COLORS.purple,
+										stack: "Stack 1",
+									},
+								],
+							};
+
+							// Configuration
+							const config = {
+								type: "bar",
+								data: data,
+								options: {
+									plugins: {
+										title: {
+											display: true,
+											// text: "Chart.js Bar Chart - Stacked",
+										},
+									},
+									responsive: true,
+									interaction: {
+										intersect: false,
+									},
+									scales: {
+										x: {
+											stacked: true,
+										},
+										y: {
+											stacked: true,
+										},
+									},
+								},
+							};
+
+							// Create chart
+							const ctx = document.getElementById("myChart").getContext("2d");
+							const myChart = new Chart(ctx, config);
+
+							// Actions
+							const actions = [
+								{
+									name: "Randomize",
+									handler(chart) {
+										chart.data.datasets.forEach((dataset) => {
+											dataset.data = Chart.Utils.numbers({ count: chart.data.labels.length, min: -100, max: 100 });
+										});
+										chart.update();
+									},
+								},
+							];
+						</script>
 					<!-- Attendance Page Summary - Time Card -->
 					<section class="time-crd section uk-flex uk-child-width-1-2">
 						<div class="time-crd-inf uk-flex uk-flex-column uk-flex-center p-l-lg">
