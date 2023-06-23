@@ -1,0 +1,41 @@
+// Time Card
+.time-crd {
+	padding: 0px !important;
+
+	&-inf {
+		color: $primary;
+		height: 170px;
+
+		.inf-txt {
+			line-height: normal;
+
+			&-name {
+				font-size: $font-size-xxl;
+				font-weight: $font-weight-bold;
+			}
+			&-pos {
+				font-size: $font-size-md;
+			}
+		}
+	}
+
+	&-clk {
+		background: $primary;
+		clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+
+		.crd-txt {
+			width: 70%;
+			height: 50%;
+			color: #fff;
+			line-height: normal;
+
+			&-time {
+				font-size: $font-size-xxl;
+				font-weight: $font-weight-bold;
+			}
+			&-date {
+				font-size: $font-size-md;
+			}
+		}
+	}
+}
