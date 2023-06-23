@@ -1,0 +1,32 @@
+.leave-sum {
+	margin-top: 0px;
+	margin-bottom: 40px;
+	text-align: left;
+	font-weight: $font-weight-regular;
+
+	.ob {
+		font-weight: $font-weight-semibold;
+	}
+	.fail {
+		font-weight: $font-weight-semibold;
+	}
+	.cs {
+		font-weight: $font-weight-semibold;
+	}
+	.leave {
+		font-weight: $font-weight-semibold;
+	}
+	.ot {
+		font-weight: $font-weight-semibold;
+	}
+}
+
+ul {
+	background-color: transparent !important;
+}
+
+.req {
+	&-card {
+		text-decoration: none;
+	}
+}

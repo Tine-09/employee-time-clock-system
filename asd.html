@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Profile</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/css/uikit.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- JS -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/js/uikit.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/js/uikit-icons.min.js"></script>
+		<script src="js/javascript.js"></script>
+
+		<!-- Fontawesome cdn  -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+		<!-- boxicon cdn  -->
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="uk-grid-collapse" uk-grid>
+			<div class="uk-width-1-6">
+				<!-- SIDEBAR -->
+				<aside class="sidebar uk-width-1-6" uk-height-viewport>
+					<header>
+						<div class="image-text">
+							<span class="image">
+								<img src="./images/logo.svg" alt="" />
+							</span>
+							<div class="text header-text">
+								<span class="name">QuickStrike</span>
+							</div>
+						</div>
+					</header>
+					<ul>
+						<li class="nav-link">
+							<a href="./components.html"><i class="bx bxs-grid-alt icon"></i> <span class="text">Dashboard</span></a>
+						</li>
+						<li class="nav-link">
+							<a href="./atttendance.html"><i class="bx bx-calendar icon"></i> <span class="text">Attendance</span></a>
+						</li>
+						<li class="nav-link">
+							<a href="#"><i class="bx bxs-folder-open icon"></i> <span class="text">Project</span></a>
+						</li>
+						<li class="nav-link active">
+							<a href="#"><i class="bx bxs-user icon"></i> <span class="text">Profile</span></a>
+						</li>
+						<li class="nav-link">
+							<a href="#"><i class="bx bxs-group icon"></i> <span class="text">Employee</span></a>
+						</li>
+						<hr style="margin: 30px 0px" />
+						<li class="nav-link">
+							<a href="#"><i class="bx bxs-cog icon"></i> <span class="text">Settings</span></a>
+						</li>
+						<li class="nav-link">
+							<a href="#"><i class="bx bx-log-out icon"></i> <span class="text">Logout</span></a>
+						</li>
+					</ul>
+				</aside>
+			</div>
+			<div class="uk-width-expand">
+				<div uk-height-overflow="offset-top: true" uk-overflow-auto></div>
+				<main style="padding: 30px 50px 0px">
+					<!-- HEADER -->
+					<header class="uk-navbar-container" style="background: none">
+						<div class="uk-flex-between">
+							<div uk-navbar class="m-x-lg">
+								<div class="uk-navbar-left">
+									<ul class="uk-navbar-nav">
+										<h1 class="m-t-sm">Request</h1>
+									</ul>
+								</div>
+								<div class="uk-navbar-right">
+									<ul class="uk-navbar-nav uk-flex">
+										<li class="m-t-sm"><span uk-icon="bell"></span></li>
+										<li>juan@qstrike.com <img src="images/avatar.jpg" class="img-sm" /></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</header>
+
+					<!-- REQUESTS SUMMARY -->
+					<div>
+						<div class="uk-child-width-expand@s uk-text-center m-t-md" uk-grid>
+							<div>
+								<div class="qx-card uk-card-body">
+									<h5 class="">
+										Total <br />
+										Requests
+									</h5>
+									<h2>8</h2>
+								</div>
+							</div>
+							<div>
+								<div class="qx-card uk-card-body">
+									<h5 class="">
+										Engineering <br />
+										Department
+									</h5>
+									<h2>4</h2>
+								</div>
+							</div>
+							<div>
+								<div class="qx-card uk-card-body">
+									<h5 class="">
+										Creatives <br />
+										Department
+									</h5>
+									<h2>3</h2>
+								</div>
+							</div>
+							<div>
+								<div class="qx-card uk-card-body">
+									<h5 class="">
+										Human Resource <br />
+										Department
+									</h5>
+									<h2>10</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- REQUEST LISTS -->
+					<section class="section qx-card m-t-lg m-b-lg">
+						<div class="qx-card card-default uk-card uk-card-body">
+							<div class="m-sm">
+								<div class="uk-child-width-expand@s uk-background-muted uk-padding-small" uk-grid>
+									<li>NAME</li>
+									<li>DEPARTMENT</li>
+									<li>DATE FILED</li>
+									<li>TYPE</li>
+								</div>
+								<a href="#request-modal" uk-toggle>
+									<div class="uk-child-width-expand@s" uk-grid>
+										<div class="uk-grid">
+											<li class="p-r-sm"><img class="img-xs" src="images/avatar.jpg" alt="" /></li>
+											<li class="p-l-remove">Juan De La Cruz</li>
+										</div>
+										<li class="p-l-xl">Engineering</li>
+										<li>17 April 2023</li>
+										<li>Vacation Leave</li>
+									</div>
+								</a>
+								<hr />
+								<div class="uk-child-width-expand@s" uk-grid>
+									<div class="uk-grid">
+										<li class="p-r-sm"><img class="img-xs" src="images/avatar.jpg" alt="" /></li>
+										<li class="p-l-remove">Juan De La Cruz</li>
+									</div>
+									<li class="p-l-xl">Creatives</li>
+									<li>17 April 2023</li>
+									<li>Vacation Leave</li>
+								</div>
+								<hr />
+								<div class="uk-child-width-expand@s" uk-grid>
+									<div class="uk-grid">
+										<li class="p-r-sm"><img class="img-xs" src="images/avatar.jpg" alt="" /></li>
+										<li class="p-l-remove">Juan De La Cruz</li>
+									</div>
+									<li class="p-l-xl">Human Resource</li>
+									<li>17 April 2023</li>
+									<li>Vacation Leave</li>
+								</div>
+								<hr />
+								<div class="uk-child-width-expand@s" uk-grid>
+									<div class="uk-grid">
+										<li class="p-r-sm"><img class="img-xs" src="images/avatar.jpg" alt="" /></li>
+										<li class="p-l-remove">Juan De La Cruz</li>
+									</div>
+									<li class="p-l-xl">Engineering</li>
+									<li>17 April 2023</li>
+									<li>Vacation Leave</li>
+								</div>
+								<hr />
+								<div class="uk-child-width-expand@s" uk-grid>
+									<div class="uk-grid">
+										<li class="p-r-sm"><img class="img-xs" src="images/avatar.jpg" alt="" /></li>
+										<li class="p-l-remove">Juan De La Cruz</li>
+									</div>
+									<li class="p-l-xl">Engineering</li>
+									<li>17 April 2023</li>
+									<li>Vacation Leave</li>
+								</div>
+								<hr />
+								<div class="uk-child-width-expand@s" uk-grid>
+									<div class="uk-grid">
+										<li class="p-r-sm"><img class="img-xs" src="images/avatar.jpg" alt="" /></li>
+										<li class="p-l-remove">Juan De La Cruz</li>
+									</div>
+									<li class="p-l-xl">Engineering</li>
+									<li>17 April 2023</li>
+									<li>Vacation Leave</li>
+								</div>
+								<hr />
+								<div class="uk-child-width-expand@s" uk-grid>
+									<div class="uk-grid">
+										<li class="p-r-sm"><img class="img-xs" src="images/avatar.jpg" alt="" /></li>
+										<li class="p-l-remove">Juan De La Cruz</li>
+									</div>
+									<li class="p-l-xl">Engineering</li>
+									<li>17 April 2023</li>
+									<li>Vacation Leave</li>
+								</div>
+								<hr />
+								<div class="uk-child-width-expand@s" uk-grid>
+									<div class="uk-grid">
+										<li class="p-r-sm"><img class="img-xs" src="images/avatar.jpg" alt="" /></li>
+										<li class="p-l-remove">Juan De La Cruz</li>
+									</div>
+									<li class="p-l-xl">Engineering</li>
+									<li>17 April 2023</li>
+									<li>Vacation Leave</li>
+								</div>
+								<hr />
+								<div class="uk-child-width-expand@s" uk-grid>
+									<div class="uk-grid">
+										<li class="p-r-sm"><img class="img-xs" src="images/avatar.jpg" alt="" /></li>
+										<li class="p-l-remove">Juan De La Cruz</li>
+									</div>
+									<li class="p-l-xl">Engineering</li>
+									<li>17 April 2023</li>
+									<li>Vacation Leave</li>
+								</div>
+								<hr />
+								<div class="uk-child-width-expand@s" uk-grid>
+									<div class="uk-grid">
+										<li class="p-r-sm"><img class="img-xs" src="images/avatar.jpg" alt="" /></li>
+										<li class="p-l-remove">Juan De La Cruz</li>
+									</div>
+									<li class="p-l-xl">Engineering</li>
+									<li>17 April 2023</li>
+									<li>Vacation Leave</li>
+								</div>
+								<hr />
+								<div class="uk-child-width-expand@s" uk-grid>
+									<div class="uk-grid">
+										<li class="p-r-sm"><img class="img-xs" src="images/avatar.jpg" alt="" /></li>
+										<li class="p-l-remove">Juan De La Cruz</li>
+									</div>
+									<li class="p-l-xl">Engineering</li>
+									<li>17 April 2023</li>
+									<li>Vacation Leave</li>
+								</div>
+								<hr />
+								<div class="uk-child-width-expand@s" uk-grid>
+									<div class="uk-grid">
+										<li class="p-r-sm"><img class="img-xs" src="images/avatar.jpg" alt="" /></li>
+										<li class="p-l-remove">Juan De La Cruz</li>
+									</div>
+									<li class="p-l-xl">Engineering</li>
+									<li>17 April 2023</li>
+									<li>Vacation Leave</li>
+								</div>
+								<hr />
+								<div class="uk-child-width-expand@s" uk-grid>
+									<div class="uk-grid">
+										<li class="p-r-sm"><img class="img-xs" src="images/avatar.jpg" alt="" /></li>
+										<li class="p-l-remove">Juan De La Cruz</li>
+									</div>
+									<li class="p-l-xl">Engineering</li>
+									<li>17 April 2023</li>
+									<li>Vacation Leave</li>
+								</div>
+
+								<!-- REQUEST MODAL -->
+								<div class="rcnt-modal" id="request-modal" uk-modal>
+									<div class="uk-modal-dialog uk-modal-body modal-content uk-width-1-2">
+										<div class="uk-position-relative m-b-lg">
+											<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+										</div>
+
+										<div class="uk-flex uk-flex-column uk-flex-between uk-height-small">
+											<div>
+												<span class="uk-badge badge badge-approved">Approved</span>
+											</div>
+
+											<div class="uk-flex uk-flex-column">
+												<span class="rcnt-modal-title">Going for a trip</span>
+												<span class="rcnt-modal-type">Vacation Leave</span>
+											</div>
+
+											<div class="uk-flex uk-flex-middle rcnt-modal-date">
+												<i class="bx bx-calendar p-r-xs rcnt-modal-date-icon"></i>
+												<span class="m-remove rcnt-modal-date-day"> April 25-28, 2023</span>
+											</div>
+										</div>
+
+										<p class="m-b-md m-t-lg">I am writing to inform you that I will be taking a vacation leave from April 25 to 28. I have completed all my pending work and have ensured that my tasks will be taken care of in my absence. I have also informed my colleagues about my leave and have provided them with the necessary information and instructions they may need.</p>
+
+										<div class="uk-flex uk-flex-column rcnt-modal-attch">
+											<div class="m-b-xs attch-title">
+												<span>Attachments</span>
+											</div>
+
+											<div class="uk-flex">
+												<div class="uk-flex uk-flex-middle p-l-xs p-t-xs p-b-xs m-r-sm attch-txt">
+													<i class="bx bxs-file-blank p-r-xs attch-icon"></i>
+													<span class="p-r-md attch-name">receipt.txt</span>
+													<i class="bx bx-x-circle p-r-xs"></i>
+												</div>
+
+												<div class="uk-flex uk-flex-middle p-l-xs p-t-xs p-b-xs attch-txt">
+													<i class="bx bxs-image-alt p-r-xs attch-icon"></i>
+													<span class="p-r-md attch-name">beach.jpg</span>
+													<i class="bx bx-x-circle p-r-xs"></i>
+												</div>
+											</div>
+										</div>
+
+										<div class="uk-text-right">
+											<button class="uk-button btn btn-outline-secondary btn-size-sm uk-modal-close" type="button" uk-toggle="target: #rcnt-confirmation">Delete Request</button>
+											<div id="rcnt-confirmation" uk-modal>
+												<div class="uk-modal-dialog uk-modal-body modal-content">
+													<div class="uk-position-relative">
+														<h2 class="uk-modal-title f-w-semi-bold">DELETE LEAVE REQUEST?</h2>
+														<button class="uk-modal-close uk-modal-close-default" type="button" uk-close></button>
+													</div>
+													<p class="m-b-md m-t-lg">Do you really want to delete this request? This process cannot be undone.</p>
+													<div class="uk-text-right">
+														<button class="uk-button btn btn-outline-secondary uk-modal-close" type="button">No</button>
+														<button class="uk-button btn btn-type-default">Yes</button>
+													</div>
+												</div>
+											</div>
+
+											<button class="uk-button btn btn-type-default btn-size-sm">Edit Request</button>
+										</div>
+									</div>
+								</div>
+
+								<!-- PAGINATION -->
+								<div class="uk-text-center m-t-xl m-b-sm">
+									<div class="uk-inline">
+										<ul class="uk-pagination uk-flex-middle" uk-margin>
+											<li uk-tooltip="Previous Page">
+												<a href="#"><span uk-pagination-previous></span></a>
+											</li>
+											<li class="page-number uk-active m-xs uk-text-center"><a href="">1</a></li>
+											<li class="page-number m-xs uk-text-center"><a href="">2</a></li>
+											<li class="page-number m-xs uk-text-center"><a href="">3</a></li>
+											<li class="page-number m-xs uk-text-center"><a href="">4</a></li>
+											<li class="page-number m-xs uk-text-center"><a href="">5</a></li>
+											<li uk-tooltip="Next Page">
+												<a href="#"><span uk-pagination-next></span></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</main>
+
+				<footer class="p-x-xxl p-t-xl">
+					<div class="uk-grid-large" uk-grid>
+						<div class="uk-text-center uk-width-1-5@m">
+							<img src="./images/logo.svg" alt="QuickStrike-logo" />
+							<h4 class="m-xs">QUICKSTRIKE</h4>
+						</div>
+						<div class="uk-width-expand">
+							<h4 class="color-t-secondary">CONTACTS</h4>
+							<div class="uk-flex-middle uk-grid-small" uk-grid>
+								<div class="uk-width-auto"><i class="bx bx-location-plus"></i></div>
+								<div class="uk-width-expand">
+									<div class="address">4J29+PHH, San Fernando, Pampanga</div>
+								</div>
+							</div>
+							<div class="uk-flex-middle uk-grid-small" uk-grid>
+								<div class="uk-width-auto">
+									<i class="bx bx-phone"></i>
+								</div>
+								<div class="ul-width-expand">
+									<div class="address">+63 952 691 5931</div>
+								</div>
+							</div>
+							<div class="uk-flex-middle uk-grid-small" uk-grid>
+								<div class="uk-width-auto">
+									<i class="bx bx-envelope"></i>
+								</div>
+								<div class="uk-width-expand">
+									<div class="address">hr@qstrike.com</div>
+								</div>
+							</div>
+						</div>
+						<div class="uk-width-1-5@m">
+							<h4 class="color-t-secondary">PAGES</h4>
+							<ul class="uk-list list list-size-lg">
+								<li><a class="f-w-bold">Dashboard</a></li>
+								<li><a class="f-w-bold">Attendance</a></li>
+								<li><a class="f-w-bold">Profile</a></li>
+								<li><a class="f-w-bold">Employees</a></li>
+								<li><a class="f-w-bold">Projects</a></li>
+							</ul>
+						</div>
+						<div class="uk-width-1-5@m">
+							<h4 class="color-t-secondary">LEGAL NOTICES</h4>
+							<ul class="uk-list list list-size-lg">
+								<li><a class="f-w-bold">Privacy Policy</a></li>
+								<li><a class="f-w-bold">Terms of Use</a></li>
+								<li><a class="f-w-bold">Disclaimer</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="uk-grid-large uk-child-width-auto uk-flex uk-flex-right p-b-sm" uk-grid>
+						<div>
+							<h6 class="m-remove color-t-placeholdertext">QuickStrike MNFG PH © 2023</h6>
+						</div>
+						<div>
+							<h6 class="m-remove color-t-placeholdertext">Dashboard latest update: March 27, 2013</h6>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>

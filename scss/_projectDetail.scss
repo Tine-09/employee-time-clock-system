@@ -120,43 +120,43 @@
 		}
 	}
 
+	.certification {
+		.cert-name {
+			font-size: $font-size-md;
+			margin-bottom: 0px;
+		}
 
-.certification {
-	.cert-name {
-		font-size: $font-size-md;
-		margin-bottom: 0px;
-	}
+		.file-type {
+			font-size: $font-size-xs;
+			font-weight: $font-weight-regular;
+			margin-top: 7px;
+			color: gray;
+			margin-bottom: 12px;
+		}
 
-	.file-type {
-		font-size: $font-size-xs;
-		font-weight: $font-weight-regular;
-		margin-top: 7px;
-		color: gray;
-		margin-bottom: 12px;
-	}
+		.cert-btn {
+			color: $secondary;
+			cursor: pointer;
+			text-decoration: none;
+		}
 
-	.cert-btn {
-		color: $secondary;
-		cursor: pointer;
-		text-decoration: none;
-	}
-
-	a {
-		text-transform: none;
-		text-decoration: none;
-		.cert-flex {
-			display: flex;
-			padding: 0px 0px;
-			width: 340px;
-			.bxs-plus-circle {
-				font-size: 82px;
-				color: $secondary;
-				margin-right: 10px;
-			}
-			h2 {
-				font-weight: $font-weight-regular;
-				margin-top: 25px;
-				font-size: $font-size-md;
+		a {
+			text-transform: none;
+			text-decoration: none;
+			.cert-flex {
+				display: flex;
+				padding: 0px 0px;
+				width: 340px;
+				.bxs-plus-circle {
+					font-size: 82px;
+					color: $secondary;
+					margin-right: 10px;
+				}
+				h2 {
+					font-weight: $font-weight-regular;
+					margin-top: 25px;
+					font-size: $font-size-md;
+				}
 			}
 		}
 	}
